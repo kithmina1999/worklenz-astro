@@ -104,8 +104,8 @@ const timeTrackingContent = await getCollection("time-tracking");
       console.log('Initializing videos...');
       const videos = document.querySelectorAll("video");
       if (videos.length === 0) {
-          console.log('No videos found');
-          return;
+        console.log('No videos found');
+        return;
       }
 
       videos.forEach((video, index) => {
@@ -164,5 +164,8 @@ const timeTrackingContent = await getCollection("time-tracking");
       console.log('URL change detected');
       reinitializeVideos();
     });
+
+    // Reinitialize videos on load to ensure they are set up properly.
+    reinitializeVideos();
   </script>
 </Layout>
