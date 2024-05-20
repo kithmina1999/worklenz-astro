@@ -1,0 +1,20 @@
+---
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "./Layout.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={frontmatter.title}>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{frontmatter.title}</Fragment>
+      <Fragment slot="desc"> </Fragment>
+    </Sectionhead>
+
+    <div class="mx-auto prose mt-10 text-justify">
+      <slot />
+    </div>
+  </Container>
+</Layout>

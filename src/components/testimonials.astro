@@ -1,0 +1,63 @@
+---
+import Card from "@components/card.astro";
+import Container from "@components/container.astro";
+import Review from "@components/review.astro";
+
+const testimonials = [
+  {
+    name: "Pulani Ranasinghe",
+    title: "Founder & Leadership at Loons Lab",
+    image: "/testimonials/pulani-ranasinghe.jpeg",
+    text: "Amaizing product which is very simple and easy to use.",
+  },
+  {
+    name: "Upul Dissanayake",
+    title: "Founder and CEO at LONGWApps (Pvt) Ltd",
+    image: "/testimonials/upul-dissanayake.jpeg",
+    text: "Worklenz has revolutionized our workflow. With its user-friendly interface and powerful features, task management is a breeze. Time tracking, insightful analytics, and seamless integrations make it a must-have for any team serious about productivity. Highly recommended!",
+  },
+  {
+    name: "Dr. Milinda piyasena",
+    title: "Senior Lecturer at Sabaragamuwa University, Sri Lanka",
+    image: "/testimonials/milinda-piyasena.png",
+    text: "This is an excellent product. We practically experienced how productivity can increase after fully integrating this with our daily task schedule",
+  },
+  {
+    name: "Marta Gómez Jiménez",
+    title: "Product Manager (EdTech) and Agile Coach at The Bridge",
+    image: "/testimonials/marta-gomez-jimenez.jpeg",
+    text: "we are working with Trello until we have discovered Worklenz. The boards is better tan Trello bzz you can view % of tasks completed and also the roadmap is more attractive than others. We are waiting the new features that make posible importar boards and projects from other platfforms to migrate and centralize all project's information in one site.",
+  },
+];
+---
+
+<Container>
+  <div class="mt-24">
+    <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-center">
+      Client <span class="text-blue-600">Testimonials</span>
+    </h2>
+    <p class="text-lg mt-4 text-slate-600 text-center">
+      Worklenz is trusted by fellow companies and brands.
+    </p>
+  </div>
+</Container>
+
+<div class="mt-10 relative overflow-x-clip">
+  <div
+    class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial from-blue-100 right-1/3 -top-10">
+  </div>
+  <div
+    class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial from-purple-100 right-1/3 translate-x-2/3 top-10">
+  </div>
+  <div class="relative md:flex gap-10 overflow-hidden py-5 group">
+    <div
+      class="md:motion-safe:animate-marquee w-auto py-5 overflow-x-auto flex flex-nowrap min-w-full shrink-0 items-stretch gap-10 snap-x snap-mandatory px-5">
+      {testimonials.map((item) => <Review {...item} />)}
+    </div>
+    <!--  ↓↓ Shadow DOM to make the animation smooth (clone) ↓↓ -->
+    <div
+      class="md:motion-safe:animate-marquee hidden md:motion-reduce:hidden md:flex w-auto py-5 overflow-x-auto flex-nowrap min-w-full shrink-0 items-stretch gap-10 snap-x snap-mandatory px-5">
+      {testimonials.map((item) => <Review {...item} />)}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import PricingComponent from "@components/pricing.astro";
+import Faq from "@components/faq.astro";
+import ComparePricing from "@components/compare-pricing.astro";
+import PricingLink from "@components/ui/pricingLink.astro";
+
+const pricing = [
+  {
+    name: "Free",
+    price: "Free",
+    desc: "",
+    color: "blue",
+    popular: false,
+    features: [
+      "1 team",
+      "1GB free storage",
+      "3 active projects",
+      "Unlimited team members",
+      "Task list",
+      "Kanban board",
+      "Project roadmap",
+      "Project insights",
+      "Time tracking",
+    ],
+    button: {
+      text: "Get Started",
+      link: "/",
+    },
+  },
+  {
+    name: "Pro",
+    price: "5.99",
+    desc: "",
+    popular: true,
+    color: "orange",
+    features: [
+      "Unlimited teams",
+      "25GB free storage",
+      "Unlimited active projects",
+      "Unlimited team members",
+      "Everything in free plan",
+      "Resource management",
+      "Advanced project reporting",
+      "Track team members' progress",
+      "Reports exporting",
+    ],
+    button: {
+      text: "Get Started",
+      link: "#",
+    },
+  },
+];
+---
+
+<Layout title="Pricing">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Pricing</Fragment>
+      <Fragment slot="desc">
+        Simple & Predictable pricing. No Surprises.
+      </Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-row mx-auto w-[400px] mt-12">
+      <PricingLink href="#" block size="md">Try for Free</PricingLink>
+      <PricingLink href="/self-hosted" style="muted" size="md" block>Self Hosted</PricingLink>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-screen-md mt-12">
+      {pricing.map((item) => <PricingComponent plan={item} />)}
+    </div>
+    <ComparePricing />
+    <Faq />
+  </Container>
+</Layout>

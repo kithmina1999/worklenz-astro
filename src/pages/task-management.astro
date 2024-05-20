@@ -1,0 +1,127 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import { getCollection } from "astro:content";
+import { Icon } from "astro-icon/components";
+import Picture from "astro/components/Picture.astro";
+import TaskImage from "../assets/task-management.png";
+
+const taskContent = await getCollection("task");
+---
+
+<Layout title="Task Management">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title"
+        >Organize all your tasks efficiently with ease</Fragment
+      >
+      <Fragment slot="desc">
+        Simplify task management with our enhanced features for a more efficient workflow
+      </Fragment>
+      <Fragment slot="image">
+        <Picture
+        src={TaskImage}
+        alt="Feature image"
+        formats={["avif", "webp"]}
+        loading="eager"
+        width={500}
+        />
+      </Fragment>
+      <Fragment slot="link">Get Started</Fragment>
+    </Sectionhead>
+
+    <main class="mt-16">
+      {
+        taskContent.map((item) => (
+          <div>
+            {item.data.source.map((subItem,index) => (
+              <div
+            class={`hidden items-center mt-20 md:grid md:grid-cols-2 gap-8 ${index % 2 === 0 ? "justify-items-start" : "justify-items-end"}`}>
+            {index % 2 === 0 ? (
+              <>
+                <div class="flex flex-col">
+                  <p class="text-3xl font-bold">{subItem.title}</p>
+                  <div class="mt-6 flex flex-col">
+                    {subItem.content.map((subNestedItem) => (
+                      <div class="flex flex-row items-center gap-4 mt-2">
+                        <div>
+                          <Icon name="ph:check" class="w-6 h-6 text-blue-400" />
+                        </div>
+                        <label class="text-lg font-semibold">
+                          {subNestedItem.subTitle} :{" "}
+                          <span class="text-sm font-normal text-gray-500">
+                            {subNestedItem.explanation}
+                          </span>
+                        </label>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <video  muted loop controls>
+                    <source src={subItem.video.src} type="video/mp4" />
+                  </video>
+                </div>
+              </>
+            ) : (
+              <>
+                <div>
+                  <video  muted loop controls>
+                    <source src={subItem.video.src} type="video/mp4" />
+                  </video>
+                </div>
+                <div class="flex flex-col">
+                  <p class="text-3xl font-bold">{subItem.title}</p>
+                  <div class="mt-6 flex flex-col">
+                    {subItem.content.map((subNestedItem) => (
+                      <div class="flex flex-row items-center gap-4 mt-2">
+                        <div>
+                          <Icon name="ph:check" class="w-6 h-6 text-blue-400" />
+                        </div>
+                        <label class="text-lg font-semibold">
+                          {subNestedItem.subTitle} :{" "}
+                          <span class="text-sm font-normal text-gray-500">
+                            {subNestedItem.explanation}
+                          </span>
+                        </label>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </>
+            )}
+          </div>
+          
+          <div class="md:hidden items-center grid mt-20 gap-8">
+            <div class="flex flex-col">
+                  <p class="text-3xl font-bold">{subItem.title}</p>
+                  <div class="mt-6 flex flex-col">
+                    {subItem.content.map((subNestedItem) => (
+                      <div class="flex flex-row items-center gap-4 mt-2">
+                        <div>
+                          <Icon name="ph:check" class="w-6 h-6 text-blue-400" />
+                        </div>
+                        <label class="text-lg font-semibold">
+                          {subNestedItem.subTitle} :{" "}
+                          <span class="text-sm font-normal text-gray-500">
+                            {subNestedItem.explanation}
+                          </span>
+                        </label>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <video  muted loop controls>
+                    <source src={subItem.video.src} type="video/mp4" />
+                  </video>
+                </div>
+          </div>
+            ))}
+          </div>
+        ))
+      }
+    </main>
+  </Container>
+</Layout>

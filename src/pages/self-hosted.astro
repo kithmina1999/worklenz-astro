@@ -1,0 +1,50 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import PricingComponent from "@components/pricing.astro";
+import Faq from "@components/faq.astro";
+import ComparePricing from "@components/compare-pricing.astro";
+import PricingLink from "@components/ui/pricingLink.astro";
+
+const pricing = [
+  
+{
+    name: "Enterprise",
+    price: null,
+    desc: "Suitable for Enterprise solutions",
+    popular: false,
+    color: "purple",
+    features: [
+      "All Pro Features",
+      "Hosting Support",
+    ],
+    button: {
+      text: "Contact us",
+      link: "/contact",
+    },
+  },
+];
+---
+
+<Layout title="Pricing">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Pricing</Fragment>
+      <Fragment slot="desc">
+        Simple & Predictable pricing. No Surprises.
+      </Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-row mx-auto w-[400px] mt-12">
+      <PricingLink href="/free" style="muted" block size="md">Try for Free</PricingLink>
+      <PricingLink href="#" size="md" block>Self Hosted</PricingLink>
+    </div>
+
+    <div class="grid mx-auto max-w-[400px] mt-12">
+      {pricing.map((item) => <PricingComponent plan={item} />)}
+    </div>
+    <ComparePricing />
+    <Faq />
+  </Container>
+</Layout>

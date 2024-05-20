@@ -1,0 +1,168 @@
+---
+import Badge from "@components/ui/badge.astro";
+import { Picture } from "astro:assets";
+import FeatureImg1 from "../assets/features/6.svg";
+import FeatureImg2 from "../assets/features/2.png";
+import { Icon } from "astro-icon/components";
+import Link from "@components/ui/link.astro";
+
+const { nomargin } = Astro.props;
+---
+
+<div
+  class:list={[
+    "max-w-4xl mx-auto flex flex-col items-center justify-center",
+    !nomargin && "mt-24",
+  ]}>
+  <Badge color="blue">UNIQUE FEATURES</Badge>
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-4 text-center">
+    Mastering productivity with something extra special
+  </h2>
+  <p class="text-lg mt-4 text-slate-600 text-center [text-wrap:pretty]">
+    Unlock your true potential and master productivity with Worklenz, where
+    you&apos;ll find extra special features exclusive to our platform.
+  </p>
+</div>
+
+<div class="grid md:grid-cols-2 py-10">
+  <div class="grid place-items-center">
+    <Picture
+      src={FeatureImg1}
+      alt="Feature Image"
+      formats={["avif", "webp"]}
+      loading="eager"
+    />
+  </div>
+
+  <div class="grid place-items-center">
+    <div class="max-w-lg">
+      <Badge color="blue" class="-ml-px">Resource Overview</Badge>
+      <h3 class="text-2xl font-medium mt-4 [text-wrap:balance]">
+        Know where your resources are…
+      </h3>
+      <p class="mt-4 text-slate-600 [text-wrap:balance]">
+        Get all the information you need related to project team members into a
+        one-view report, the platform combines all action-related information
+        for team members in one place by summarizing all the necessary facts as
+        part of project management
+      </p>
+
+      <ul class="grid mt-6 text-left gap-y-4">
+        <li class="flex items-center gap-3 text-neutral-800">
+          <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+
+          <span class="text-sm"
+            >Tasks Progress Tasks Assigned as a % of completed and to be
+            completed.</span
+          >
+        </li>
+
+        <li class="flex items-center gap-3 text-neutral-800">
+          <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+
+          <span class="text-sm">No. of Overdue Tasks (Member-wise)</span>
+        </li>
+
+        <li class="flex items-center gap-3 text-neutral-800">
+          <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+
+          <span class="text-sm">No. of Completed Tasks (Member-wise)</span>
+        </li>
+
+        <li class="flex items-center gap-3 text-neutral-800">
+          <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+
+          <span class="text-sm">No. of Ongoing Tasks (Member-wise)</span>
+        </li>
+      </ul>
+      <div class="flex items-center gap-4 mt-6">
+        <Link href="#" size="sm" class="inline-flex items-center group gap-px">
+          <span>Try now!</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform">
+            <path
+              fill-rule="evenodd"
+              d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </Link>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="grid md:grid-cols-2 py-10">
+  <div class="grid place-items-center pb-10 md:pb-0 md:order-2">
+    <Picture
+      src={FeatureImg2}
+      alt="Feature Image"
+      formats={["avif", "webp"]}
+      loading="eager"
+    />
+  </div>
+
+  <div class="grid place-items-center">
+    <div class="max-w-lg">
+      <Badge color="blue" class="-ml-px">Project Overview</Badge>
+      <h3 class="text-2xl font-medium mt-4 [text-wrap:balance]">
+        Visualize your overall projects with one-click
+      </h3>
+      <p class="mt-4 text-slate-600 [text-wrap:balance]">
+        Get all project-related information for members of your projects.
+        Worklenz provides a comprehensive view of project details, milestones,
+        progress, and team contributions—all conveniently accessible in one
+        place.
+      </p>
+      <ul class="grid mt-6 text-left gap-y-4">
+        <li class="flex items-center gap-3 text-neutral-800">
+          <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+
+          <span class="text-sm">Estimated vs Actual</span>
+        </li>
+        <li class="flex items-center gap-3 text-neutral-800">
+          <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+
+          <span class="text-sm">Tasks Progress Last Activity</span>
+        </li>
+        <li class="flex items-center gap-3 text-neutral-800">
+          <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+
+          <span class="text-sm">Status</span>
+        </li>
+        <li class="flex items-center gap-3 text-neutral-800">
+          <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+
+          <span class="text-sm">Health</span>
+        </li>
+        <li class="flex items-center gap-3 text-neutral-800">
+          <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+
+          <span class="text-sm">Category</span>
+        </li>
+        <li class="flex items-center gap-3 text-neutral-800">
+          <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+
+          <span class="text-sm">Start/End dates</span>
+        </li>
+      </ul>
+      <div class="flex items-center gap-4 mt-6">
+        <Link href="#" size="sm" class="inline-flex items-center group gap-px">
+          <span>Try now!</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform">
+            <path
+              fill-rule="evenodd"
+              d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </Link>
+      </div>
+    </div>
+  </div>
+</div>

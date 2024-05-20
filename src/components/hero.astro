@@ -1,0 +1,78 @@
+---
+import { Image, Picture } from "astro:assets";
+import heroImage from "../assets/hero-screenshot.svg";
+import Link from "@components/ui/link.astro";
+import Container from "@components/container.astro";
+---
+
+<div class="overflow-x-clip">
+  <Container>
+    <main class="grid lg:grid-cols-5 place-items-center relative">
+      <div
+        class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial from-blue-200 right-0 top-0">
+      </div>
+      <div
+        class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial from-purple-200 right-56 top-10">
+      </div>
+
+      <div class="max-w-sm md:max-w-max lg:col-span-2">
+        <h1
+          class="text-3xl lg:text-4xl xl:text-6xl lg:tracking-tight xl:tracking-tighter [text-wrap:balance] text-center lg:text-start font-black">
+          Unleash your potential with
+        </h1>
+        <h1
+          class="text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight xl:tracking-tighter [text-wrap:balance] text-center lg:text-start text-blue-600">
+          Open source project management
+        </h1>
+        <p
+          class="text-lg mt-4 max-w-lg text-slate-600 [text-wrap:balance] text-center lg:text-start">
+          The only all-in-one open source solution that streamlines your
+          agency&apos;s success with easy navigation
+        </p>
+        <div
+          class="mt-6 flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-3">
+          <Link
+            href="https://app.worklenz.com/auth/signup"
+            target="_blank"
+            class="flex gap-1 items-center justify-center"
+            rel="noopener">
+            Get Started
+          </Link>
+          <!-- Add Product Hunt Button -->
+          <a
+            href="https://www.producthunt.com/posts/worklenz?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-worklenz"
+            target="_blank"
+            ><img
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=446424&theme=light"
+              alt="Worklenz - Simplify, Organize, Achieve:  Your Work, Elevated | Product Hunt"
+              style="width: 250px; height: 54px;"
+              width="250"
+              height="54"
+            /></a
+          >
+        </div>
+        <div class="mt-4 flex items-center gap-2">
+          <div class="flex -space-x-1">
+            <img class="w-8 h-8 rounded-full border-2 border-white" src="/testimonials/pulani-ranasinghe.jpeg" alt="User 1">
+            <img class="w-8 h-8 rounded-full border-2 border-white" src="/testimonials/upul-dissanayake.jpeg" alt="User 2">
+            <img class="w-8 h-8 rounded-full border-2 border-white" src="/testimonials/milinda-piyasena.png" alt="User 3">
+            <img class="w-8 h-8 rounded-full border-2 border-white" src="/testimonials/marta-gomez-jimenez.jpeg" alt="User 4">
+          </div>
+          <span class="text-gray-600 text-sm">20+ Product Hunt Reviews</span>
+          <span class="text-yellow-500 text-sm">★★★★★</span>
+        </div>
+      </div>
+      <div class="py-3 lg:col-span-3 lg:-mr-44">
+        <Picture
+          src={heroImage}
+          alt="Worklenz Dashboard"
+          formats={["avif", "webp"]}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          widths={[240, 540, 720, heroImage.width]}
+          loading="eager"
+          fetchpriority="high"
+        />
+      </div>
+    </main>
+  </Container>
+</div>

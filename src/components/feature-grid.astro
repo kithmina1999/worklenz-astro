@@ -1,0 +1,123 @@
+---
+// @ts-ignore
+import { Picture, Image } from "astro:assets";
+import Card from "@components/card.astro";
+import IntegrationImg from "../assets/integrations.png";
+import FeatureImgEight from "../assets/features/8.png";
+import FeatureImgNine from "../assets/features/9.png";
+import FeatureImgTen from "../assets/features/10.png";
+import FeatureImgEleven from "../assets/features/11.png";
+---
+
+<div class="mt-24">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Everything you need to <span class="text-blue-600"
+      >manage your digital agency</span
+    >
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    Worklenz comes with cutting-edge innovative features just to make sure that
+    your project process smoothly
+  </p>
+</div>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-5 mt-16 gap-10">
+  <Card class="lg:col-span-3" color="blue">
+    <Fragment slot="image">
+      <Picture
+        src={FeatureImgEight}
+        alt="Feature image"
+        formats={["avif", "webp"]}
+        class="h-full w-full object-contain"
+        loading="eager"
+      />
+    </Fragment>
+    <!-- <span slot="badge">Astroship</span> -->
+    <span slot="title">Time reports</span>
+    <span slot="desc">
+      Centralize all project-related information of team members within a
+      unified platform, ensuring easy access and organization of crucial project
+      details, tasks, progress updates, and member contributions, streamlining
+      collaboration and enhancing project management efficiency.
+    </span>
+  </Card>
+  <Card class="lg:col-span-2" color="blue">
+    <Fragment slot="image">
+      <Picture
+        src={FeatureImgNine}
+        alt="Feature image"
+        formats={["avif", "webp"]}
+        class="h-full w-full object-contain"
+        loading="eager"
+      />
+    </Fragment>
+    <!-- <span slot="badge">Creative</span> -->
+    <span slot="title">Phases</span>
+    <span slot="desc">
+      Implement a phased approach to project management, dividing projects into
+      distinct stages to facilitate efficient tracking, monitoring progress
+      stage by stage, and ensuring systematic completion of tasks and
+      milestones, ultimately enhancing overall project management effectiveness.</span
+    >
+  </Card>
+</div>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-3 mt-10 gap-10">
+  <Card color="blue" size="sm">
+    <Fragment slot="image">
+      <Picture
+        src={FeatureImgTen}
+        alt="Feature image"
+        formats={["avif", "webp"]}
+        class="h-full w-full object-contain"
+        loading="eager"
+      />
+    </Fragment>
+    <!-- <span slot="badge">Template</span> -->
+    <span slot="title">Team management</span>
+    <span slot="desc">
+      Efficiently manage teams across projects by ensuring full visibility into
+      their progress, tasks, and contributions. Leverage analytics to gather
+      insights and make data-driven decisions, enhancing project outcomes and
+      optimizing team performance.</span
+    >
+  </Card>
+
+  <Card color="blue" size="sm">
+    <Fragment slot="image">
+      <Picture
+        src={FeatureImgEleven}
+        alt="Feature image"
+        formats={["avif", "webp"]}
+        class="h-full w-full object-contain"
+        loading="eager"
+      />
+    </Fragment>
+    <!-- <span slot="badge">Product</span> -->
+    <span slot="title">Workload</span>
+    <span slot="desc">
+      Track and monitor assigned tasks, completed tasks, pending work, and time
+      spent on tasks on a user-by-user basis. This workload management feature
+      provides detailed insights into individual productivity, task completion
+      rates, and time allocation, facilitating better resource allocation and
+      performance evaluation.</span
+    >
+  </Card>
+
+  <Card size="sm">
+    <Fragment slot="image">
+      <!-- // svg image. cannot use <picture/> as of now -->
+      <Image
+        src={IntegrationImg}
+        alt="Feature image"
+        width="909"
+        height="823"
+        class="h-full w-full object-contain"
+        loading="eager"
+      />
+    </Fragment>
+    <!-- <span slot="badge">Webhooks</span> -->
+    <span slot="title">Integrations</span>
+    <span slot="desc"> Coming Soon...</span>
+  </Card>
+</div>

@@ -1,0 +1,50 @@
+---
+import Badge from "@components/ui/badge.astro";
+import { Picture } from "astro:assets";
+import Link from "./ui/link.astro";
+const { align = "center" } = Astro.props;
+---
+
+<div
+  class:list={[
+    "mt-16",
+    align === "center" && "text-center",
+    Astro.slots.has("image") ? "grid sm:grid-cols-2 items-center" : "",
+  ]}>
+  {
+    Astro.slots.has("badge") && (
+      <div class="mb-4">
+        <Badge color="blue">
+          <slot name="badge" />
+        </Badge>
+      </div>
+    )
+  }
+  {
+    Astro.slots.has("image") && (
+      <slot name="image">
+        <Picture src={Astro.props.image} alt="Feature image" />
+      </slot>
+    )
+  }
+
+  <div>
+    <h1 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+      <slot name="title">Title</slot>
+    </h1>
+    <p class="text-lg mt-4 text-slate-500 mx-auto max-w-xl">
+      <slot name="desc">Some description goes here</slot>
+    </p>
+    {
+      Astro.slots.has("link") && (
+        <Link
+          href="https://app.worklenz.com/auth/signup"
+          target="_blank"
+          class="flex gap-1 items-center justify-center w-40 mx-auto mt-8"
+          rel="noopener">
+          <slot name="link">Get Started</slot>
+        </Link>
+      )
+    }
+  </div>
+</div>
