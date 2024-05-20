@@ -55,10 +55,10 @@ const timeTrackingContent = await getCollection("time-tracking");
                       ))}
                     </div>
                   </div>
-                  <div>
+                  <div class="mx-auto">
                     <div class="video-container">
                       <div class="video-placeholder" id={`placeholder-${index}`}>
-                        <Picture src={loadingImage} alt="Loading" />
+                        <Picture src={loadingImage} alt="Loading" width={50}/>
                       </div>
                       <video id={`video-${index}`} muted loop controls class="hidden">
                         <source src={subItem.video.src} type="video/mp4" />
@@ -68,10 +68,10 @@ const timeTrackingContent = await getCollection("time-tracking");
                 </>
               ) : (
                 <>
-                  <div>
+                  <div class="mx-auto">
                     <div class="video-container">
-                      <div class="video-placeholder" id={`placeholder-${index}`}>
-                        <Picture src={loadingImage} alt="Loading" />
+                      <div class="video-placeholder flex w-full items-center" id={`placeholder-${index}`}>
+                        <Picture src={loadingImage} alt="Loading" width={50}/>
                       </div>
                       <video id={`video-${index}`} muted loop controls class="hidden">
                         <source src={subItem.video.src} type="video/mp4" />
