@@ -6,6 +6,7 @@ import { getCollection } from "astro:content";
 import { Icon } from "astro-icon/components";
 import Picture from "astro/components/Picture.astro";
 import TempImage from "../assets/templates.png";
+import loadingImage from "../assets/loading.gif";
 
 const templateContent = await getCollection("template");
 ---
@@ -58,19 +59,29 @@ const templateContent = await getCollection("template");
                     ))}
                   </div>
                 </div>
-                <div>
-                  <video  muted loop controls>
-                    <source src={subItem.video.src} type="video/mp4" />
-                  </video>
-                </div>
+                <div class="mx-auto">
+                    <div class="video-container">
+                      <div class="video-placeholder" id={`placeholder-${index}`}>
+                        <Picture src={loadingImage} alt="Loading" width={50}/>
+                      </div>
+                      <video id={`video-${index}`} muted loop controls class="hidden">
+                        <source src={subItem.video.src} type="video/mp4" />
+                      </video>
+                    </div>
+                  </div>
               </>
             ) : (
               <>
-                <div>
-                  <video  muted loop controls>
-                    <source src={subItem.video.src} type="video/mp4" />
-                  </video>
-                </div>
+                <div class="mx-auto">
+                    <div class="video-container">
+                      <div class="video-placeholder" id={`placeholder-${index}`}>
+                        <Picture src={loadingImage} alt="Loading" width={50}/>
+                      </div>
+                      <video id={`video-${index}`} muted loop controls class="hidden">
+                        <source src={subItem.video.src} type="video/mp4" />
+                      </video>
+                    </div>
+                  </div>
                 <div class="flex flex-col">
                   <p class="text-3xl font-bold">{subItem.title}</p>
                   <div class="mt-6 flex flex-col">
@@ -124,4 +135,73 @@ const templateContent = await getCollection("template");
       }
     </main>
   </Container>
+  <script is:inline>
+    function initializeVideos() {
+      console.log('Initializing videos...');
+      const videos = document.querySelectorAll("video");
+      if (videos.length === 0) {
+        console.log('No videos found');
+        return;
+      }
+
+      videos.forEach((video, index) => {
+        video.addEventListener("loadedmetadata", () => {
+          console.log(`Video ${index} metadata loaded`);
+          const placeholder = document.getElementById(`placeholder-${index}`);
+          if (placeholder) {
+            placeholder.classList.add("hidden");
+            console.log(`Placeholder ${index} hidden`);
+          }
+          video.classList.remove("hidden");
+          console.log(`Video ${index} displayed`);
+        });
+      });
+    }
+
+    function reinitializeVideos() {
+      console.log('Reinitializing videos...');
+      initializeVideos();
+    }
+
+    function checkUrlChange(callback) {
+      let lastUrl = location.href;
+      new MutationObserver(() => {
+        const url = location.href;
+        if (url !== lastUrl) {
+          lastUrl = url;
+          callback();
+        }
+      }).observe(document, { subtree: true, childList: true });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('DOMContentLoaded event');
+      reinitializeVideos();
+    });
+
+    window.addEventListener('pageshow', (event) => {
+      console.log('Pageshow event', event);
+      reinitializeVideos();
+    });
+
+    document.addEventListener('visibilitychange', () => {
+      console.log('Visibility change event:', document.visibilityState);
+      if (document.visibilityState === 'visible') {
+        reinitializeVideos();
+      }
+    });
+
+    window.onpopstate = function(event) {
+      console.log('Popstate event', event);
+      reinitializeVideos();
+    };
+
+    checkUrlChange(() => {
+      console.log('URL change detected');
+      reinitializeVideos();
+    });
+
+    // Reinitialize videos on load to ensure they are set up properly.
+    reinitializeVideos();
+  </script>
 </Layout>
