@@ -75,7 +75,7 @@ Therefore, open source task management tools are beneficial to enterprises as th
 ### _1. Worklenz_
 <img src="/images/worklenz-logo.png" alt="worklenz" width="200"/>
 
-Worklenz is a powerful open-source project management tool designed to enhance efficiency within organizations. It provides a comprehensive solution for managing projects, tasks, and collaboration within teams. Here are some key features of Worklenz:
+*[Worklenz](https://worklenz.com/)* is a powerful open-source project management tool designed to enhance efficiency within organizations. It provides a comprehensive solution for managing projects, tasks, and collaboration within teams. Here are some key features of Worklenz:
 
 **Task Management**
 
@@ -106,27 +106,36 @@ Worklenz is a powerful open-source project management tool designed to enhance e
 
 ### _2. OpenProject_
 <img src="/images/open-project.webp" alt="worklenz" width="200"/>
-OpenProject is a robust project management system that offers features like task tracking, Gantt charts, collaboration tools, and time tracking. It’s suitable for both small teams and large enterprises.
+
+*[OpenProject](https://www.openproject.org//)* is a robust project management system that offers features like task tracking, Gantt charts, collaboration tools, and time tracking. It’s suitable for both small teams and large enterprises.
+
+
 
 ### _3. Nozbe_
 <img src="/images/nozbe-logo-sm.webp" alt="worklenz" width="200"/>
-Nozbe focuses on simplicity and ease of use. It allows users to create tasks, set deadlines, and collaborate with team members. Its straightforward interface makes it a great choice for those who prefer minimalistic task management tools.
+
+*[Nozbe](https://nozbe.com/)* focuses on simplicity and ease of use. It allows users to create tasks, set deadlines, and collaborate with team members. Its straightforward interface makes it a great choice for those who prefer minimalistic task management tools.
 
 ### _4. Toodledo_
 <img src="/images/toodle-do.webp" alt="worklenz" width="200"/>
-Toodledo provides task tracking, organization, and customizable features. Users can categorize tasks, set priorities, and create custom lists. It’s suitable for personal use or small teams.
+
+*[Toodledo](https://www.toodledo.com/)* provides task tracking, organization, and customizable features. Users can categorize tasks, set priorities, and create custom lists. It’s suitable for personal use or small teams.
 
 ### _5. Podio_
 <img src="/images/podio-logo.webp" alt="worklenz" width="200"/>
-Podio is more than just a task management tool; it’s a customizable collaboration platform. Enterprises can create their workspaces, integrate apps, and manage tasks, projects, and communication in one place.
+
+*[Podio](https://www.podio.com/)* is more than just a task management tool; it’s a customizable collaboration platform. Enterprises can create their workspaces, integrate apps, and manage tasks, projects, and communication in one place.
 
 ### _6. Asana_
 <img src="/images/Asana-Logo.webp" alt="worklenz" width="200"/>
-Asana is well-known for its project management capabilities. It offers task assignments, due dates, project views, and integrations. While there’s a paid version, the free version is feature-rich and suitable for many organizations.
+
+*[Asana](https://asana.com/)* is well-known for its project management capabilities. It offers task assignments, due dates, project views, and integrations. While there’s a paid version, the free version is feature-rich and suitable for many organizations.
 
 ### _7. Trello_
 <img src="/images/Trello_logo.svg.webp" alt="worklenz" width="200"/>
-Trello uses a visual task board approach, where tasks are represented as cards on boards. It’s intuitive, flexible, and great for visual thinkers. Teams can organize tasks, assign members, and track progress easily.
+
+*[Trello](https://trello.com/)* uses a visual task board approach, where tasks are represented as cards on boards. It’s intuitive, flexible, and great for visual thinkers. Teams can organize tasks, assign members, and track progress easily.
+
 Remember that each tool has its unique features and strengths, so enterprises should evaluate their specific requirements before choosing the most suitable open source task management solution.
 
 

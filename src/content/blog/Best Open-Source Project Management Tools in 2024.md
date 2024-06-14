@@ -7,9 +7,11 @@ image:
   alt: Best Open-Source PM Tools - Worklenz
 publishDate: 2023-05-10
 category: ""
-author: "SJ"
-tags: [Open-Source,PM Tools]
-description: " Discover the top open-source project management tools for 2024 on our website. Find the best tools to streamline your projects efficiently."
+author: SJ
+tags:
+  - Open-Source
+  - PM Tools
+description: Discover the top open-source project management tools for 2024 on our website. Find the best tools to streamline your projects efficiently.
 ---
 
 **Securing the success of any effort is one of the many major roles project management has to play.**
@@ -46,6 +48,8 @@ There are several fantastic options for you to consider, each with its own uniqu
 
 1. ### LeanTime
 
+<img src="/images/leantime-logo.webp" alt="leantime" width="200"/>
+
 Leantime is an open-source project management system designed for startups and small teams. It combines project management features with elements of task tracking and collaboration. LeanTime aims to provide a lean and efficient platform for managing projects and tasks while fostering team collaboration. It includes features such as task boards, milestones, time tracking, and collaboration tools. If its features align with your project management needs, it could be worth exploring for your team.
 
 **Task Boards** - Leantime provides task boards for visualizing and managing tasks by allowing teams to organize and prioritize work.
@@ -63,6 +67,8 @@ Leantime is an open-source project management system designed for startups and s
 **Open Source** - Being open-source means that the source code is freely available and can be modified and extended, providing transparency and flexibility. 
 
 2. ### Tuleap
+
+<img src="/images/tuleap-logo.webp" alt="tuleap" width="200"/>
 
 Tuleap is another open-source software development and project management tool. It is designed to support the entire software development lifecycle and offers a range of features for collaborative project management. Here are some key aspects of Tuleap:
 
@@ -85,6 +91,8 @@ Tuleap is another open-source software development and project management tool. 
 This is particularly well-suited for software development teams looking for an integrated and collaborative environment that covers various aspects of the development lifecycle.
 
 3. ### Project Libre
+
+<img src="/images/ProjectLibre-Logo.webp" alt="projectlibre" width="200"/>
 
 ProjectLibre is also open-source project management software designed to provide an alternative to commercial tools like Microsoft Project. Here are the key features of ProjectLibre: 
 
@@ -110,6 +118,8 @@ ProjectLibre is suitable for individuals and small to medium-sized teams looking
 
 4. ### OpenProject
 
+<img src="/images/open-project.webp" alt="openproject" width="200"/>
+
 OpenProject is another open-source project management software that provides a range of features to support project planning, collaboration, and execution. Key aspects of OpenProject include:
 
 **Project Planning** - OpenProject offers tools for creating and managing project plans, including Gantt charts, task lists, and timelines.
@@ -131,6 +141,9 @@ OpenProject is another open-source project management software that provides a r
 OpenProject is suitable for teams of various sizes and types of projects, offering an open-source solution for effective project management.
 
 05. ### Taiga
+
+<img src="/images/taiga-logo.webp" alt="taiga" width="200"/>
+
 Taiga is an open-source project management platform designed for Agile development. Here are some key features of Taiga:
 
 **User-Friendly Interface** - Taiga provides an intuitive and user-friendly interface, making it easy for teams to navigate and use. 
@@ -155,6 +168,8 @@ Taiga is particularly suitable for software development teams following Agile me
 
 06. ### Gantt Project
 
+<img src="/images/gantt-project.webp" alt="ganttproject" width="200"/>
+
 GanttProject is also an open-source project management tool that focuses on creating Gantt charts for project planning and scheduling. Here are some key features of GanttProject: 
 
 **Gantt Charts** - The primary feature of GanttProject is the ability to create and manage Gantt charts, visualizing project timelines, tasks, and dependencies. 
@@ -176,6 +191,8 @@ GanttProject is also an open-source project management tool that focuses on crea
 GanttProject is suitable for individuals and small teams looking for a straightforward, open-source solution to create and manage Gantt charts for project planning and scheduling.
 
 07. ### Kanboard
+
+<img src="/images/Kanboard-logo.webp" alt="kanboard" width="200"/>
 
 Kanboard is another open-source project management tool known for its simplicity and visual approach. Here are the key features of Kanboard:
 
@@ -200,6 +217,8 @@ Kanboard is another open-source project management tool known for its simplicity
 Kanboard is suitable for teams looking for a straightforward and lightweight Kanban-based project management tool, particularly those who value simplicity and ease of use.
 
 08. ### Redmine
+
+<img src="/images/Redmine-logo.webp" alt="redmine" width="200"/>
 
 Redmine is also an open-source project management and issue-tracking tool known for its flexibility and extensibility.Here are the key features of Redmine:
 

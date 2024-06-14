@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "Risks and Rewards of Buying from Big Players-Meta’s Shift"
+title: Risks and Rewards of Buying from Big Players-Meta’s Shift
 snippet: Risks and Rewards of Buying from Big Players- Meta’s Strategic Shift
 image:
   src: /images/Risks-and-Rewards.webp
@@ -8,9 +8,11 @@ image:
 publishDate: 2024-05-20
 category: ""
 author: SJ
-tags: [Guide,Tips]
-description: |2
-   Learn about the potential risks and benefits associated with purchasing from major players in the industry. Make informed decisions for your business.
+tags:
+  - Guide
+  - Tips
+description: |
+  Learn about the potential risks and benefits associated with purchasing from major players in the industry. Make informed decisions for your business.
 ---
 
 Do you know the saying, _“Nobody ever got fired for buying IBM”_? 
