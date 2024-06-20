@@ -8,9 +8,11 @@ image:
 publishDate: 2024-05-09
 category: ""
 author: SJ
-tags: [Project Goals,Tips]
-description: |2
-   Discover the essential steps to setting realistic goals for success. Learn how to prioritize tasks and achieve your objectives effectively
+tags:
+  - Project Goals
+  - Tips
+description: |
+  Discover the essential steps to setting realistic goals for success. Learn how to prioritize tasks and achieve your objectives effectively
 ---
 
 _Did you know that 70% of projects fails to achieve their goal? So setting realistic project goals is a crucial step for successful project management. You can significantly increase the chances of achieving project objectives_ 
@@ -64,14 +66,20 @@ To help you in creating achievable project objectives here are some **project go
 **Example: Setting SMART Objectives**
 
 Let's take the example of a software development project:
-| ***Objective** - Develop a User-Friendly Mobile* app                                                                                |
-|:-:|                                    
-|**SMART Criteria** |                                                       
-| **_Specific_**: Create a mobile app for iOS and Android platforms with a simple and intuitive user interface.                       |
-| **_Measurable_**: Achieve a minimum rating of 4 stars on app stores and receive positive user feedback.                             |
-| **_Attainable_**: Ensure that the required technical skills and resources are available within the project team or can be acquired. |
-| **_Relevant_**: Align the app's features and functionality with the target audience's needs and preferences.                        |
-| **_Time-Bound_**: Complete the development and launch of the app within six months.                                                 |                      |
+
+***Objective** - Develop a User-Friendly Mobile App* 
+
+**SMART Criteria**
+
+- **_Specific_**: Create a mobile app for iOS and Android platforms with a simple and intuitive user interface.
+
+- **_Measurable_**: Achieve a minimum rating of 4 stars on app stores and receive positive user feedback.
+
+- **_Attainable_**: Ensure that the required technical skills and resources are available within the project team or can be acquired.
+
+- **_Relevant_**: Align the app's features and functionality with the target audience's needs and preferences.
+
+- **_Time-Bound_**: Complete the development and launch of the app within six months.
 
 You are taking yourself up for success by defining clear objectives using SMART criteria. These tips will help you in creating achievable project objectives and increase the likelihood of project success.
 
@@ -207,17 +215,17 @@ When it comes to setting goals, project management software assists individuals 
 
 ### Worklenz and Goals
 
--Highly rated goal-setting and project management software used by both small and large teams
+- Highly rated goal-setting and project management software used by both small and large teams
 
--Automated goal tracking, dynamic calendars, and dashboards.
+- Automated goal tracking, dynamic calendars, and dashboards.
 
--Visual representation of your goals.
+- Visual representation of your goals.
 
--Helps break down complex goals into manageable components and actionable steps.
+- Helps break down complex goals into manageable components and actionable steps.
 
--Emphasizes personal development and achievement.
+- Emphasizes personal development and achievement.
 
--The tool combines goal setting with task management.
+- The tool combines goal setting with task management.
 
 - Focuses on employee performance management.
 
