@@ -35,11 +35,12 @@ const makeTitle = title
 
     <SEO
       title={makeTitle}
-      description="Experience the efficiency and effectiveness of our advanced project management platform and never look back."
+      description={'Experience the efficiency and effectiveness of our advanced project management platform and never look back.'}
       canonical={canonicalURL}
       twitter={{
         card: "summary_large_image",
-        description: "Experience the efficiency and effectiveness of our advanced project management platform and never look back.",
+        description:
+          "Experience the efficiency and effectiveness of our advanced project management platform and never look back.",
         title: `Worklenz - Free and Open Source Agency Management Tool`,
       }}
       openGraph={{
@@ -54,11 +55,15 @@ const makeTitle = title
         },
       }}
     />
+
     <script
+      is:inline
       charset="utf-8"
       type="text/javascript"
-      src="//js.hsforms.net/forms/embed/v2.js"></script>
-    <script type="text/javascript">
+      src="//js.hsforms.net/forms/embed/v2.js"
+    ></script>
+
+    <script type="text/javascript" is:inline>
       (function (c, l, a, r, i, t, y) {
         c[a] =
           c[a] ||
@@ -72,6 +77,43 @@ const makeTitle = title
         y.parentNode.insertBefore(t, y);
       })(window, document, "clarity", "script", "dx77073klh");
     </script>
+    <!-- Meta Pixel Code -->
+    <script is:inline>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "1468803210502744");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=1468803210502744&ev=PageView&noscript=1"
+      /></noscript
+    >
+    <!-- End Meta Pixel Code -->
     <style is:global>
       /* Improve Page speed */
       /* https://css-tricks.com/almanac/properties/c/content-visibility/ */

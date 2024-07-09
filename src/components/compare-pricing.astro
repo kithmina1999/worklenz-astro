@@ -12,9 +12,9 @@ const plans = [
     cta: "Try now",
     features: {
       Teams: "1",
-      Storage: "5GB",
+      Storage: "500MB",
       "Active Projects": "3",
-      "Team Members": "5",
+      "Team Members": "Unlimited",
       "For Team Members": {
         "Task List": {
           available: true,
@@ -412,14 +412,14 @@ const adminFeatureKeys = Object.keys(
                 {/* Desktop */}
                 <Link
                   size="md"
-                  href="#"
+                  href="https://app.worklenz.com/auth/signup"
                   class="bg-blue-500 text-white py-2 sm:px-4 sm:mx-10 rounded hover:bg-blue-700 hidden sm:block">
                   {plan.cta}
                 </Link>
                 {/* Mobile */}
                 <Link
                   size="xs"
-                  href="#"
+                  href="https://app.worklenz.com/auth/signup"
                   class="bg-blue-500 text-white rounded hover:bg-blue-700 sm:hidden">
                   {plan.cta}
                 </Link>
