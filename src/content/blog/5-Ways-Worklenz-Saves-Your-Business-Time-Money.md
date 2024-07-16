@@ -3,7 +3,7 @@ draft: false
 title: 5 Ways Worklenz Saves Your Business Time & Money
 snippet: 5 Ways Worklenz Saves Your Business Time & Money
 image:
-  src: /images/Save-Business-time-money.webp
+  src: /images/Save-Business-Time-Money.webp
   alt: 05 Best Open-Source Case Management Software for Your Law Firm
 publishDate: 2024-07-16
 category: ""
