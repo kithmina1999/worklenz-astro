@@ -51,7 +51,7 @@ By maintaining a healthy work-life balance, employees can improve their long-ter
 
 ## How does work-life balance affect mental and physical health?
 
-![how-does-work-life-balance-affect ](/images/work-life-balance-affect.webp)
+![how-does-work-life-balance-affect ](/images/how-does-work-life-balance-affect.webp)
 
 
 While many employees may believe that putting in long hours is necessary for career success, the hidden costs of overwork can be significant. Chronic stress and burnout can have a detrimental impact on both mental and physical health. In this section, we'll explore how work-life balance is crucial for employee well-being.
