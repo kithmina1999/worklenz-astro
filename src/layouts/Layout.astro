@@ -61,14 +61,8 @@ const makeTitle = title
       }}
     />
 
-    <script
-      is:inline
-      charset="utf-8"
-      type="text/javascript"
-      src="//js.hsforms.net/forms/embed/v2.js"
-    ></script>
-
     <script type="text/javascript" is:inline>
+      window.addEventListener('load', () => {
       (function (c, l, a, r, i, t, y) {
         c[a] =
           c[a] ||
@@ -81,21 +75,25 @@ const makeTitle = title
         y = l.getElementsByTagName(r)[0];
         y.parentNode.insertBefore(t, y);
       })(window, document, "clarity", "script", "dx77073klh");
+    });
     </script>
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1056701577"  is:inline>
     </script>
-    <script  is:inline>
+    <script  is:inline async>
+      window.addEventListener('load', () => {
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'AW-1056701577');
+      });
     </script>
 
     <!-- Meta Pixel Code -->
-    <script is:inline>
+    <script is:inline async>
+      window.addEventListener('load', () => {
       !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
         n = f.fbq = function () {
@@ -121,9 +119,11 @@ const makeTitle = title
       );
       fbq("init", "1468803210502744");
       fbq("track", "PageView");
+    });
     </script>
     <noscript
       ><img
+        loading="lazy"
         height="1"
         width="1"
         style="display:none"
@@ -145,5 +145,12 @@ const makeTitle = title
     <Navbar />
     <slot />
     <Footer margin={footerMargin} />
+    <script
+      is:inline
+      charset="utf-8"
+      defer
+      type="text/javascript"
+      src="//js.hsforms.net/forms/embed/v2.js"
+    ></script>
   </body>
 </html>
