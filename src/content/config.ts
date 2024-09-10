@@ -14,7 +14,7 @@ const blogCollection = defineCollection({
     cloud_based_checked: z.boolean().optional().nullable(),
     easy_to_use_checked: z.boolean().optional().nullable(),
     data_security_checked: z.boolean().optional().nullable(),
-    is_programmatic_seo: z.boolean().optional().nullable(),
+    blog_type: z.string().optional().nullable(),
     draft: z.boolean(),
     title: z.string(),
     snippet: z.string(),

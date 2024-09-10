@@ -1,5 +1,5 @@
 ---
-is_programmatic_seo: true
+blog_type: "programmatic_one"
 draft: false
 title: Asana
 snippet: Asana
