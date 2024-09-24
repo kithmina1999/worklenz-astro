@@ -7,8 +7,8 @@ const { Content } = await entry.render();
 
 <Container>
   <style>
-    .form-checkbox:disabled:checked {
-    color: rgb(37 99 235 / 1); /* Background color for checked and disabled */
+    .form-checkbox:onclick="return false;":checked {
+    color: rgb(37 99 235 / 1); /* Background color for checked and onclick="return false;" */
   }
   </style>
   <div class="mx-auto max-w-3xl text-center mt-14">
@@ -95,56 +95,57 @@ const { Content } = await entry.render();
       <tbody>
           <tr class="even:bg-gray-100">
               <td class="py-2 px-4 text-left border-b">Open-Source</td>
-              <td class="py-2 px-4 text-center border-b"><input type="checkbox" checked disabled class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
+              <td class="py-2 px-4 text-center border-b"><!-- Tailwind built-in classes -->
+                <input type="checkbox" checked onclick="return false;" class="form-checkbox h-5 w-5 text-blue-600 checked:bg-blue-600 checked:border-blue-600 " /></td>
               {
                 entry.data.open_source_checked?
-                <td class="py-2 px-4 text-center border-b"><input type="checkbox" checked disabled class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
+                <td class="py-2 px-4 text-center border-b"><input type="checkbox" checked onclick="return false;" class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
                 :
-                <td class="py-2 px-4 text-center border-b"><input type="checkbox" disabled class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
+                <td class="py-2 px-4 text-center border-b"><input type="checkbox" onclick="return false;" class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
 
               }
           </tr>
           <tr class="even:bg-gray-100">
             <td class="py-2 px-4 text-left border-b">Self-hosted</td>
-            <td class="py-2 px-4 text-center border-b"><input type="checkbox" checked disabled class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
+            <td class="py-2 px-4 text-center border-b"><input type="checkbox" checked onclick="return false;" class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
             {
               entry.data.self_hosted_checked?
-              <td class="py-2 px-4 text-center border-b"><input type="checkbox"  checked disabled class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
+              <td class="py-2 px-4 text-center border-b"><input type="checkbox"  checked onclick="return false;" class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
               :
-              <td class="py-2 px-4 text-center border-b"><input type="checkbox" disabled class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
+              <td class="py-2 px-4 text-center border-b"><input type="checkbox" onclick="return false;" class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
 
             }
           </tr>
           <tr class="even:bg-gray-100">
             <td class="py-2 px-4 text-left border-b">Cloud-based</td>
-            <td class="py-2 px-4 text-center border-b"><input type="checkbox" disabled checked class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
+            <td class="py-2 px-4 text-center border-b"><input type="checkbox" onclick="return false;" checked class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
             {
               entry.data.cloud_based_checked?
-              <td class="py-2 px-4 text-center border-b"><input type="checkbox" disabled checked class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
+              <td class="py-2 px-4 text-center border-b"><input type="checkbox" onclick="return false;" checked class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
               :
-              <td class="py-2 px-4 text-center border-b"><input type="checkbox" disabled class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
+              <td class="py-2 px-4 text-center border-b"><input type="checkbox" onclick="return false;" class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
 
             }
           </tr>
           <tr class="even:bg-gray-100">
             <td class="py-2 px-4 text-left border-b">Easy to use</td>
-            <td class="py-2 px-4 text-center border-b"><input type="checkbox" disabled checked class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
+            <td class="py-2 px-4 text-center border-b"><input type="checkbox" onclick="return false;" checked class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
             {
               entry.data.easy_to_use_checked?
-              <td class="py-2 px-4 text-center border-b"><input type="checkbox" disabled checked class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
+              <td class="py-2 px-4 text-center border-b"><input type="checkbox" onclick="return false;" checked class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
               :
-              <td class="py-2 px-4 text-center border-b"><input type="checkbox" disabled class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
+              <td class="py-2 px-4 text-center border-b"><input type="checkbox" onclick="return false;" class="center-checkbox form-checkbox h-5 w-5 text-blue-600" /></td>
 
             }
           </tr>
           <tr class="even:bg-gray-100">
             <td class="py-2 px-4 text-left border-b">Data security</td>
-            <td class="py-2 px-4 text-center border-b"><input type="checkbox" disabled checked class="form-checkbox h-5 w-5 text-blue-600" /></td>
+            <td class="py-2 px-4 text-center border-b"><input type="checkbox" onclick="return false;" checked class="form-checkbox h-5 w-5 text-blue-600" /></td>
             {
               entry.data.data_security_checked?
-              <td class="py-2 px-4 text-center border-b"><input type="checkbox" disabled checked class="form-checkbox h-5 w-5 text-blue-600" /></td>
+              <td class="py-2 px-4 text-center border-b"><input type="checkbox" onclick="return false;" checked class="form-checkbox h-5 w-5 text-blue-600" /></td>
               :
-              <td class="py-2 px-4 text-center border-b"><input type="checkbox" disabled class="form-checkbox h-5 w-5 text-blue-600" /></td>
+              <td class="py-2 px-4 text-center border-b"><input type="checkbox" onclick="return false;" class="form-checkbox h-5 w-5 text-blue-600" /></td>
 
             }
           </tr>
