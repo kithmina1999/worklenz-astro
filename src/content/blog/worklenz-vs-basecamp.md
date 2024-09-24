@@ -17,7 +17,7 @@ meta_description: |
   This test Desc
 main_content: |
   Basecamp is a project management platform that helps small teams move faster and progress faster. It offers features like pings, reports, timelines, billing, and exceptional customer service.
-main_content_image: /images/pseo/Basecamp-Logo.png
+main_content_image: /images/pseo/Basecamp-logo.png
 open_source_checked: false
 self_hosted_checked: false
 cloud_based_checked: false

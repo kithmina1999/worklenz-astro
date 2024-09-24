@@ -17,7 +17,7 @@ meta_description: |
   This test Desc
 main_content: |
   asana is a comprehensive work management tool designed to help individuals and teams keep track of tasks, delegate responsibilities, monitor progress, and communicate in real time. By providing a centralized platform for collaboration, Asana helps teams stay organized and focused, ensuring that projects are completed on time.
-main_content_image: /images/pseo/Asana-Logo.png
+main_content_image: /images/pseo/Asana-logo.png
 open_source_checked: false
 self_hosted_checked: false
 cloud_based_checked: true

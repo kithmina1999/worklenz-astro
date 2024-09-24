@@ -17,7 +17,7 @@ meta_description: |
   This test Desc
 main_content: |
   Wrike is a versatile work management platform streamlines work processes for maximum efficiency. It empowers teams to collaborate, manage projects, and achieve goals.
-main_content_image: /images/pseo/Wrike-Logo.png
+main_content_image: /images/pseo/Wrike-logo.png
 open_source_checked: false
 self_hosted_checked: false
 cloud_based_checked: true
