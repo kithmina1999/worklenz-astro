@@ -18,6 +18,7 @@ meta_description: |
 main_content: |
   Podio is a cloud-based collaboration tool that organizes projects into boards. It helps track work progress, manage tasks, and facilitate communication.
 main_content_image: /images/pseo/Podio-logo.png
+sub_content_image: /images/pseo/Podio-logo.png
 open_source_checked: false
 self_hosted_checked: false
 cloud_based_checked: true

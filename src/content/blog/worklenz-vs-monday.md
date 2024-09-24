@@ -18,6 +18,7 @@ meta_description: |
 main_content: |
   Monday.com is a customizable and scalable platform that helps you run all your work in one place. It offers work management, CRM, project management, and more features.
 main_content_image: /images/pseo/Monday-logo.png
+sub_content_image: /images/pseo/Monday-logo.png
 open_source_checked: false
 self_hosted_checked: false
 cloud_based_checked: true

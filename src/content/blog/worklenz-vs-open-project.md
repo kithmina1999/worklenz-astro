@@ -18,6 +18,7 @@ meta_description: |
 main_content: |
   OpenProject is an open-source project management solution. It’s self-hosted and cloud-based, offering features like Gantt charts, task management, and collaboration.
 main_content_image: /images/pseo/OpenProject-logo.png
+sub_content_image: /images/pseo/OpenProject-logo.png
 open_source_checked: true
 self_hosted_checked: true
 cloud_based_checked: true

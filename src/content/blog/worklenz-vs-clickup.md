@@ -18,6 +18,7 @@ meta_description: |
 main_content: |
   ClickUp is an all-in-one productivity platform that replaces multiple tools. It offers features like projects, dashboards, forms, sprints, and time tracking.
 main_content_image: /images/pseo/ClickUp-logo.png
+sub_content_image: /images/pseo/ClickUp-logo.png
 open_source_checked: false
 self_hosted_checked: false
 cloud_based_checked: true

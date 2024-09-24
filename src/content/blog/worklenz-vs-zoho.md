@@ -18,6 +18,7 @@ meta_description: |
 main_content: |
   Zoho provides a suite of cloud-based applications, including CRM, project management, and more. It’s designed for businesses of all sizes.
 main_content_image: /images/pseo/Zoho-logo.png
+sub_content_image: /images/pseo/Zoho-logo.png
 open_source_checked: false
 self_hosted_checked: false
 cloud_based_checked: true

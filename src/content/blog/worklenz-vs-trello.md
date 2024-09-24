@@ -18,6 +18,7 @@ meta_description: |
 main_content: |
   Trello is a popular project management tool that uses boards, lists, and cards to organize tasks. It’s flexible, easy to use, and great for personal and team use.
 main_content_image: /images/pseo/Trello-logo.png
+sub_content_image: /images/pseo/Trello-logo.png
 open_source_checked: false
 self_hosted_checked: false
 cloud_based_checked: true
