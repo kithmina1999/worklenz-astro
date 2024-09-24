@@ -6,11 +6,6 @@ const { Content } = await entry.render();
 ---
 
 <Container>
-  <style>
-    .form-checkbox:onclick="return false;":checked {
-    color: rgb(37 99 235 / 1); /* Background color for checked and onclick="return false;" */
-  }
-  </style>
   <div class="mx-auto max-w-3xl text-center mt-14">
     <h1
       class="text-3xl lg:text-4xl font-bold lg:tracking-tight mt-1 lg:leading-tight">
@@ -49,7 +44,7 @@ const { Content } = await entry.render();
       src={entry.data.image.src}
       alt="Feature image"
       width="1280"
-      height="800"
+      height="600"
       class="h-full w-full object-contain rounded-xl mt-6"
       transition:name={`post-img-${entry.slug}`}
     />
