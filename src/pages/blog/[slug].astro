@@ -21,7 +21,7 @@ const { entry } = Astro.props;
 
 <Layout title={entry.data.title}>
   {
-    entry.data.blog_type ? 
+    entry.data.is_programmatic_seo ? 
       <ProgrammaticOneBlogContent entry={entry} />
      : 
       <DefaultBlogContent entry={entry} />

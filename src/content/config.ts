@@ -26,6 +26,7 @@ const blogCollection = defineCollection({
     author: z.string().default("Astroship"),
     category: z.string(),
     tags: z.array(z.string()),
+    is_programmatic_seo: z.boolean().default(false),
   }),
 });
 
