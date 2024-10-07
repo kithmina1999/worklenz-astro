@@ -11,7 +11,7 @@ import Pagination from "@components/pagination.astro";
 export async function getStaticPaths({ paginate }) {
   const PAGE_SIZE = 6;
   const allPosts = await getCollection("blog", ({ data }) => {
-    return !data.draft && data.publishDate < new Date();
+    return !data.draft && !data?.is_programmatic_seo && data.publishDate < new Date();
   });
 
   const allSortedPosts = allPosts.sort(function (a, b) {
@@ -39,7 +39,10 @@ const { page } = Astro.props;
     <main class="mt-16">
       <ul class="grid sm:grid-cols-2 md:grid-cols-3 gap-10 lg:gap-16">
         {
-          (page as any).data.filter((post) => !post.data.blog_type).map((post, index) => (
+          console.log((page as any)?.data)
+        }
+        {
+          ((page as any).data.filter((post) => !post?.data?.is_programmatic_seo)).map((post, index) => (
             <li>
               <a href={`/blog/${post.slug}`}>
                 <div>
