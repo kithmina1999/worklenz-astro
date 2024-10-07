@@ -23,7 +23,7 @@ const analyticsContent = await getCollection("analytics");
       <Fragment slot="image">
         <Picture
         src={AnalyticsImage}
-        alt="Feature image"
+        alt=""
         formats={["avif", "webp"]}
         loading="eager"
         width={500}
@@ -50,12 +50,12 @@ const analyticsContent = await getCollection("analytics");
                         <div>
                           <Icon name="ph:check" class="w-6 h-6 text-blue-400" />
                         </div>
-                        <label class="text-lg font-semibold">
+                        <p class="text-lg font-semibold">
                           {subNestedItem.subTitle} :{" "}
                           <span class="text-sm font-normal text-gray-500">
                             {subNestedItem.explanation}
                           </span>
-                        </label>
+                        </p>
                       </div>
                     ))}
                   </div>
@@ -91,12 +91,12 @@ const analyticsContent = await getCollection("analytics");
                         <div>
                           <Icon name="ph:check" class="w-6 h-6 text-blue-400" />
                         </div>
-                        <label class="text-lg font-semibold">
+                        <div class="text-lg font-semibold">
                           {subNestedItem.subTitle} :{" "}
                           <span class="text-sm font-normal text-gray-500">
                             {subNestedItem.explanation}
                           </span>
-                        </label>
+                        </div>
                       </div>
                     ))}
                   </div>
@@ -114,12 +114,12 @@ const analyticsContent = await getCollection("analytics");
                         <div>
                           <Icon name="ph:check" class="w-6 h-6 text-blue-400" />
                         </div>
-                        <label class="text-lg font-semibold">
+                        <div class="text-lg font-semibold">
                           {subNestedItem.subTitle} :{" "}
                           <span class="text-sm font-normal text-gray-500">
                             {subNestedItem.explanation}
                           </span>
-                        </label>
+                        </div>
                       </div>
                     ))}
                   </div>
