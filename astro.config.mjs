@@ -9,4 +9,8 @@ import icon from "astro-icon";
 export default defineConfig({
   site: "https://worklenz.com",
   integrations: [tailwind(), mdx(), icon(), sitemap(), react()],
+  build: {
+    // Ensure that the 404 page is generated
+    output: 'server'
+  }
 });
