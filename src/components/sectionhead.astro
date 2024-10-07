@@ -23,7 +23,7 @@ const { align = "center" } = Astro.props;
   {
     Astro.slots.has("image") && (
       <slot name="image">
-        <Picture src={Astro.props.image} alt="Feature image" />
+        <Picture loading={"lazy"} src={Astro.props.image} alt="Feature image" />
       </slot>
     )
   }
