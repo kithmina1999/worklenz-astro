@@ -42,7 +42,7 @@ const { Content } = await entry.render();
     <Picture
       formats={["avif", "webp"]}
       src={entry.data.image.src}
-      alt="Feature image"
+      alt={entry.data.image.alt}
       width="1280"
       height="600"
       class="h-full w-full object-contain rounded-xl mt-6"
@@ -57,7 +57,7 @@ const { Content } = await entry.render();
   
     <!-- Image -->
     <div class="md:w-1/2 md:order-2 md:flex md:items-center md:justify-center">
-      <img src={entry.data.sub_content_image} alt="logo" class="w-full h-auto max-w-xs" />
+      <img src={entry.data.sub_content_image} alt={entry.data.title + " vs worklenz"} class="w-full h-auto max-w-xs" />
     </div>
   </div>
   <div class="mx-auto prose mt-6 max-w-4xl prose-headings:mb-2 prose-headings:mt-8">
