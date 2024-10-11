@@ -31,10 +31,12 @@ const footermenu = {
     {
       title: "Blog",
       path: "/blog",
+      target: "self",
     },
     {
       title: "Community",
       path: "https://discord.gg/6Qmm839mgr",
+      target: "_blank",
     },
   ],
 };
@@ -49,7 +51,7 @@ const footermenu = {
     <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
       <div class="sm:col-span-2 md:col-span-3 lg:col-span-2">
         <a href="/" class="text-lg flex items-center">
-          <Picture src={Logo} alt="Logo" loading="eager" width={120} />
+          <Picture src={Logo} alt="Logo" loading="lazy" width={120} />
         </a>
         <p class="mt-4 text-sm text-slate-700 max-w-xs">
           The only all-in-one open source solution that streamlines your
@@ -114,7 +116,8 @@ const footermenu = {
             footermenu.product.map((item) => (
               <a
                 href={item.path || "#"}
-                class="py-2 text-sm text-slate-600 hover:text-blue-600">
+                class="py-2 text-sm text-slate-600 hover:text-blue-600"
+                target="_blank">
                 {item.title}
               </a>
             ))
@@ -128,7 +131,8 @@ const footermenu = {
             footermenu.resources.map((item) => (
               <a
                 href={item.path || "#"}
-                class="py-2 text-sm text-slate-600 hover:text-blue-600">
+                class="py-2 text-sm text-slate-600 hover:text-blue-600"
+                target={item.target}>
                 {item.title}
               </a>
             ))
