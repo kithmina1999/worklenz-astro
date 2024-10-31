@@ -27,6 +27,7 @@ const blogCollection = defineCollection({
     category: z.string(),
     tags: z.array(z.string()),
     is_programmatic_seo: z.boolean().default(false),
+    is_programmatic_layout_2: z.boolean().default(false),
   }),
 });
 
