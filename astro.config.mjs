@@ -12,5 +12,6 @@ export default defineConfig({
   build: {
     // Ensure that the 404 page is generated
     output: 'server'
-  }
+  },
+  trailingSlash: 'ignore'
 });
