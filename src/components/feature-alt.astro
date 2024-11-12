@@ -19,8 +19,8 @@ const { nomargin } = Astro.props;
     Mastering productivity with something extra special
   </h2>
   <p class="text-lg mt-4 text-slate-600 text-center [text-wrap:pretty]">
-    Unlock your true potential and master productivity with Worklenz, where
-    you&apos;ll find extra special features exclusive to our platform.
+    Discover the true potential of seamless task management with Worklenz, the
+    most friendly platform for staying organized, efficient, and in control.
   </p>
 </div>
 
@@ -36,15 +36,15 @@ const { nomargin } = Astro.props;
 
   <div class="grid place-items-center">
     <div class="max-w-lg">
-      <Badge color="blue" class="-ml-px">Resource Overview</Badge>
+      <Badge color="blue" class="-ml-px">Task Overview</Badge>
       <h3 class="text-2xl font-medium mt-4 [text-wrap:balance]">
-        Know where your resources are…
+        Stay organized and in control of every task…
       </h3>
       <p class="mt-4 text-slate-600 [text-wrap:balance]">
-        Get all the information you need related to project team members into a
-        one-view report, the platform combines all action-related information
-        for team members in one place by summarizing all the necessary facts as
-        part of project management
+        Worklenz’s Task List keeps task management simple, helping teams stay
+        focused, organized, and on schedule. With a clear, streamlined view,
+        it’s easy to track progress and ensure every task moves forward
+        seamlessly.
       </p>
 
       <ul class="grid mt-6 text-left gap-y-4">
@@ -52,31 +52,39 @@ const { nomargin } = Astro.props;
           <Icon name="ph:check-circle-fill" class="w-5 h-5" />
 
           <span class="text-sm"
-            >Tasks Progress Tasks Assigned as a % of completed and to be
-            completed.</span
+            >Subtasks</span
           >
         </li>
 
         <li class="flex items-center gap-3 text-neutral-800">
           <Icon name="ph:check-circle-fill" class="w-5 h-5" />
 
-          <span class="text-sm">No. of Overdue Tasks (Member-wise)</span>
+          <span class="text-sm">Time Tracking</span>
         </li>
 
         <li class="flex items-center gap-3 text-neutral-800">
           <Icon name="ph:check-circle-fill" class="w-5 h-5" />
 
-          <span class="text-sm">No. of Completed Tasks (Member-wise)</span>
+          <span class="text-sm">Task Dependencies</span>
         </li>
 
         <li class="flex items-center gap-3 text-neutral-800">
           <Icon name="ph:check-circle-fill" class="w-5 h-5" />
 
-          <span class="text-sm">No. of Ongoing Tasks (Member-wise)</span>
+          <span class="text-sm">Activity Log</span>
+        </li>
+
+        <li class="flex items-center gap-3 text-neutral-800">
+          <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+
+          <span class="text-sm">Comments with Attachments</span>
         </li>
       </ul>
       <div class="flex items-center gap-4 mt-6">
-        <Link href="https://app.worklenz.com/auth/signup" size="sm" class="inline-flex items-center group gap-px">
+        <Link
+          href="https://app.worklenz.com/auth/signup"
+          size="sm"
+          class="inline-flex items-center group gap-px">
           <span>Try now!</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -149,7 +157,10 @@ const { nomargin } = Astro.props;
         </li>
       </ul>
       <div class="flex items-center gap-4 mt-6">
-        <Link href="https://app.worklenz.com/auth/signup" size="sm" class="inline-flex items-center group gap-px">
+        <Link
+          href="https://app.worklenz.com/auth/signup"
+          size="sm"
+          class="inline-flex items-center group gap-px">
           <span>Try now!</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
