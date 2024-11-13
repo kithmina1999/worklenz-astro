@@ -1,7 +1,7 @@
 ---
 import { Picture } from "astro:assets";
-import heroImage from "../assets/hero-image.svg";
-import heroImageMobile from "../assets/mobile-hero-image.svg";
+import heroImage from "../assets/hero-image.png";
+import heroImageMobile from "../assets/mobile-hero-image.png";
 import Link from "@components/ui/link.astro";
 import Container from "@components/container.astro";
 ---
@@ -19,16 +19,16 @@ import Container from "@components/container.astro";
       <div class="">
         <h1
           class="text-4xl md:text-5xl lg:text-6xl xl:text-6xl lg:tracking-tight xl:tracking-tighter [text-wrap:balance] text-center lg:text-center xl:text-center font-bold xl:leading-normal">
-          Unleash your potential with
+          Empower your team with
         </h1>
         <h1
           class="text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-semibold lg:tracking-tight xl:tracking-tighter [text-wrap:balance] text-center lg:text-center text-blue-600">
-          Open source project management
+          Simple task management
         </h1>
         <p
           class="text-lg mt-4 max-w-lg text-slate-600 [text-wrap:balance] text-center lg:text-center mx-auto">
           The only all-in-one open source solution that streamlines your
-          agency&apos;s success with easy navigation
+          business&apos;s success with easy navigation
         </p>
         <div
           class="mt-6 flex flex-col sm:flex-row sm:justify-center lg:justify-center gap-3">
@@ -37,7 +37,7 @@ import Container from "@components/container.astro";
             target="_blank"
             class="flex gap-1 items-center justify-center"
             rel="noopener">
-            Get Started
+            Get Started for Free
           </Link>
           <!-- Add Product Hunt Button -->
           <a
@@ -53,15 +53,36 @@ import Container from "@components/container.astro";
             /></a
           >
         </div>
-        <div class="mt-4 flex items-center justify-center gap-2 review-section-hero">
+        <div
+          class="mt-4 flex items-center justify-center gap-2 review-section-hero">
           <div class="flex -space-x-1 review-section-hero-images">
-            <img class="w-8 h-8 rounded-full border-2 border-white" src="/testimonials/pulani-ranasinghe.jpeg" alt="User 1">
-            <img class="w-8 h-8 rounded-full border-2 border-white" src="/testimonials/upul-dissanayake.jpeg" alt="User 2">
-            <img class="w-8 h-8 rounded-full border-2 border-white" src="/testimonials/milinda-piyasena.png" alt="User 3">
-            <img class="w-8 h-8 rounded-full border-2 border-white" src="/testimonials/marta-gomez-jimenez.jpeg" alt="User 4">
+            <img
+              class="w-8 h-8 rounded-full border-2 border-white"
+              src="/testimonials/pulani-ranasinghe.jpeg"
+              alt="User 1"
+            />
+            <img
+              class="w-8 h-8 rounded-full border-2 border-white"
+              src="/testimonials/upul-dissanayake.jpeg"
+              alt="User 2"
+            />
+            <img
+              class="w-8 h-8 rounded-full border-2 border-white"
+              src="/testimonials/milinda-piyasena.png"
+              alt="User 3"
+            />
+            <img
+              class="w-8 h-8 rounded-full border-2 border-white"
+              src="/testimonials/marta-gomez-jimenez.jpeg"
+              alt="User 4"
+            />
           </div>
-          <span class="text-gray-600 text-sm review-section-hero-text">20+ Product Hunt Reviews</span>
-          <span class="text-yellow-500 text-sm review-section-hero-text">★★★★★</span>
+          <span class="text-gray-600 text-sm review-section-hero-text"
+            >20+ Product Hunt Reviews</span
+          >
+          <span class="text-yellow-500 text-sm review-section-hero-text"
+            >★★★★★</span
+          >
         </div>
       </div>
       <div class="py-3 lg:col-span-3 lg:-mr-44 mt-20 mb-16">
@@ -83,24 +104,22 @@ import Container from "@components/container.astro";
             fetchpriority="high"
             class="block sm:hidden"
           />
-
         </div>
       </div>
     </main>
   </Container>
 </div>
 
-
 <style>
   .hero-image-holder {
     max-width: 1240px;
   }
-  @media(max-width: 1280px) {
+  @media (max-width: 1280px) {
     .hero-image-holder {
       max-width: calc(100vw - 3rem);
     }
   }
-  @media(max-width: 480px) {
+  @media (max-width: 480px) {
     .review-section-hero {
       display: grid !important;
     }
