@@ -19,17 +19,21 @@ export async function getStaticPaths() {
 // Get the entry directly from the prop on render
 const { entry } = Astro.props;
 
-// Determine the layout component based on entry properties
+// Determine the layout component and title based on entry properties
 let ContentComponent;
+let Title;
 if (entry.data.is_programmatic_layout_2) {
   ContentComponent = ProgrammaticOneBlogContent2;
+  Title = `Best Open Source ${entry.data.title} Alternative`;
 } else if (entry.data.is_programmatic_seo) {
   ContentComponent = ProgrammaticOneBlogContent;
+  Title = `Open-Source Alternative to ${entry.data.title}`;
 } else {
   ContentComponent = DefaultBlogContent;
+  Title = `${entry.data.title}`;
 }
 ---
 
-<Layout title={entry.data.title}>
+<Layout title={Title}>
   <ContentComponent entry={entry} />
 </Layout>
