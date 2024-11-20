@@ -21,13 +21,14 @@ const blogCollection = defineCollection({
     image: z.object({
       src: z.string(),
       alt: z.string(),
-    }),
+    }).optional(),
     publishDate: z.coerce.date(),
     author: z.string().default("Astroship"),
     category: z.string(),
     tags: z.array(z.string()),
     is_programmatic_seo: z.boolean().default(false),
     is_programmatic_layout_2: z.boolean().default(false),
+    is_programmatic_layout_3: z.boolean().default(false),
   }),
 });
 
