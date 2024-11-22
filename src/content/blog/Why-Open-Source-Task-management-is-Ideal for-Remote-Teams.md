@@ -4,7 +4,7 @@ title: Why Open-Source Task Management is Ideal for Remote Teams
 snippet: Why Open-Source Task Management is Ideal for Remote Teams
 
 image:
-  src: /images/OS-task-management-remote-teams.webp
+  src: /images/os-task-management-remote-teams.webp
   alt: Why Open-Source Task Management is Ideal for Remote Teams
 publishDate: 2024-11-21
 category: ""
