@@ -377,11 +377,11 @@ const relatedArticles = relatedFiles.map((file) => {
                 {article.title}
               </h3>
               <div class="mt-4 flex justify-between text-sm text-gray-500">
-                <span class="text-slate-400">{entry.data.author}</span>
+                <span class="text-slate-400">{article.author}</span>
                 <time
                   class="text-slate-400"
-                  datetime={entry.data.publishDate.toISOString()}>
-                  {entry.data.publishDate.toDateString()}
+                  datetime={new Date(article.publishDate).toISOString()}>
+                  {new Date(article.publishDate).toDateString()}
                 </time>
               </div>
             </div>
