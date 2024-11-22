@@ -1,0 +1,393 @@
+---
+import Container from "@components/container.astro";
+import { Picture } from "astro:assets";
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+import { getCollection } from "astro:content";
+
+// Load current article
+// const currentArticle = import.meta.glob("./articles/*.md", { eager: true })[
+//   "./articles/current-article.md"
+// ];
+
+// Get related articles
+const relatedFiles = entry.data.related;
+const allArticles = import.meta.glob("../content/blog/*.md", { eager: true });
+
+const relatedArticles = relatedFiles.map((file) => {
+  const article: any = allArticles[`../content/blog/${file}.md`];
+  let Title: string;
+
+  if (article.frontmatter.is_programmatic_layout_2) {
+    Title = `Best Open Source ${article.frontmatter.title} Alternative`;
+  } else if (article.frontmatter.is_programmatic_seo) {
+    Title = `Open-Source Alternative to ${article.frontmatter.title}`;
+  } else if (article.frontmatter.is_programmatic_layout_3) {
+    Title = `Open Source Task Management for Marketing Teams in ${article.frontmatter.title}`;
+  } else if (article.frontmatter.is_programmatic_layout_4) {
+    Title = `Self-Hosted Alternative to ${article.frontmatter.title}`;
+  } else {
+    Title = `${article.frontmatter.title}`;
+  }
+
+  return {
+    title: Title,
+    image: article.frontmatter.image,
+    author: article.frontmatter.author || "Unknown Author",
+    publishDate: article.frontmatter.publishDate || "Unknown Date",
+    url: file.replace(".md", ""),
+  };
+});
+---
+
+<Container>
+  <div class="mx-auto max-w-3xl text-center mt-14">
+    <h1
+      class="text-3xl lg:text-4xl font-bold lg:tracking-tight mt-1 lg:leading-tight">
+      Best Self Hosted {entry.data.title} Alternative
+    </h1>
+    <div class="mt-1">
+      <span class="text-lg text-slate-500 italic">
+        Master productivity by choosing the best-ever self-hosted solution!
+      </span>
+    </div>
+    <div
+      class="flex gap-2 mt-3 items-center justify-center text-sm flex-wrap md:flex-nowrap">
+      <span class="text-slate-400">
+        {entry.data.author}
+      </span>
+      <span class="text-slate-400">•</span>
+      <time
+        class="text-slate-400"
+        datetime={entry.data.publishDate.toISOString()}>
+        {entry.data.publishDate.toDateString()}
+      </time>
+      <span class="text-slate-400 hidden md:block">•</span>
+      <div class="w-full md:w-auto flex flex-wrap justify-center gap-3">
+        {
+          entry.data.tags.map((tag) => (
+            <span class="text-sm text-slate-500">#{tag}</span>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-4xl">
+    <Picture
+      formats={["avif", "webp"]}
+      src={entry.data.image.src}
+      alt={entry.data.image.alt}
+      width="1280"
+      height="600"
+      class="h-full w-full object-contain rounded-xl mt-6"
+      transition:name={`post-img-${entry.slug}`}
+    />
+  </div>
+
+  <div
+    class="mx-auto prose mt-6 max-w-4xl prose-headings:mb-2 prose-headings:mt-8">
+    <h2>Looking for the best Self-Hosted {entry.data.title} Alternative?</h2>
+    <div
+      class="mx-auto prose mt-6 max-w-4xl prose-headings:mb-2 prose-headings:mt-8">
+      Finding a reliable project management tool can be challenging, especially
+      with many available options. {entry.data.title} is a popular choice for many
+      teams, but if you're looking for an self-hosted alternative, Worklenz is here
+      to meet your needs
+    </div>
+    <!-- <div class="mx-auto prose mt-6 max-w-4xl prose-headings:mb-2 prose-headings:mt-8"> -->
+    <h2>Worklenz - the best Self-Hosted {entry.data.title} Alternative</h2>
+    <!-- </div> -->
+    <div
+      class="mx-auto prose mt-6 max-w-4xl prose-headings:mb-2 prose-headings:mt-8">
+      <h3 class="text-xl font-bold">Why Consider Worklenz?</h3>
+    </div>
+    <div>
+      <p>
+        Worklenz stands out as an exceptional self-hosted project management
+        tool that provides comprehensive features to help teams manage their
+        projects effectively. Here’s why Worklenz might be the perfect fit for
+        you.
+      </p>
+      <ol>
+        <li>
+          <h3>Comprehensive Features</h3>
+          <p>
+            Worklenz offers an extensive range of features designed to simplify
+            project management. From project planning and task management to
+            collaboration tools and time tracking, Worklenz has everything you
+            need to keep your projects on track. The platform also provides
+            detailed reporting on project status, team workload, and performance
+            metrics, ensuring you have all the information you need at your
+            fingertips.
+          </p>
+        </li>
+        <li>
+          <h3>Seamless Collaboration</h3>
+          <p>
+            Effective collaboration is key to successful project management, and
+            Worklenz excels in this area. With file sharing, comments, and
+            communication tools, your team can collaborate effortlessly, no
+            matter where they are.
+          </p>
+        </li>
+        <li>
+          <h3>Built for Scalability</h3>
+          <p>
+            Worklenz is designed to grow with your needs. Built using Angular
+            for the front end and a custom TypeScript implementation of
+            ExpressJS with PostgreSQL as the backend, it offers a scalable,
+            reliable, and type-safe solution for project management.
+          </p>
+        </li>
+      </ol>
+    </div>
+    <div
+      class="mx-auto prose mt-6 max-w-4xl prose-headings:mb-2 prose-headings:mt-8">
+      <h5 class="text-xl font-bold">
+        It's Your Choice: Worklenz vs {entry.data.title}
+      </h5>
+    </div>
+    <div
+      class="mx-auto prose mt-6 max-w-3xl prose-headings:mb-2 prose-headings:mt-8">
+      <table class="min-w-full bg-white border border-gray-200">
+        <thead>
+          <tr class="bg-gray-200 text-white">
+            <th class="py-2 px-4 text-center border-b">Feature</th>
+            <th class="py-2 px-4 text-center border-b">Worklenz</th>
+            <th class="py-2 px-4 text-center border-b">{entry.data.title}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="even:bg-gray-100">
+            <td class="py-2 px-4 text-left border-b">Open-Source</td>
+            <td class="py-2 px-4 text-center border-b"
+              ><!-- Tailwind built-in classes -->
+              <input
+                type="checkbox"
+                checked
+                onclick="return false;"
+                class="form-checkbox h-5 w-5 text-blue-600 checked:bg-blue-600 checked:border-blue-600"
+              /></td
+            >
+            {
+              entry.data.open_source_checked ? (
+                <td class="py-2 px-4 text-center border-b">
+                  <input
+                    type="checkbox"
+                    checked
+                    onclick="return false;"
+                    class="center-checkbox form-checkbox h-5 w-5 text-blue-600"
+                  />
+                </td>
+              ) : (
+                <td class="py-2 px-4 text-center border-b">
+                  <input
+                    type="checkbox"
+                    onclick="return false;"
+                    class="center-checkbox form-checkbox h-5 w-5 text-blue-600"
+                  />
+                </td>
+              )
+            }
+          </tr>
+          <tr class="even:bg-gray-100">
+            <td class="py-2 px-4 text-left border-b">Self-Hosted</td>
+            <td class="py-2 px-4 text-center border-b"
+              ><input
+                type="checkbox"
+                checked
+                onclick="return false;"
+                class="center-checkbox form-checkbox h-5 w-5 text-blue-600"
+              /></td
+            >
+            {
+              entry.data.self_hosted_checked ? (
+                <td class="py-2 px-4 text-center border-b">
+                  <input
+                    type="checkbox"
+                    checked
+                    onclick="return false;"
+                    class="center-checkbox form-checkbox h-5 w-5 text-blue-600"
+                  />
+                </td>
+              ) : (
+                <td class="py-2 px-4 text-center border-b">
+                  <input
+                    type="checkbox"
+                    onclick="return false;"
+                    class="center-checkbox form-checkbox h-5 w-5 text-blue-600"
+                  />
+                </td>
+              )
+            }
+          </tr>
+          <tr class="even:bg-gray-100">
+            <td class="py-2 px-4 text-left border-b">Cloud-based</td>
+            <td class="py-2 px-4 text-center border-b"
+              ><input
+                type="checkbox"
+                onclick="return false;"
+                checked
+                class="center-checkbox form-checkbox h-5 w-5 text-blue-600"
+              /></td
+            >
+            {
+              entry.data.cloud_based_checked ? (
+                <td class="py-2 px-4 text-center border-b">
+                  <input
+                    type="checkbox"
+                    onclick="return false;"
+                    checked
+                    class="center-checkbox form-checkbox h-5 w-5 text-blue-600"
+                  />
+                </td>
+              ) : (
+                <td class="py-2 px-4 text-center border-b">
+                  <input
+                    type="checkbox"
+                    onclick="return false;"
+                    class="center-checkbox form-checkbox h-5 w-5 text-blue-600"
+                  />
+                </td>
+              )
+            }
+          </tr>
+          <tr class="even:bg-gray-100">
+            <td class="py-2 px-4 text-left border-b">Easy to use</td>
+            <td class="py-2 px-4 text-center border-b"
+              ><input
+                type="checkbox"
+                onclick="return false;"
+                checked
+                class="center-checkbox form-checkbox h-5 w-5 text-blue-600"
+              /></td
+            >
+            {
+              entry.data.easy_to_use_checked ? (
+                <td class="py-2 px-4 text-center border-b">
+                  <input
+                    type="checkbox"
+                    onclick="return false;"
+                    checked
+                    class="center-checkbox form-checkbox h-5 w-5 text-blue-600"
+                  />
+                </td>
+              ) : (
+                <td class="py-2 px-4 text-center border-b">
+                  <input
+                    type="checkbox"
+                    onclick="return false;"
+                    class="center-checkbox form-checkbox h-5 w-5 text-blue-600"
+                  />
+                </td>
+              )
+            }
+          </tr>
+          <tr class="even:bg-gray-100">
+            <td class="py-2 px-4 text-left border-b">Data security</td>
+            <td class="py-2 px-4 text-center border-b"
+              ><input
+                type="checkbox"
+                onclick="return false;"
+                checked
+                class="form-checkbox h-5 w-5 text-blue-600"
+              /></td
+            >
+            {
+              entry.data.data_security_checked ? (
+                <td class="py-2 px-4 text-center border-b">
+                  <input
+                    type="checkbox"
+                    onclick="return false;"
+                    checked
+                    class="form-checkbox h-5 w-5 text-blue-600"
+                  />
+                </td>
+              ) : (
+                <td class="py-2 px-4 text-center border-b">
+                  <input
+                    type="checkbox"
+                    onclick="return false;"
+                    class="form-checkbox h-5 w-5 text-blue-600"
+                  />
+                </td>
+              )
+            }
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="mx-auto prose mt-6 max-w-4xl prose-headings:mb-2 prose-headings:mt-8">
+      <h2>Top Reasons to Choose Worklenz</h2>
+    </div>
+    <div>
+      <p>
+        Worklenz is an self-hosted project management tool that stands out for
+        several reasons:
+      </p>
+
+      <ol>
+        <li>Benefit from a customizable and flexible self-hosted platform.</li>
+        <li>
+          Gain a comprehensive view of your team’s resources and streamline
+          their management with ease.
+        </li>
+        <li>Keep a close eye on task progress to ensure timely completion.</li>
+        <li>
+          Get a clear picture of your projects with detailed milestones and team
+          contributions.
+        </li>
+        <li>
+          Enjoy peace of mind knowing your data is protected with a scalable and
+          type-safe backend.
+        </li>
+      </ol>
+
+      <h2>Empower Your Projects with Worklenz</h2>
+      <p>
+        Switching to a self-hosted tool like Worklenz gives you complete control
+        and flexibility to manage your projects efficiently. With its powerful
+        features and user-friendly interface, Worklenz is a reliable alternative
+        to {entry.data.title}, allowing you to customize your workflow and keep
+        your data secure while achieving your project goals with ease.
+      </p>
+    </div>
+  </div>
+
+  <hr class="mx-auto max-w-4xl mt-16 mb-16" />
+
+  <!-- Related Articles -->
+  <div class="mx-auto max-w-4xl">
+    <h1 class="text-2xl font-bold mb-6">Related Articles</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {
+        relatedArticles.map((article) => (
+          <a
+            href={article.url}
+            class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 block">
+            <img
+              src={article.image.src}
+              alt={article.image.alt}
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800">
+                {article.title}
+              </h3>
+              <div class="mt-4 flex justify-between text-sm text-gray-500">
+                <span class="text-slate-400">{entry.data.author}</span>
+                <time
+                  class="text-slate-400"
+                  datetime={entry.data.publishDate.toISOString()}>
+                  {entry.data.publishDate.toDateString()}
+                </time>
+              </div>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</Container>
