@@ -4,11 +4,11 @@ draft: false
 title: Bonsai
 snippet: Bonsai
 image:
-  src: /images/pseo/Bonsai-Alternative.png
+  src: /images/pseo/bonsai-alternative.png
   alt: bonsai vs worklenz, alternative for bonsai project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: SJ
+author: Nuwan Sameera
 tags:
   - Guide
   - Tips
@@ -23,4 +23,4 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
----
+related: [accelo-alternative, teamgantt-alternative, bitbucketpipelines-alternative, worksection-alternative]

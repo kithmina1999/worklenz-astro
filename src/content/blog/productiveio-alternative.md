@@ -5,10 +5,10 @@ title: Productive.io
 snippet: Productive.io
 image:
   src: /images/pseo/productiveio-alternative.png
-  alt: productiveio vs worklenz, alternative for productiveio project managemet tool, task management, resource management, productivity
+  alt: productive.io vs worklenz, alternative for productive.io project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: SJ
+author: Ushani Ishara
 tags:
   - Guide
   - Tips
@@ -23,3 +23,4 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
+related: [omnifocus-alternative, teamleader-alternative, togglplan-alternative, notion-alternative]

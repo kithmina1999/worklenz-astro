@@ -4,11 +4,11 @@ draft: false
 title: Trello
 snippet: Trello
 image:
-  src: /images/pseo/Trello-Alternative.png
+  src: /images/pseo/trello-alternative.png
   alt: trello vs worklenz, alternative for trello project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: SJ
+author: Danushka Katubulla
 tags:
   - Guide
   - Tips
@@ -23,4 +23,4 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
----
+related: [hive-alternative, asana-alternative, meistertask-alternative, infinity-alternative]

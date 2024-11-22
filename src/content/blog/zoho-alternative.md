@@ -4,11 +4,11 @@ draft: false
 title: Zoho
 snippet: Zoho
 image:
-  src: /images/pseo/Zoho-Alternative.png
+  src: /images/pseo/zoho-alternative.png
   alt: zoho vs worklenz, alternative for zoho project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: SJ
+author: Kavindu Mihiranga
 tags:
   - Guide
   - Tips
@@ -23,4 +23,4 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
----
+related: [easyproject-alternative, forecast-alternative, productiveio-alternative, timecamp-alternative]
