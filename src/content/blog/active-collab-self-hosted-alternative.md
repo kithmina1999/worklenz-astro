@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [airtable-alternative, salesforcetasks-alternative, visor-alternative, smartsheet-alternative]
+related: [airtable-alternative, salesforce-tasks-alternative, visor-alternative, smartsheet-alternative]
 ---
