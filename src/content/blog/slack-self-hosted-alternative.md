@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [rememberthemilk-alternative, visor-alternative, openproject-alternative, forecast-alternative]
+related: [remember-the-milk-alternative, visor-alternative, openproject-alternative, forecast-alternative]
 ---
