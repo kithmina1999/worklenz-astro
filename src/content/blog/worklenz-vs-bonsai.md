@@ -4,11 +4,11 @@ draft: false
 title: Bonsai
 snippet: Bonsai
 image:
-  src: /images/pseo/Bonsai-Alternative.png
-  alt: Bonsai
-publishDate: 2024-09-13
+  src: /images/pseo/bonsai-alternative.png
+  alt: bonsai vs worklenz, alternative for bonsai project managemet tool, task management, resource management, productivity
+publishDate: 2024-10-11
 category: ""
-author: SJ
+author: Nuwan Sameera
 tags:
   - Guide
   - Tips
@@ -17,15 +17,16 @@ meta_description: |
   This test Desc
 main_content: |
   Bonsai is an all-in-one business management software designed for creative and digital agencies, consultancies, and professional service providers.
-main_content_image: /images/pseo/Bonsai-logo.png
-sub_content_image: /images/pseo/Bonsai-logo.png
+main_content_image: /images/pseo/bonsai-logo.png
+sub_content_image: /images/pseo/bonsai-logo.png
 open_source_checked: false
-self_hosted_checked: false
+self_hosted_checked: true
 cloud_based_checked: true
 easy_to_use_checked: true
 data_security_checked: true
 description: |
-  Find the most effective open source task management tools for coaches on our platform. Simplify your coaching tasks and boost productivity with these tools.
+  Find the most effective open-source task management tools for coaches on our platform. Simplify your coaching tasks and boost productivity with these tools.
+related: [worklenz-vs-teamweek, worklenz-vs-dropboxpaper, worklenz-vs-zapier, worklenz-vs-hubstaff]
 ---
 1. **Open Source Excellence:** Worklenz is an all-in-one solution built on open-source principles. It empowers teams by providing easy navigation and unique features, making project management efficient and accessible.
 2. **Resource Overview:** Worklenz consolidates project team members' information into a single-view report. You'll always know where your resources are, streamlining resource management.

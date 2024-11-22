@@ -4,11 +4,11 @@ draft: false
 title: ClickUp
 snippet: ClickUp
 image:
-  src: /images/pseo/Clickup-Alternative.png
-  alt: ClickUp
-publishDate: 2024-09-15
+  src: /images/pseo/clickup-alternative.png
+  alt: clickup vs worklenz, alternative for clickup project managemet tool, task management, resource management, productivity
+publishDate: 2024-10-11
 category: ""
-author: SJ
+author: Dasun Lakshitha
 tags:
   - Guide
   - Tips
@@ -17,15 +17,16 @@ meta_description: |
   This test Desc
 main_content: |
   ClickUp is an all-in-one productivity platform that replaces multiple tools. It offers features like projects, dashboards, forms, sprints, and time tracking.
-main_content_image: /images/pseo/ClickUp-logo.png
-sub_content_image: /images/pseo/ClickUp-logo.png
+main_content_image: /images/pseo/clickup-logo.png
+sub_content_image: /images/pseo/clickup-logo.png
 open_source_checked: false
 self_hosted_checked: false
 cloud_based_checked: true
 easy_to_use_checked: true
 data_security_checked: true
 description: |
-  Find the most effective open source task management tools for coaches on our platform. Simplify your coaching tasks and boost productivity with these tools.
+  Find the most effective open-source task management tools for coaches on our platform. Simplify your coaching tasks and boost productivity with these tools.
+related: [worklenz-vs-ganttpro, worklenz-vs-zenkit, worklenz-vs-paymo, worklenz-vs-planio]
 ---
 1. **Open Source Excellence:** Worklenz is an all-in-one solution built on open-source principles. It empowers teams by providing easy navigation and unique features, making project management efficient and accessible.
 2. **Resource Overview:** Worklenz consolidates project team members' information into a single-view report. You'll always know where your resources are, streamlining resource management.
