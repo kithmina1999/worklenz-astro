@@ -26,7 +26,7 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
   Find the most effective open-source task management tools for coaches on our platform. Simplify your coaching tasks and boost productivity with these tools.
-related: [worklenz-vs-teamwork, worklenz-vs-zapier, worklenz-vs-runn, worklenz-vs-evernoteteams]
+related: [worklenz-vs-teamgantt, worklenz-vs-bitrix, worklenz-vs-hubplanner, worklenz-vs-shortcut]
 ---
 1. **Open Source Excellence:** Worklenz is an all-in-one solution built on open-source principles. It empowers teams by providing easy navigation and unique features, making project management efficient and accessible.
 2. **Resource Overview:** Worklenz consolidates project team members' information into a single-view report. You'll always know where your resources are, streamlining resource management.

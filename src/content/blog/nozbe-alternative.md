@@ -23,4 +23,4 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [salesforcetasks-alternative, workamajig-alternative, taskworld-alternative, notion-alternative]
+related: [dropbox-paper-alternative, omnifocus-alternative, ganttproject-alternative, airtable-alternative]

@@ -8,7 +8,7 @@ image:
   alt: dropbox paper vs worklenz, alternative for dropbox paper project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Kavindu Mihiranga
+author: Danushka Katubulla
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [nutcache-alternative, runn-alternative, accelo-alternative, basecamp-alternative]
+related: [loom-self-hosted-alternative, nozbe-self-hosted-alternative, gantt-project-self-hosted-alternative, teamwork-self-hosted-alternative]
 ---

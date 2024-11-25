@@ -8,7 +8,7 @@ image:
   alt: kantata vs worklenz, alternative for kantata project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Danushka Katubulla
+author: Dasun Lakshitha
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [habitica-alternative, loom-alternative, togglplan-alternative, teamleader-alternative]
+related: [resource-guru-self-hosted-alternative, teamdeck-self-hosted-alternative, bonsai-self-hosted-alternative, jira-self-hosted-alternative]
 ---

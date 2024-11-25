@@ -23,4 +23,4 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [float-alternative, proofhub-alternative, ticktick-alternative, worksection-alternative]
+related: [hyve-alternative, infinity-alternative, tick-tick-alternative, workflowmax-alternative]

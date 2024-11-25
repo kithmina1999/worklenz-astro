@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [salesforcetasks-alternative, basecamp-alternative, teamwork-alternative, habitica-alternative]
+related: [remember-the-milk-self-hosted-alternative, calendar-self-hosted-alternative, slack-self-hosted-alternative, nutcache-self-hosted-alternative]
 ---

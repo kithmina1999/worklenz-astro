@@ -8,7 +8,7 @@ image:
   alt: taskworld vs worklenz, alternative for taskworld project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Danushka Katubulla
+author: Nuwan Sameera
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [bitbucketpipelines-alternative, hubplanner-alternative, asana-alternative, bonsai-alternative]
+related: [freedcamp-self-hosted-alternative, redbooth-self-hosted-alternative, slack-self-hosted-alternative, jira-self-hosted-alternative]
 ---

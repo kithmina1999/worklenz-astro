@@ -5,10 +5,10 @@ title: Active Collab
 snippet: Active Collab
 image:
   src: /images/pseo/activecollab-alternative.png
-  alt: activecollab vs worklenz, alternative for activecollab project managemet tool, task management, resource management, productivity
+  alt: active collab vs worklenz, alternative for active collab project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: SJ
+author: Dasun Lakshitha
 tags:
   - Guide
   - Tips
@@ -23,3 +23,4 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
+related: [ganttproject-alternative, microsoftproject-alternative, adobeworkfront-alternative, asana-alternative]

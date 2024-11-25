@@ -8,7 +8,7 @@ image:
   alt: omnifocus vs worklenz, alternative for omnifocus project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: Dasun Lakshitha
+author: Kavindu Mihiranga
 tags:
   - Guide
   - Tips
@@ -23,4 +23,4 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [teamleader-alternative, notion-alternative, hyve-alternative, workamajig-alternative]
+related: [nozbe-alternative, things-3-alternative, ganttpro-alternative, tick-tick-alternative]

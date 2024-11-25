@@ -8,7 +8,7 @@ image:
   alt: open project vs worklenz, alternative for open project project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Danushka Katubulla
+author: Ushani Ishara
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [workzone-alternative, taskworld-alternative, redbooth-alternative, ticktick-alternative]
+related: [clickup-self-hosted-alternative, ganttpro-self-hosted-alternative, redmine-self-hosted-alternative, taiga-self-hosted-alternative]
 ---

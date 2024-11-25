@@ -8,7 +8,7 @@ image:
   alt: clickup vs worklenz, alternative for clickup project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Danushka Katubulla
+author: Kavindu Mihiranga
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [freedcamp-alternative, redmine-alternative, teamweek-alternative, ganttproject-alternative]
+related: [mondaycom-self-hosted-alternative, podio-self-hosted-alternative, jira-self-hosted-alternative, todoist-self-hosted-alternative]
 ---

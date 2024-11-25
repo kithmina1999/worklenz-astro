@@ -8,7 +8,7 @@ image:
   alt: zenhub vs worklenz, alternative for zenhub project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Danushka Katubulla
+author: Nuwan Sameera
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [ticktick-alternative, todoist-alternative, notion-alternative, hubspot-tasks-alternative]
+related: [forecast-self-hosted-alternative, accelo-self-hosted-alternative, notion-self-hosted-alternative, clickup-self-hosted-alternative]
 ---

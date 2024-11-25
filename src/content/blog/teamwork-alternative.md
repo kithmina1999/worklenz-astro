@@ -8,7 +8,7 @@ image:
   alt: teamwork vs worklenz, alternative for teamwork project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: Dasun Lakshitha
+author: Kavindu Mihiranga
 tags:
   - Guide
   - Tips
@@ -23,4 +23,4 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [openproject-alternative, bitrix-alternative, hubspottasks-alternative, googletasks-alternative]
+related: [notion-alternative, plutio-alternative, agiled-alternative, zenhub-alternative]

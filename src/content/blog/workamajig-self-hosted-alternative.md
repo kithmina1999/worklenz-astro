@@ -8,7 +8,7 @@ image:
   alt: workamajig vs worklenz, alternative for workamajig project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Chamika Jayasri
+author: Ushani Ishara
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [activecollab-alternative, scoro-alternative, openproject-alternative, timecamp-alternative]
+related: [tick-tick-self-hosted-alternative, airtable-self-hosted-alternative, zenhub-self-hosted-alternative, confluence-self-hosted-alternative]
 ---

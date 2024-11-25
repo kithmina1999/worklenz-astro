@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [stackfield-alternative, timecamp-alternative, things3-alternative, ntaskmanager-alternative]
+related: [profoworkflow-self-hosted-alternative, quire-self-hosted-alternative, ganttpro-self-hosted-alternative, jira-self-hosted-alternative]
 ---

@@ -8,7 +8,7 @@ image:
   alt: resource guru vs worklenz, alternative for resource guru project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Chamika Jayasri
+author: Nuwan Sameera
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [hubplanner-alternative, ganttproject-alternative, runn-alternative, hubspottasks-alternative]
+related: [float-self-hosted-alternative, ganttpro-self-hosted-alternative, zenhub-self-hosted-alternative, freedcamp-self-hosted-alternative]
 ---

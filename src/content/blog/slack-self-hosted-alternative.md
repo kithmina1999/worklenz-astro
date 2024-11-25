@@ -8,7 +8,7 @@ image:
   alt: slack vs worklenz, alternative for slack project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Nuwan Sameera
+author: Danushka Katubulla
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [remember-the-milk-alternative, visor-alternative, openproject-alternative, forecast-alternative]
+related: [ifttt-self-hosted-alternative, discord-self-hosted-alternative, loom-self-hosted-alternative, asana-self-hosted-alternative]
 ---

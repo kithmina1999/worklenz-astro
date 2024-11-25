@@ -8,7 +8,7 @@ image:
   alt: nozbe vs worklenz, alternative for nozbe project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Dasun Lakshitha
+author: Nuwan Sameera
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [salesforcetasks-alternative, workamajig-alternative, taskworld-alternative, notion-alternative]
+related: [dropbox-paper-self-hosted-alternative, omnifocus-self-hosted-alternative, clickup-self-hosted-alternative, flow-self-hosted-alternative]
 ---

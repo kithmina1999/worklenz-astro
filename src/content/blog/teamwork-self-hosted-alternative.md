@@ -8,7 +8,7 @@ image:
   alt: teamwork vs worklenz, alternative for teamwork project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Dasun Lakshitha
+author: Nuwan Sameera
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [openproject-alternative, bitrix-alternative, hubspottasks-alternative, googletasks-alternative]
+related: [notion-self-hosted-alternative, jira-self-hosted-alternative, ganttpro-self-hosted-alternative, smartsheet-self-hosted-alternative]
 ---

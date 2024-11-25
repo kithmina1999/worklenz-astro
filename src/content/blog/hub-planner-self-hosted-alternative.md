@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [focusbooster-alternative, airtable-alternative, notion-alternative, teamweek-alternative]
+related: [workzone-self-hosted-alternative, visor-self-hosted-alternative, clickup-self-hosted-alternative, slack-self-hosted-alternative]
 ---

@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [dropboxpaper-alternative, teamgantt-alternative, hyve-alternative, focusbooster-alternative]
+related: [hub-planner-self-hosted-alternative, shortcut-self-hosted-alternative, ganttpro-self-hosted-alternative, mondaycom-self-hosted-alternative]
 ---

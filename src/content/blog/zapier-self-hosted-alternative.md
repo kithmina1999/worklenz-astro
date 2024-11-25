@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [adobeworkfront-alternative, clarizen-alternative, teamleader-alternative, freedcamp-alternative]
+related: [hubspot-tasks-self-hosted-alternative, ifttt-self-hosted-alternative, mondaycom-self-hosted-alternative, jira-self-hosted-alternative]
 ---

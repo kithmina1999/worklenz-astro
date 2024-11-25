@@ -8,7 +8,7 @@ image:
   alt: zoho vs worklenz, alternative for zoho project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Ushani Ishara
+author: Danushka Katubulla
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [easyproject-alternative, forecast-alternative, productiveio-alternative, timecamp-alternative]
+related: [bonsai-self-hosted-alternative, nifty-self-hosted-alternative, gantt-project-self-hosted-alternative, infinity-self-hosted-alternative]
 ---

@@ -8,7 +8,7 @@ image:
   alt: github projects vs worklenz, alternative for github projects project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: Chamika Jayasri
+author: Kavindu Mihiranga
 tags:
   - Guide
   - Tips
@@ -23,4 +23,4 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [basecamp-alternative, redbooth-alternative, calendar-alternative, hive-alternative]
+related: [forest-alternative, bitbucket-pipelines-alternative, zenhub-alternative, notion-alternative]

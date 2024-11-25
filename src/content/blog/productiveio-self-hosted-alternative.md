@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [omnifocus-alternative, teamleader-alternative, togglplan-alternative, notion-alternative]
+related: [nifty-self-hosted-alternative, teamwork-self-hosted-alternative, trello-self-hosted-alternative, airtable-self-hosted-alternative]
 ---

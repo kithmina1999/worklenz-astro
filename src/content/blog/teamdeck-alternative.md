@@ -23,4 +23,4 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [workzone-alternative, zenhub-alternative, airtable-alternative, trello-alternative]
+related: [kantata-alternative, runn-alternative, hyve-alternative, zapier-alternative]

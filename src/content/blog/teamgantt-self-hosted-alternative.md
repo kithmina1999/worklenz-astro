@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [nozbe-alternative, casual-alternative, ticktick-alternative, agiled-alternative]
+related: [hubstaff-self-hosted-alternative, bitrix-self-hosted-alternative, smartsheet-self-hosted-alternative, ganttpro-self-hosted-alternative]
 ---

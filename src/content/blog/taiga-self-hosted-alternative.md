@@ -8,7 +8,7 @@ image:
   alt: taiga vs worklenz, alternative for taiga project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Ushani Ishara
+author: Kavindu Mihiranga
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [flow-alternative, bitrix-alternative, rememberthemilk-alternative, teamgantt-alternative]
+related: [redmine-self-hosted-alternative, gantt-project-self-hosted-alternative, clickup-self-hosted-alternative, freedcamp-self-hosted-alternative]
 ---

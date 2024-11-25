@@ -8,7 +8,7 @@ image:
   alt: hive vs worklenz, alternative for hive project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: Dasun Lakshitha
+author: Danushka Katubulla
 tags:
   - Guide
   - Tips
@@ -23,4 +23,4 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [slack-alternative, plutio-alternative, trello-alternative, kissflow-alternative]
+related: [shortcut-alternative, clarizen-alternative, ganttproject-alternative, smartsheet-alternative]

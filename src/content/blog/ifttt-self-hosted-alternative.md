@@ -8,7 +8,7 @@ image:
   alt: ifttt vs worklenz, alternative for ifttt project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Kavindu Mihiranga
+author: Danushka Katubulla
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [quire-alternative, hyve-alternative, workzone-alternative, mondaycom-alternative]
+related: [zapier-self-hosted-alternative, slack-self-hosted-alternative, notion-self-hosted-alternative, trello-self-hosted-alternative]
 ---

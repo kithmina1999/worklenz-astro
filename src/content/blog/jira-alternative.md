@@ -23,4 +23,4 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [kissflow-alternative, workamajig-alternative, githubprojects-alternative, taiga-alternative]
+related: [teamwork-alternative, meistertask-alternative, trello-alternative, confluence-alternative]

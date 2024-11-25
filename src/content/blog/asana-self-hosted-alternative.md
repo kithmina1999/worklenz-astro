@@ -8,7 +8,7 @@ image:
   alt: asana vs worklenz, alternative for asana project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Ushani Ishara
+author: Danushka Katubulla
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [adobeworkfront-alternative, shortcut-alternative, timecamp-alternative, celoxis-alternative]
+related: [adobe-workfront-self-hosted-alternative, wrike-self-hosted-alternative, mondaycom-self-hosted-alternative, notion-self-hosted-alternative]
 ---

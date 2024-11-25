@@ -23,4 +23,4 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [togglplan-alternative, clarizen-alternative, runn-alternative, asana-alternative]
+related: [open-project-alternative, bonsai-alternative, notion-alternative, teamwork-alternative]

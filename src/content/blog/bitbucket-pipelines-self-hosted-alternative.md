@@ -8,7 +8,7 @@ image:
   alt: bitbucket pipelines vs worklenz, alternative for bitbucket pipelines project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Nuwan Sameera
+author: Kavindu Mihiranga
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [rememberthemilk-alternative, hubstaff-alternative, kanboard-alternative, shortcut-alternative]
+related: [github-projects-self-hosted-alternative, salesforce-tasks-self-hosted-alternative, teamwork-self-hosted-alternative, notion-self-hosted-alternative]
 ---

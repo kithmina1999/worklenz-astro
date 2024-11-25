@@ -8,7 +8,7 @@ image:
   alt: evernote teams vs worklenz, alternative for evernote teams project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: Dasun Lakshitha
+author: Danushka Katubulla
 tags:
   - Guide
   - Tips
@@ -23,4 +23,4 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [kissflow-alternative, activecollab-alternative, basecamp-alternative, trello-alternative]
+related: [casual-alternative, google-tasks-alternative, slack-alternative, airtable-alternative]

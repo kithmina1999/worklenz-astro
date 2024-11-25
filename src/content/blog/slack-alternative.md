@@ -8,7 +8,7 @@ image:
   alt: slack vs worklenz, alternative for slack project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: Chamika Jayasri
+author: Danushka Katubulla
 tags:
   - Guide
   - Tips
@@ -23,4 +23,4 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [rememberthemilk-alternative, visor-alternative, openproject-alternative, forecast-alternative]
+related: [ifttt-alternative, discord-alternative, zenhub-alternative, ganttpro-alternative]

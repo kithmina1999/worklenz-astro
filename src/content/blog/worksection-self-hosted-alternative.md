@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [flow-alternative, nozbe-alternative, runn-alternative, paymo-alternative]
+related: [flowlu-self-hosted-alternative, freedcamp-self-hosted-alternative, clickup-self-hosted-alternative, redmine-self-hosted-alternative]
 ---

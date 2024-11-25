@@ -8,7 +8,7 @@ image:
   alt: tick tick vs worklenz, alternative for tick tick project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Kavindu Mihiranga
+author: Nuwan Sameera
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [podio-alternative, float-alternative, quire-alternative, zoho-alternative]
+related: [ganttpro-self-hosted-alternative, workamajig-self-hosted-alternative, bonsai-self-hosted-alternative, trello-self-hosted-alternative]
 ---

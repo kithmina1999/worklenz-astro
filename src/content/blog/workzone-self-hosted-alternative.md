@@ -8,7 +8,7 @@ image:
   alt: workzone vs worklenz, alternative for workzone project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Ushani Ishara
+author: Dasun Lakshitha
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [worksection-alternative, nozbe-alternative, calendar-alternative, confluence-alternative]
+related: [teamhood-self-hosted-alternative, hub-planner-self-hosted-alternative, trello-self-hosted-alternative, bonsai-self-hosted-alternative]
 ---

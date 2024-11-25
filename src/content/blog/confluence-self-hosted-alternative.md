@@ -8,7 +8,7 @@ image:
   alt: confluence vs worklenz, alternative for confluence project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Ushani Ishara
+author: Kavindu Mihiranga
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [salesforcetasks-alternative, ganttpro-alternative, bonsai-alternative, anydo-alternative]
+related: [celoxis-self-hosted-alternative, hubstaff-self-hosted-alternative, jira-self-hosted-alternative, notion-self-hosted-alternative]
 ---

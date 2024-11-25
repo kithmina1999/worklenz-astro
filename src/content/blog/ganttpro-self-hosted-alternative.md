@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [wrike-alternative, ifttt-alternative, activecollab-alternative, evernoteteams-alternative]
+related: [anydo-self-hosted-alternative, airtable-self-hosted-alternative, teamgantt-self-hosted-alternative, gantt-project-self-hosted-alternative]
 ---

@@ -8,7 +8,7 @@ image:
   alt: trello vs worklenz, alternative for trello project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Kavindu Mihiranga
+author: Danushka Katubulla
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [hive-alternative, asana-alternative, meistertask-alternative, infinity-alternative]
+related: [wrike-self-hosted-alternative, mondaycom-self-hosted-alternative, notion-self-hosted-alternative, zenhub-self-hosted-alternative]
 ---

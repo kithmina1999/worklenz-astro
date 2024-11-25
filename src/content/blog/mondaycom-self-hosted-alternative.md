@@ -8,7 +8,7 @@ image:
   alt: monday.com vs worklenz, alternative for monday.com project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Nuwan Sameera
+author: Kavindu Mihiranga
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [kantata-alternative, teamwork-alternative, celoxis-alternative, proworkflow-alternative]
+related: [trello-self-hosted-alternative, clickup-self-hosted-alternative, smartsheet-self-hosted-alternative, asana-self-hosted-alternative]
 ---

@@ -8,7 +8,7 @@ image:
   alt: runn vs worklenz, alternative for runn project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: Dasun Lakshitha
+author: Chamika Jayasri
 tags:
   - Guide
   - Tips
@@ -23,4 +23,4 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [nutcache-alternative, easyproject-alternative, proofhub-alternative, notion-alternative]
+related: [teamdeck-alternative, hyve-alternative, habitica-alternative, teamwork-alternative]

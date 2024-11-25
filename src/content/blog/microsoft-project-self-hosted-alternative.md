@@ -8,7 +8,7 @@ image:
   alt: microsoft project vs worklenz, alternative for microsoft project project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Danushka Katubulla
+author: Dasun Lakshitha
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [evernoteteams-alternative, hubplanner-alternative, mondaycom-alternative, kantata-alternative]
+related: [gantt-project-self-hosted-alternative, forecast-self-hosted-alternative, clickup-self-hosted-alternative, trello-self-hosted-alternative]
 ---

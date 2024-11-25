@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [ganttpro-alternative, ntaskmanager-alternative, hive-alternative, float-alternative]
+related: [jira-self-hosted-alternative, agiled-self-hosted-alternative, zenhub-self-hosted-alternative, infinity-self-hosted-alternative]
 ---

@@ -8,7 +8,7 @@ image:
   alt: wrike vs worklenz, alternative for wrike project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Nuwan Sameera
+author: Kavindu Mihiranga
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [smartsheet-alternative, kantata-alternative, redbooth-alternative, ntaskmanager-alternative]
+related: [basecamp-self-hosted-alternative, trello-self-hosted-alternative, teamwork-self-hosted-alternative, ganttpro-self-hosted-alternative]
 ---

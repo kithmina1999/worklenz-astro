@@ -8,7 +8,7 @@ image:
   alt: easyproject vs worklenz, alternative for easyproject project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Kavindu Mihiranga
+author: Danushka Katubulla
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [float-alternative, todoist-alternative, kissflow-alternative, scoro-alternative]
+related: [clarizen-self-hosted-alternative, workflowmax-self-hosted-alternative, airtable-self-hosted-alternative, zenhub-self-hosted-alternative]
 ---

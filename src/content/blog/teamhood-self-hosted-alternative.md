@@ -8,7 +8,7 @@ image:
   alt: teamhood vs worklenz, alternative for teamhood project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Danushka Katubulla
+author: Nuwan Sameera
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [focusbooster-alternative, anydo-alternative, zapier-alternative, ticktick-alternative]
+related: [quickbase-self-hosted-alternative, workzone-self-hosted-alternative, ganttpro-self-hosted-alternative, airtable-self-hosted-alternative]
 ---

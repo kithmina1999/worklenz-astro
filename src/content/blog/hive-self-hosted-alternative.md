@@ -8,7 +8,7 @@ image:
   alt: hive vs worklenz, alternative for hive project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Danushka Katubulla
+author: Dasun Lakshitha
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [slack-alternative, plutio-alternative, trello-alternative, kissflow-alternative]
+related: [shortcut-self-hosted-alternative, clarizen-self-hosted-alternative, mondaycom-self-hosted-alternative, asana-self-hosted-alternative]
 ---

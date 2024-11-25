@@ -8,7 +8,7 @@ image:
   alt: podio vs worklenz, alternative for podio project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Chamika Jayasri
+author: Dasun Lakshitha
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [togglplan-alternative, clarizen-alternative, runn-alternative, asana-alternative]
+related: [open-project-self-hosted-alternative, scoro-self-hosted-alternative, teamwork-self-hosted-alternative, smartsheet-self-hosted-alternative]
 ---

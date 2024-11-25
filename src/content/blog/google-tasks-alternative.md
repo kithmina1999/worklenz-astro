@@ -8,7 +8,7 @@ image:
   alt: google tasks vs worklenz, alternative for google tasks project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: Danushka Katubulla
+author: Nuwan Sameera
 tags:
   - Guide
   - Tips
@@ -23,4 +23,4 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [stackfield-alternative, infinity-alternative, paymo-alternative, airtable-alternative]
+related: [evernote-teams-alternative, habitica-alternative, ganttpro-alternative, notion-alternative]

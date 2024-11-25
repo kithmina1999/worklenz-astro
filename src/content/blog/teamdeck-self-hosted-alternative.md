@@ -8,7 +8,7 @@ image:
   alt: teamdeck vs worklenz, alternative for teamdeck project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Danushka Katubulla
+author: Chamika Jayasri
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [workzone-alternative, zenhub-alternative, airtable-alternative, trello-alternative]
+related: [kantata-self-hosted-alternative, runn-self-hosted-alternative, mondaycom-self-hosted-alternative, gantt-project-self-hosted-alternative]
 ---

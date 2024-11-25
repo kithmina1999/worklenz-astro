@@ -8,7 +8,7 @@ image:
   alt: bitrix vs worklenz, alternative for bitrix project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Dasun Lakshitha
+author: Nuwan Sameera
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [wrike-alternative, loom-alternative, bonsai-alternative, slack-alternative]
+related: [teamgantt-self-hosted-alternative, kanboard-self-hosted-alternative, slack-self-hosted-alternative, mondaycom-self-hosted-alternative]
 ---

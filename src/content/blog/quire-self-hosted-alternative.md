@@ -8,7 +8,7 @@ image:
   alt: quire vs worklenz, alternative for quire project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Chamika Jayasri
+author: Ushani Ishara
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [ganttproject-alternative, notion-alternative, stackfield-alternative, todoist-alternative]
+related: [liquidplanner-self-hosted-alternative, quickbase-self-hosted-alternative, slack-self-hosted-alternative, notion-self-hosted-alternative]
 ---

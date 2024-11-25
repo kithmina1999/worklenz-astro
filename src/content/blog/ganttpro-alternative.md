@@ -8,7 +8,7 @@ image:
   alt: ganttpro vs worklenz, alternative for ganttpro project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: Chamika Jayasri
+author: Dasun Lakshitha
 tags:
   - Guide
   - Tips
@@ -23,4 +23,4 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [wrike-alternative, ifttt-alternative, activecollab-alternative, evernoteteams-alternative]
+related: [anydo-alternative, tick-tick-alternative, smartsheet-alternative, mondaycom-alternative]

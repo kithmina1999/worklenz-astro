@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [openproject-alternative, trello-alternative, anydo-alternative, togglplan-alternative]
+related: [quire-self-hosted-alternative, teamhood-self-hosted-alternative, mondaycom-self-hosted-alternative, notion-self-hosted-alternative]
 ---

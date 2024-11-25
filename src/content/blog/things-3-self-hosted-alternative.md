@@ -8,7 +8,7 @@ image:
   alt: things 3 vs worklenz, alternative for things 3 project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Chamika Jayasri
+author: Nuwan Sameera
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [rememberthemilk-alternative, flow-alternative, todoist-alternative, mondaycom-alternative]
+related: [omnifocus-self-hosted-alternative, remember-the-milk-self-hosted-alternative, mondaycom-self-hosted-alternative, zenhub-self-hosted-alternative]
 ---

@@ -8,7 +8,7 @@ image:
   alt: hyve vs worklenz, alternative for hyve project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Chamika Jayasri
+author: Ushani Ishara
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [hubspottasks-alternative, togglplan-alternative, activecollab-alternative, kissflow-alternative]
+related: [runn-self-hosted-alternative, kissflow-self-hosted-alternative, ganttpro-self-hosted-alternative, redmine-self-hosted-alternative]
 ---

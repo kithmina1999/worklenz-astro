@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [easyproject-alternative, taskworld-alternative, celoxis-alternative, resourceguru-alternative]
+related: [stackfield-self-hosted-alternative, celoxis-self-hosted-alternative, ganttpro-self-hosted-alternative, smartsheet-self-hosted-alternative]
 ---

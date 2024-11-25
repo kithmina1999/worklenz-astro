@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [forecast-alternative, dropboxpaper-alternative, worksection-alternative, togglplan-alternative]
+related: [worksection-self-hosted-alternative, taskworld-self-hosted-alternative, trello-self-hosted-alternative, kanboard-self-hosted-alternative]
 ---

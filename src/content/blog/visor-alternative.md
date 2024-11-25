@@ -8,7 +8,7 @@ image:
   alt: visor vs worklenz, alternative for visor project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: Kavindu Mihiranga
+author: Danushka Katubulla
 tags:
   - Guide
   - Tips
@@ -23,4 +23,4 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [dropboxpaper-alternative, teamgantt-alternative, hyve-alternative, focusbooster-alternative]
+related: [hub-planner-alternative, shortcut-alternative, ganttproject-alternative, notion-alternative]

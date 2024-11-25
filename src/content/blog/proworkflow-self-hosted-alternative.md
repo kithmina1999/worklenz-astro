@@ -8,7 +8,7 @@ image:
   alt: proworkflow vs worklenz, alternative for proworkflow project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Ushani Ishara
+author: Chamika Jayasri
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [ntaskmanager-alternative, freedcamp-alternative, trello-alternative, jira-alternative]
+related: [ntask-manager-self-hosted-alternative, liquidplanner-self-hosted-alternative, teamwork-self-hosted-alternative, gantt-project-self-hosted-alternative]
 ---

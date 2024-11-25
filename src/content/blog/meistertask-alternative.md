@@ -23,4 +23,4 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [rememberthemilk-alternative, bitrix-alternative, nifty-alternative, todoist-alternative]
+related: [agiled-alternative, zenkit-alternative, flow-alternative, slack-alternative]

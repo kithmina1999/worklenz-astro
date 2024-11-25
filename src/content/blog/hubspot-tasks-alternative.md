@@ -8,7 +8,7 @@ image:
   alt: hubspot tasks vs worklenz, alternative for hubspot tasks project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: Dasun Lakshitha
+author: Chamika Jayasri
 tags:
   - Guide
   - Tips
@@ -23,4 +23,4 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [flow-alternative, forecast-alternative, zapier-alternative, microsoftproject-alternative]
+related: [salesforce-tasks-alternative, zapier-alternative, slack-alternative, jira-alternative]

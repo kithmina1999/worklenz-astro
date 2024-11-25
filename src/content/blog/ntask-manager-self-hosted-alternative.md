@@ -8,7 +8,7 @@ image:
   alt: ntask manager vs worklenz, alternative for ntask manager project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Chamika Jayasri
+author: Dasun Lakshitha
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [nozbe-alternative, ganttpro-alternative, activecollab-alternative, easyproject-alternative]
+related: [timecamp-self-hosted-alternative, profoworkflow-self-hosted-alternative, asana-self-hosted-alternative, clickup-self-hosted-alternative]
 ---

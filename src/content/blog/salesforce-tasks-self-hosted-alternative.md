@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [habitica-alternative, zoho-alternative, resourceguru-alternative, productiveio-alternative]
+related: [bitbucket-pipelines-self-hosted-alternative, hubspot-tasks-self-hosted-alternative, zoho-self-hosted-alternative, clickup-self-hosted-alternative]
 ---

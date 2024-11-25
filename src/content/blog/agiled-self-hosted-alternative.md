@@ -8,7 +8,7 @@ image:
   alt: agiled vs worklenz, alternative for agiled project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Kavindu Mihiranga
+author: Ushani Ishara
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [hive-alternative, bitrix-alternative, kantata-alternative, hubstaff-alternative]
+related: [plutio-self-hosted-alternative, meistertask-self-hosted-alternative, notion-self-hosted-alternative, tick-tick-self-hosted-alternative]
 ---

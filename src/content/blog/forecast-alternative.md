@@ -8,7 +8,7 @@ image:
   alt: forecast vs worklenz, alternative for forecast project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: Dasun Lakshitha
+author: Kavindu Mihiranga
 tags:
   - Guide
   - Tips
@@ -23,4 +23,4 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [flow-alternative, ticktick-alternative, rememberthemilk-alternative, zenkit-alternative]
+related: [airtable-alternative, zenhub-alternative, accelo-alternative, ganttpro-alternative]

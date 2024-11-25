@@ -8,7 +8,7 @@ image:
   alt: hubstaff vs worklenz, alternative for hubstaff project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: Ushani Ishara
+author: Nuwan Sameera
 tags:
   - Guide
   - Tips
@@ -23,4 +23,4 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [clarizen-alternative, hive-alternative, forest-alternative, microsoftproject-alternative]
+related: [confluence-alternative, teamgantt-alternative, slack-alternative, smartsheet-alternative]

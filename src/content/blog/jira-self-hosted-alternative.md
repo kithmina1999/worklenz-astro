@@ -8,7 +8,7 @@ image:
   alt: jira vs worklenz, alternative for jira project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Chamika Jayasri
+author: Danushka Katubulla
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [kissflow-alternative, workamajig-alternative, githubprojects-alternative, taiga-alternative]
+related: [teamwork-self-hosted-alternative, trello-self-hosted-alternative, redmine-self-hosted-alternative, kanboard-self-hosted-alternative]
 ---

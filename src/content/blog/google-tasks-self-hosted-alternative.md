@@ -8,7 +8,7 @@ image:
   alt: google tasks vs worklenz, alternative for google tasks project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Dasun Lakshitha
+author: Danushka Katubulla
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [stackfield-alternative, infinity-alternative, paymo-alternative, airtable-alternative]
+related: [evernote-teams-self-hosted-alternative, habitica-self-hosted-alternative, ganttpro-self-hosted-alternative, asana-self-hosted-alternative]
 ---

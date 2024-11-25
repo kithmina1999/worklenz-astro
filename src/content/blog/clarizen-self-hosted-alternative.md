@@ -8,7 +8,7 @@ image:
   alt: clarizen vs worklenz, alternative for clarizen project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-21
 category: ""
-author: Ushani Ishara
+author: Kavindu Mihiranga
 tags:
   - Guide
   - Tips
@@ -23,5 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best self hosted alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [redmine-alternative, ticktick-alternative, quickbase-alternative, teamgantt-alternative]
+related: [hive-self-hosted-alternative, easyproject-self-hosted-alternative, teamwork-self-hosted-alternative, ganttpro-self-hosted-alternative]
 ---

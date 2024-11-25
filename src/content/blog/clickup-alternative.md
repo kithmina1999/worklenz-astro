@@ -8,7 +8,7 @@ image:
   alt: clickup vs worklenz, alternative for clickup project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: Kavindu Mihiranga
+author: Dasun Lakshitha
 tags:
   - Guide
   - Tips
@@ -23,4 +23,4 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [freedcamp-alternative, redmine-alternative, teamweek-alternative, ganttproject-alternative]
+related: [mondaycom-alternative, notion-alternative, zoho-alternative, slack-alternative]

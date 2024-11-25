@@ -8,7 +8,7 @@ image:
   alt: monday.com vs worklenz, alternative for monday.com project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: Chamika Jayasri
+author: Ushani Ishara
 tags:
   - Guide
   - Tips
@@ -23,4 +23,4 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
-related: [kantata-alternative, teamwork-alternative, celoxis-alternative, proworkflow-alternative]
+related: [trello-alternative, clickup-alternative, teamwork-alternative, smartsheet-alternative]
