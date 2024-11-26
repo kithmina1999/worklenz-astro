@@ -23,4 +23,5 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
+related: [clickup-alternative, podio-alternative, jira-alternative, flow-alternative]
 ---
