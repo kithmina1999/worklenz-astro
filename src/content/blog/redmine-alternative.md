@@ -8,7 +8,7 @@ image:
   alt: redmine vs worklenz, alternative for redmine project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: SJ
+author: Nuwan Sameera
 tags:
   - Guide
   - Tips
@@ -23,3 +23,4 @@ easy_to_use_checked: false
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
+related: [kanboard-alternative, taiga-alternative, ganttpro-alternative, notion-alternative]

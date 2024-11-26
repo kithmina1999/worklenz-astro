@@ -3,6 +3,7 @@ import Container from "@components/container.astro";
 import { Picture } from "astro:assets";
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+import RelatedArticles from "@components/related-articles.astro";
 ---
 
 <Container>
@@ -155,4 +156,10 @@ const { Content } = await entry.render();
     class="mx-auto prose mt-6 max-w-4xl prose-headings:mb-2 prose-headings:mt-8">
     <Content />
   </div>
+
+  <hr class="mx-auto max-w-4xl mt-16 mb-16" />
+
+  <!-- Related Articles -->
+  <RelatedArticles entry={entry}/>
+
 </Container>
