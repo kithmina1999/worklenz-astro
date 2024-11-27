@@ -8,7 +8,7 @@ image:
   alt: Switzerland Government Software to be Open Source
 publishDate: 2024-07-25
 category: ""
-author: SJ
+author: Kalinga Gunwardhana
 tags:
   - News
   - Open-Source

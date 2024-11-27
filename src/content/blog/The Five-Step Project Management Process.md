@@ -7,7 +7,7 @@ image:
   alt: The Five-Step Project Management Process
 publishDate: 2024-07-04
 category: ""
-author: SJ
+author: Tharindu Bandara
 tags:
   - Steps
   - Project Management
