@@ -7,7 +7,7 @@ image:
   alt: Effective Communication Strategies for Remote and Hybrid Team Success
 publishDate: 2024-09-25
 category: ""
-author: SJ
+author: Tharindu Bandara
 tags:
   - Guide
   - Tips

@@ -8,7 +8,7 @@ image:
   alt: Importance of Work-Life Balance
 publishDate: 2024-09-04
 category: ""
-author: SJ
+author: Ushani Ishara
 tags:
   - Guide
   - Tips

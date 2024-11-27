@@ -9,7 +9,7 @@ image:
 
 publishDate: 2024-08-13
 category: ""
-author: SJ
+author: Sachinthi Jayathilaka
 tags:
   - Guide
   - Tips

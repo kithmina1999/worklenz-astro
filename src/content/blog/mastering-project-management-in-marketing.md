@@ -7,7 +7,7 @@ image:
   alt: Mastering Project Management in Marketing
 publishDate: 2024-08-022
 category: ""
-author: SJ
+author: Nuwan Sameera
 tags:
   - Guide
   - Tips

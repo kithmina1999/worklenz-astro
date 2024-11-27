@@ -7,7 +7,7 @@ image:
   alt: ask Management for Startups - How Worklenz can help
 publishDate: 2024-10-18
 category: ""
-author: SJ
+author: Tharindu Shan
 tags:
   - Guide
   - Tips

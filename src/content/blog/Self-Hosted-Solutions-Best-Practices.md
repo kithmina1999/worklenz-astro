@@ -7,7 +7,7 @@ image:
   alt: Self-Hosted Solutions - Best Practices
 publishDate: 2024-10-11
 category: ""
-author: SJ
+author: Tharindu Bandara
 tags:
   - Guide
   - Tips
