@@ -1,14 +1,14 @@
 ---
 is_programmatic_seo: true
 draft: false
-title: Planio
-snippet: Planio
+title: Tick Tick
+snippet: Tick Tick
 image:
-  src: /images/pseo/planio-alternative.png
-  alt: planio vs worklenz, alternative for planio project managemet tool, task management, resource management, productivity
+  src: /images/pseo/tick-tick-alternative.png
+  alt: tick-tick vs worklenz, alternative for tick-tick project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-11
 category: ""
-author: Nuwan Sameera
+author: SJ
 tags:
   - Guide
   - Tips
@@ -16,17 +16,17 @@ tags:
 meta_description: |
   This test Desc
 main_content: |
-  Plan.io is an online tool for project management and team-collaboration that offers features such as issue-tracking, project management, version control, and a help desk. It’s based on the open-source Redmine tool.
-main_content_image: /images/pseo/planio-logo.png
-sub_content_image: /images/pseo/planio-logo.png
+  Tick Tick is a task management app that offers features for task prioritization, time tracking, and habit building.
+main_content_image: /images/pseo/tick-tick-logo.png
+sub_content_image: /images/pseo/tick-tick-logo.png
 open_source_checked: false
-self_hosted_checked: true
+self_hosted_checked: false
 cloud_based_checked: true
 easy_to_use_checked: true
 data_security_checked: true
 description: |
   Find the most effective open-source task management tools for coaches on our platform. Simplify your coaching tasks and boost productivity with these tools.
-related: [worklenz-vs-workflowmax, worklenz-vs-discord, worklenz-vs-ganttpro, worklenz-vs-quickbase]
+related: [worklenz-vs-ganttpro, worklenz-vs-meistertask, worklenz-vs-notion, worklenz-vs-nozbe]
 ---
 1. **Open Source Excellence:** Worklenz is an all-in-one solution built on open-source principles. It empowers teams by providing easy navigation and unique features, making project management efficient and accessible.
 2. **Resource Overview:** Worklenz consolidates project team members' information into a single-view report. You'll always know where your resources are, streamlining resource management.

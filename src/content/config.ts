@@ -24,8 +24,8 @@ const blogCollection = defineCollection({
       src: z.string(),
       alt: z.string(),
     }).optional(),
+    is_unsplash: z.boolean().optional().nullable(),
     unsplash: z.object({
-      is_unsplash: z.boolean().optional().nullable(),
       username:  z.string(),
       user_profile_url:  z.string()
     }).optional(),

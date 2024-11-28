@@ -51,9 +51,6 @@ import RelatedArticles from "@components/related-articles.astro";
       class="h-full w-full object-contain rounded-xl mt-6"
       transition:name={`post-img-${entry.slug}`}
     />
-    { entry.data.unsplash.is_unsplash && <div class="w-full md:w-auto flex flex-wrap justify-center gap-3">
-      <a class="text-sm text-slate-500" href={ entry.data.unsplash.user_profile_url} target="_blank">{entry.data.unsplash.username}</a>
-      </div> }
   </div>
 
   <div
