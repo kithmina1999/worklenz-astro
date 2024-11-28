@@ -16,7 +16,7 @@ tags:
 meta_description: |
   This test Desc
 main_content: |
-  Plan.io is an online tool for project management and team-collaboration that offers features such as issue-tracking, project management, version control, and a help desk. It’s based on the open-source Redmine tool.
+  Plan.io is an online tool for project management and team-collaboration that offers features such as issue-tracking, project management, version control, and a help desk. It's based on the open-source Redmine tool.
 main_content_image: /images/pseo/planio-logo.png
 sub_content_image: /images/pseo/planio-logo.png
 open_source_checked: false

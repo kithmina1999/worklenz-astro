@@ -6,6 +6,8 @@ const blogCollection = defineCollection({
   schema: z.object({
     meta_description: z.string().optional().nullable(),
     main_content: z.string().optional().nullable(),
+    content_01: z.string().optional().nullable(),
+    content_02: z.string().optional().nullable(),
     main_content_image: z.string().optional().nullable(),
     sub_content_image: z.string().optional().nullable(),
     table_title: z.string().optional().nullable(),
@@ -22,6 +24,11 @@ const blogCollection = defineCollection({
       src: z.string(),
       alt: z.string(),
     }).optional(),
+    unsplash: z.object({
+      is_unsplash: z.boolean().optional().nullable(),
+      username:  z.string(),
+      user_profile_url:  z.string()
+    }).optional(),
     publishDate: z.coerce.date(),
     author: z.string().default("Astroship"),
     category: z.string(),
@@ -30,6 +37,7 @@ const blogCollection = defineCollection({
     is_programmatic_layout_2: z.boolean().default(false),
     is_programmatic_layout_3: z.boolean().default(false),
     is_programmatic_layout_4: z.boolean().default(false),
+    is_programmatic_layout_5: z.boolean().default(false),
     related: z.array(z.string()).optional().nullable(),
   }),
 });

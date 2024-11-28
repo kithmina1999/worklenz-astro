@@ -16,7 +16,7 @@ tags:
 meta_description: |
   This test Desc
 main_content: |
-  Productive.io is a project management tool specifically designed for agencies. It focuses on bringing all aspects of agency work into one platform, streamlining workflows and finances.   
+  Productive.io is a project management tool specifically designed for agencies. It focuses on bringing all aspects of agency work into one platform, streamlining workflows and finances. 
 main_content_image: /images/pseo/productiveio-logo.png
 sub_content_image: /images/pseo/productiveio-logo.png
 open_source_checked: false

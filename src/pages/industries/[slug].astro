@@ -12,7 +12,7 @@ import ProgrammaticOneBlogContent5 from "@components/programmatic-layout-5.astro
 
 // Generate a new path for every collection entry
 export async function getStaticPaths() {
-  const blogEntries = await getCollection("blog");
+  const blogEntries = await getCollection("industries");
   return blogEntries.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry },
