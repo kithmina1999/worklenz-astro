@@ -4,7 +4,7 @@ draft: false
 title: Infinity
 snippet: Infinity
 image:
-  src: /images/pseo/infinity-alternative.png
+  src: /images/pseo/Infinity-alternative.png
   alt: infinity vs worklenz, alternative for infinity project managemet tool, task management, resource management, productivity, self-hosted
 publishDate: 2024-11-29
 category: ""
