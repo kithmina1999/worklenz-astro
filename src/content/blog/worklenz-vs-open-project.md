@@ -4,7 +4,7 @@ draft: false
 title: Open Project
 snippet: Open Project
 image:
-  src: /images/pseo/Openproject-Alternative.png
+  src: /images/pseo/openproject-Alternative.png
   alt: Open Project
 publishDate: 2024-09-15
 category: ""
