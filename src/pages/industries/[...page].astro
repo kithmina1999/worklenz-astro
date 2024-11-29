@@ -11,8 +11,8 @@ export async function getStaticPaths({ paginate }) {
   const PAGE_SIZE = 6;
 
   // Hide pSEO articles
-  const allPosts = await getCollection("blog", ({ data }) => {
-    return !data.draft && !data?.is_programmatic_seo && !data?.is_programmatic_layout_2 && !data?.is_programmatic_layout_3 && !data?.is_programmatic_layout_4 && !data?.is_programmatic_layout_5 && data.publishDate < new Date();
+  const allPosts = await getCollection("industries", ({ data }) => {
+    return !data.draft && !data?.is_programmatic_seo && !data?.is_programmatic_layout_2 && !data?.is_programmatic_layout_3 && !data?.is_programmatic_layout_4 && data.publishDate < new Date();
   });
 
   const allSortedPosts = allPosts.sort((a, b) => {
@@ -30,7 +30,7 @@ const { page } = Astro.props;
 <Layout title="Insights, Tips, and Updates for Better Team Management">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Our Blog</Fragment>
+      <Fragment slot="title">Industries</Fragment>
       <Fragment slot="desc">
         We write about building startups and thoughts going on our mind.
       </Fragment>
@@ -40,7 +40,7 @@ const { page } = Astro.props;
         {
           ((page as any)).data.map((post, index) => (
             <li>
-              <a href={`/blog/${post.slug}`}>
+              <a href={`/industries/${post.slug}`}>
                 <div>
                   <Picture
                     formats={["avif", "webp"]}
