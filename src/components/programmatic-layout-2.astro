@@ -9,7 +9,7 @@ import JsonLd from "@components/JsonLd.astro";
 const jsonLdData = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: entry.data.title,
+  headline: `Best Open Source ${entry.data.title} Alternative`,
   datePublished: entry.data.publishDate.toISOString(),
   author: {
     "@type": "Person",
