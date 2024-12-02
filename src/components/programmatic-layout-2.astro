@@ -4,6 +4,23 @@ import { Picture } from "astro:assets";
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 import RelatedArticles from "@components/related-articles.astro";
+import JsonLd from "@components/JsonLd.astro";
+import Cta from "./cta.astro";
+
+const jsonLdData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: `Best Open Source ${entry.data.title} Alternative`,
+  datePublished: entry.data.publishDate.toISOString(),
+  author: {
+    "@type": "Person",
+    name: entry.data.author,
+  },
+  keywords: entry.data.tags.join(", "),
+  image: entry.data.image.src,
+  description: entry.data.description,
+};
+
 ---
 
 <Container>
@@ -325,9 +342,11 @@ import RelatedArticles from "@components/related-articles.astro";
       <Content />
     </div>
   </div>
-
+  <Cta />
   <hr class="mx-auto max-w-4xl mt-16 mb-16" />
 
   <!-- Related Articles -->
   <RelatedArticles entry={entry} />
+  <!-- Schema Articles -->
+  <JsonLd jsonLdData={jsonLdData} />
 </Container>

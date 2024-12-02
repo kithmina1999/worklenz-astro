@@ -5,6 +5,7 @@ import { z, defineCollection } from "astro:content";
 const blogCollection = defineCollection({
   schema: z.object({
     meta_description: z.string().optional().nullable(),
+    description: z.string().optional().nullable(),
     main_content: z.string().optional().nullable(),
     content_01: z.string().optional().nullable(),
     content_02: z.string().optional().nullable(),
@@ -33,6 +34,21 @@ const blogCollection = defineCollection({
     author: z.string().default("Astroship"),
     category: z.string(),
     tags: z.array(z.string()),
+    tools: z.record(
+      z.object({
+        sub_title: z.string(),
+        main_content: z.string(),
+        features: z.array(z.string()),
+        analytics_rate: z.string(),
+        analytics_review: z.string(),
+        customization_rate: z.string(),
+        customization_review: z.string(),
+        collaboration_features_rate: z.string(),
+        collaboration_features_review: z.string(),
+        self_hosted: z.boolean().default(false),
+        open_source: z.boolean().default(false),
+        pricing: z.string().default("Free & Paid plans"),
+      })).optional().nullable(),
     is_programmatic_seo: z.boolean().default(false),
     is_programmatic_layout_2: z.boolean().default(false),
     is_programmatic_layout_3: z.boolean().default(false),
