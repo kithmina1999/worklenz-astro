@@ -1,6 +1,5 @@
 ---
 import Container from "./container.astro";
-import Sectionhead from "./sectionhead.astro";
 import { ArrowIcon } from "./ui/icons";
 
 const faq = [
@@ -50,20 +49,29 @@ const faq = [
       "Yes, you can use predefined templates or create your own templates from existing projects to reuse them efficiently.",
   },
 ];
+
+// Generate the FAQ schema
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  })),
+};
 ---
 
 <Container>
-  <!-- <Sectionhead>
-    <Fragment slot="title">FAQ</Fragment>
-    <Fragment slot="desc">Frequenty asked questions</Fragment>
-  </Sectionhead> -->
-
   <div class="mt-24">
     <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-center">
       FAQ
     </h2>
     <p class="text-lg mt-4 text-slate-600 text-center">
-      Frequenty asked questions
+      Frequently asked questions
     </p>
   </div>
 
@@ -73,7 +81,7 @@ const faq = [
         <div class="py-5">
           <details class="group">
             <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-              <span> {item.question}</span>
+              <span>{item.question}</span>
               <span class="transition group-open:rotate-180">
                 <ArrowIcon />
               </span>
@@ -86,4 +94,10 @@ const faq = [
       ))
     }
   </div>
+
+  <!-- Add FAQ schema markup -->
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(faqSchema, null, 2)}
+  />
 </Container>
