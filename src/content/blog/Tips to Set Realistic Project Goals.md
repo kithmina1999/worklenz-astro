@@ -7,7 +7,7 @@ image:
   alt: Tips to set project goals - Worklenz
 publishDate: 2024-05-09
 category: ""
-author: SJ
+author: Danushka Katubulla
 tags:
   - Project Goals
   - Tips

@@ -7,7 +7,7 @@ image:
   alt: Open Source Task Management for Marketing Teams
 publishDate: 2024-11-18
 category: ""
-author: Sachinthi Jayathilaka
+author: Danushka Katubulla
 tags:
   - Guide
   - Open-Source

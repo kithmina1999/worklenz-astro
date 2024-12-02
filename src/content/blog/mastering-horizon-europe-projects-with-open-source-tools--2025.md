@@ -8,7 +8,7 @@ image:
   alt: mastering Horizon Europe projects - Worklenz
 publishDate: 2024-05-30
 category: ""
-author: SJ
+author: Tharindu Bandara
 tags: [Open-Source,PM Tools,]
 description: |
      Unlock the secrets to mastering Horizon Europe projects with our open-source project management tools. Stay ahead in 2025 with our expert guidance.

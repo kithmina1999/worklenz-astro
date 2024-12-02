@@ -7,7 +7,7 @@ image:
   alt: Benefits of Open-Source - Worklenz
 publishDate: 2023-05-10
 category: ""
-author: SJ
+author: Ushani Ishara
 tags: [Open-Source,PM Tools]
 description: |
   Discover the benefits of using open-source project management tools to increase agility, improve collaboration, and optimize workflow efficiency.

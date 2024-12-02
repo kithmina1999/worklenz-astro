@@ -8,7 +8,7 @@ image:
   alt: Master Time Blocking & Boost Your Productivity
 publishDate: 2024-10-03
 category: ""
-author: SJ
+author: Kalinga Gunawardhana
 tags:
   - Guide
   - Tips

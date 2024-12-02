@@ -7,7 +7,7 @@ image:
   alt: Impact of poor team communication - Worklenz
 publishDate: 2024-05-10
 category: ""
-author: "SJ"
+author: "Danushka Katubulla"
 tags: [Team Management,Communication]
 slug: impact-poor-team-communication-work-dynamics
 description: |

@@ -7,7 +7,7 @@ image:
   alt: Your Secret Weapon Against Procrastination - PM Tools
 publishDate: 2024-07-31
 category: ""
-author: SJ
+author: Gayan Thakshila
 tags:
   - Guide
   - Time Management
