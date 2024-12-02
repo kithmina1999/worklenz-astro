@@ -6,6 +6,23 @@ const { Content } = await entry.render();
 import { getCollection } from "astro:content";
 import RelatedArticles from "@components/related-articles.astro";
 
+import JsonLd from "@components/JsonLd.astro";
+import Cta from "./cta.astro";
+
+const jsonLdData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: `Best Work Management Tools for ${entry.data.title} Industry`,
+  datePublished: entry.data.publishDate.toISOString(),
+  author: {
+    "@type": "Person",
+    name: entry.data.author,
+  },
+  keywords: entry.data.tags.join(", "),
+  image: entry.data.image.src,
+  description: entry.data.description,
+};
+
 ---
 
 <Container>
@@ -165,9 +182,11 @@ import RelatedArticles from "@components/related-articles.astro";
       <p>Take the next step towards success—try Worklenz today and discover how it transforms task management for {entry.data.title} industry!</p>
     </div>
   </div>
-
+  <Cta />
   <hr class="mx-auto max-w-4xl mt-16 mb-16" />
 
   <!-- Related Articles -->
   <RelatedArticles entry={entry}/>
+  <!-- Schema Articles -->
+  <JsonLd jsonLdData={jsonLdData} />
 </Container>
