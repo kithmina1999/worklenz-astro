@@ -4,11 +4,11 @@ draft: false
 title: Monday.com
 snippet: Monday.com
 image:
-  src: /images/pseo/Monday-Alternative.png
-  alt: mondaycom vs worklenz, alternative for mondaycom project managemet tool, task management, resource management, productivity
+  src: /images/pseo/mondaycom-alternative.png
+  alt: monday.com vs worklenz, alternative for monday.com project managemet tool, task management, resource management, productivity
 publishDate: 2024-10-31
 category: ""
-author: SJ
+author: Ushani Ishara
 tags:
   - Guide
   - Tips
@@ -23,4 +23,4 @@ easy_to_use_checked: true
 data_security_checked: true
 description: |
    Discover the best open source alternatives for popular software. Explore our comprehensive guides and find the perfect solution for your needs today.
----
+related: [trello-alternative, clickup-alternative, teamwork-alternative, smartsheet-alternative]

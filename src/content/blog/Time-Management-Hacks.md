@@ -7,7 +7,7 @@ image:
   alt: Top Time Management Hacks for Busy Freelancers
 publishDate: 2024-10-31
 category: ""
-author: SJ
+author: Tharindu Bandara
 tags:
   - Guide
   - Tips

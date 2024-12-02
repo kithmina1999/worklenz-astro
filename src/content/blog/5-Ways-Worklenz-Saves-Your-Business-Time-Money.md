@@ -7,7 +7,7 @@ image:
   alt: 05 Best Open-Source Case Management Software for Your Law Firm
 publishDate: 2024-07-16
 category: ""
-author: SJ
+author: Danushka Katubulla
 tags:
   - Guide
   - Tips

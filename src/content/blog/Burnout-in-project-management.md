@@ -7,7 +7,7 @@ image:
   alt: Burnout in Project Management-How Project Managers Can Help Their Team
 publishDate: 2024-09-18
 category: ""
-author: SJ
+author: Sanjeewa Kumara
 tags:
   - Guide
   - Tips

@@ -7,7 +7,7 @@ image:
   alt: Self-Hosted Project Management Software for a Team
 publishDate: 2024-07-04
 category: ""
-author: SJ
+author: Danushka Katubulla
 tags:
   - Tips
   - Self-hosted PM Tools

@@ -3,6 +3,24 @@ import Container from "@components/container.astro";
 import { Picture } from "astro:assets";
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+import RelatedArticles from "@components/related-articles.astro";
+import JsonLd from "@components/JsonLd.astro";
+import Cta from "./cta.astro";
+
+const jsonLdData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: `Best Open Source ${entry.data.title} Alternative`,
+  datePublished: entry.data.publishDate.toISOString(),
+  author: {
+    "@type": "Person",
+    name: entry.data.author,
+  },
+  keywords: entry.data.tags.join(", "),
+  image: entry.data.image.src,
+  description: entry.data.description,
+};
+
 ---
 
 <Container>
@@ -315,13 +333,20 @@ const { Content } = await entry.render();
         Switching to an open-source tool like Worklenz can provide the
         flexibility and control you need to manage your projects efficiently.
         With its powerful features and user-friendly interface, Worklenz is a
-        reliable alternative to {entry.data.title}, helping you achieve your project goals
-        with ease.
+        reliable alternative to {entry.data.title}, helping you achieve your
+        project goals with ease.
       </p>
     </div>
     <div
       class="mx-auto prose mt-6 max-w-4xl prose-headings:mb-2 prose-headings:mt-8">
       <Content />
     </div>
-  </div></Container
->
+  </div>
+  <Cta />
+  <hr class="mx-auto max-w-4xl mt-16 mb-16" />
+
+  <!-- Related Articles -->
+  <RelatedArticles entry={entry} />
+  <!-- Schema Articles -->
+  <JsonLd jsonLdData={jsonLdData} />
+</Container>

@@ -1,0 +1,241 @@
+---
+import Container from "@components/container.astro";
+import { Picture } from "astro:assets";
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+import JsonLd from "@components/JsonLd.astro";
+import Cta from "./cta.astro";
+
+const jsonLdData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: `Open Source Task Management for Marketing Teams in ${entry.data.title}`,
+  datePublished: entry.data.publishDate.toISOString(),
+  author: {
+    "@type": "Person",
+    name: entry.data.author,
+  },
+  keywords: entry.data.tags.join(", "),
+  image: entry.data.image.src,
+  description: entry.data.description,
+};
+
+---
+
+<Container>
+  <div class="mx-auto max-w-3xl text-center mt-14">
+    <h1
+      class="text-3xl lg:text-4xl font-bold lg:tracking-tight mt-1 lg:leading-tight">
+      Open Source Task Management for Marketing Teams in {entry.data.title}
+    </h1>
+    <div class="mt-1">
+      <span class="text-lg text-slate-500 italic">
+        Simplify Your Marketing Workflows with a Flexible, Cost-Effective
+        Solution…..
+      </span>
+    </div>
+    <div
+      class="flex gap-2 mt-3 items-center justify-center text-sm flex-wrap md:flex-nowrap">
+      <span class="text-slate-400">
+        {entry.data.author}
+      </span>
+      <span class="text-slate-400">•</span>
+      <time
+        class="text-slate-400"
+        datetime={entry.data.publishDate.toISOString()}>
+        {entry.data.publishDate.toDateString()}
+      </time>
+      <span class="text-slate-400 hidden md:block">•</span>
+      <div class="w-full md:w-auto flex flex-wrap justify-center gap-3">
+        {
+          entry.data.tags.map((tag) => (
+            <span class="text-sm text-slate-500">#{tag}</span>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-4xl">
+    <Picture
+      formats={["avif", "webp"]}
+      src={entry.data.image.src}
+      alt={entry.data.image.alt}
+      width="1280"
+      height="600"
+      class="h-full w-full object-contain rounded-xl mt-6"
+      transition:name={`post-img-${entry.slug}`}
+    />
+  </div>
+
+  <div
+    class="mx-auto prose mt-6 max-w-4xl prose-headings:mb-2 prose-headings:mt-8">
+    <div
+      class="mx-auto prose mt-6 max-w-4xl prose-headings:mb-2 prose-headings:mt-8">
+      <h2>Looking for the best Open-Source Task Management Tool?</h2>
+      <p>
+        Marketing teams in {entry.data.title} understand that juggling multiple projects,
+        tight deadlines, and constant collaboration can quickly become overwhelming.
+        From planning campaigns to managing content and staying on top of client
+        demands, staying organized is crucial. That’s where open-source task management
+        tools like Worklenz come in. With Worklenz, marketing teams in {
+          entry.data.title
+        } can streamline their workflows, enhance collaboration, and get more done
+        all while keeping costs in check. Let’s see how Worklenz can help your team
+        stay organized and focused on delivering outstanding results.
+      </p>
+    </div>
+
+    <!-- Challenges -->
+    <div>
+      <h2>Key Challenges Faced by Marketing Teams in {entry.data.title}</h2>
+      <p>
+        Marketing teams in {entry.data.title} face a variety of challenges that can
+        hinder productivity and affect campaign outcomes. Some of the most common
+        struggles include:
+      </p>
+      <ul>
+        <li>
+          <h3>Managing Multiple Projects</h3>
+          <p>
+            Juggling multiple campaigns and marketing initiatives at once can
+            become overwhelming, especially when there are competing priorities.
+          </p>
+        </li>
+        <li>
+          <h3>Tight Deadlines</h3>
+          <p>
+            With marketing campaigns often having strict deadlines, it can be
+            difficult to ensure every task is completed on time and to the
+            highest standard.
+          </p>
+        </li>
+        <li>
+          <h3>Team Collaboration</h3>
+          <p>
+            Whether working with remote members or coordinating across
+            departments, communication, and collaboration can be difficult
+            without the right tools.
+          </p>
+        </li>
+        <li>
+          <h3>Task Overload</h3>
+          <p>
+            Teams often find themselves drowning in a long list of tasks,
+            leading to missed details and decreased efficiency.
+          </p>
+        </li>
+      </ul>
+      <p>
+        These common hurdles are made more challenging in a fast-paced city like
+        {entry.data.title}, where competition is fierce and staying organized is
+        key to success. Fortunately, the right task management tools can make
+        all the difference.
+      </p>
+    </div>
+    
+    <!-- Benefits -->
+    <div
+      class="mx-auto prose mt-6 max-w-4xl prose-headings:mb-2 prose-headings:mt-8">
+      <h2>
+        Benefits of Open Source Task Management Tools for Marketing Teams in {
+          entry.data.title
+        }
+      </h2>
+      <p>
+        Open-source task management tools are a great choice for marketing teams
+        in {entry.data.title}, offering several key benefits:
+      </p>
+
+      <ul>
+        <li>
+          <h3>Affordable</h3>
+          <p>
+            Open-source tools are often free or very low-cost, making them
+            perfect for teams on a budget.
+          </p>
+        </li>
+        <li>
+          <h3>Customizable</h3>
+          <p>
+            These tools can be adjusted to fit your team's unique needs, whether
+            it's creating custom task categories or integrating with other
+            tools.
+          </p>
+        </li>
+        <li>
+          <h3>Better Collaboration</h3>
+          <p>
+            With features like task comments and file sharing, these tools help
+            teams stay connected and work together smoothly, even if some
+            members are working remotely.
+          </p>
+        </li>
+        <li>
+          <h3>Full Control</h3>
+          <p>
+            Open-source tools allow teams to manage their data and keep it
+            secure, giving you peace of mind.
+          </p>
+        </li>
+        <li>
+          <h3>Scalable</h3>
+          <p>
+            As your marketing campaigns grow, these tools can easily scale to
+            meet new demands without extra costs.
+          </p>
+        </li>
+      </ul>
+      <p>
+        Open-source task management tools like Worklenz help marketing teams in {
+          entry.data.title
+        } work more efficiently and stay organized by offering these benefits
+      </p>
+    </div>
+
+    <!-- Why Worklenz -->
+    <div
+      class="mx-auto prose mt-6 max-w-4xl prose-headings:mb-2 prose-headings:mt-8">
+      <h2>Why Worklenz is Ideal for Marketing Teams in {entry.data.title}</h2>
+      <p>
+        Worklenz is a great choice for marketing teams in {entry.data.title} because
+        it’s,
+      </p>
+      <ul>
+        <li>User-Friendly</li>
+        <li>Customizable</li>
+        <li>Team Collaboration</li>
+        <li>Affordable</li>
+      </ul>
+      <p>
+        These features help marketing teams stay organized, work together more
+        efficiently, and focus on what matters most, delivering results.
+      </p>
+    </div>
+
+    <!-- Conclusion -->
+    <div>
+      <h2>Conclusion</h2>
+      <p>
+        Marketing teams in {entry.data.title} have a lot on their plates, and staying
+        organized can be tough. But with open-source tools like Worklenz, managing
+        tasks, collaborating with teammates, and hitting deadlines don’t have to
+        be a hassle.
+      </p>
+      <p>
+        Whether you’re a small team just getting started or a larger group
+        handling complex campaigns, Worklenz offers an easy-to-use,
+        cost-effective solution. From customizing your workflows to integrating
+        your favorite tools, it’s designed to help your team get things done
+        without the stress.
+      </p>
+      <p>
+        Ready to make your marketing team more efficient? Worklenz might be just
+        what you need to take things to the next level.
+      </p>
+    </div>
+  </div>
+  <Cta />
+  <!-- Schema Articles -->
+  <JsonLd jsonLdData={jsonLdData} />
+  </Container>

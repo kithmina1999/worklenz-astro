@@ -9,8 +9,10 @@ import Pagination from "@components/pagination.astro";
 // Sort content entries by publication date
 export async function getStaticPaths({ paginate }) {
   const PAGE_SIZE = 6;
+
+  // Hide pSEO articles
   const allPosts = await getCollection("blog", ({ data }) => {
-    return !data.draft && !data?.is_programmatic_seo && !data?.is_programmatic_layout_2 && data.publishDate < new Date();
+    return !data.draft && !data?.is_programmatic_seo && !data?.is_programmatic_layout_2 && !data?.is_programmatic_layout_3 && !data?.is_programmatic_layout_4 && !data?.is_programmatic_layout_5 && data.publishDate < new Date();
   });
 
   const allSortedPosts = allPosts.sort((a, b) => {
@@ -25,7 +27,7 @@ export async function getStaticPaths({ paginate }) {
 const { page } = Astro.props;
 ---
 
-<Layout title="Blog">
+<Layout title="Insights, Tips, and Updates for Better Team Management">
   <Container>
     <Sectionhead>
       <Fragment slot="title">Our Blog</Fragment>
