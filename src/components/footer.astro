@@ -3,6 +3,7 @@ import Container from "@components/container.astro";
 import { Icon } from "astro-icon/components";
 import { Picture } from "astro:assets";
 import Logo from "@assets/logo.svg";
+import LanguagePicker from "@components/language-picker.astro";
 
 const { margin } = Astro.props;
 
@@ -137,6 +138,9 @@ const footermenu = {
               </a>
             ))
           }
+        </div>
+        <div>
+          <LanguagePicker />
         </div>
       </div>
     </div>

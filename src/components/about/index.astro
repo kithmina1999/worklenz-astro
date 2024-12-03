@@ -1,0 +1,236 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import EmployeeImg from "../../assets/employee.png";
+import Kalinga from "../../assets/team/kalinga.png";
+import Chamika from "../../assets/team/chamika.png";
+import Danushka from "../../assets/team/danushka.png";
+import Tharindu from "../../assets/team/tharindu.png";
+import Malaka from "../../assets/team/malaka.png";
+import Kavindu from "../../assets/team/kavindu.png";
+import { Icon } from "astro-icon/components";
+import Cta from "@components/cta.astro";
+
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+
+// Filter team entries with 'draft: false' & date before current date
+const publishedTeamMembers = await getCollection("team", ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
+---
+
+<Layout
+  title="Our Journey to Simplify Team Task Management"
+  footerMargin={false}>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{t("about.body.title")}</Fragment>
+      <Fragment slot="desc">{t("about.body.subtitle")}</Fragment>
+    </Sectionhead>
+
+    <div class="grid sm:grid-cols-2 gap-10 mx-auto mt-24 items-center">
+      <div class="relative">
+        <Picture
+          formats={["avif", "webp"]}
+          src={EmployeeImg}
+          alt="Happy Team"
+          class="rounded-xl w-full max-w-md mx-auto"
+          loading="eager"
+        />
+      </div>
+      <div class="flex flex-col place-self-center gap-8">
+        <div>
+          <h2 class="text-5xl text-gray-800 tracking-tight -mt-2">
+            <span class="text-blue-600">Our</span>
+            {" "}
+            <strong>Story</strong>
+          </h2>
+          <p class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500">
+            Founded in 2022, Worklenz emerged from a collective vision to
+            revolutionize project management practices. As a technology startup
+            based in Sri Lanka, we recognized the growing need for streamlined
+            project management tools that could adapt to the unique challenges
+            of modern businesses.
+          </p>
+        </div>
+        <div>
+          <h2 class="text-5xl text-gray-800 tracking-tight -mt-2">
+            <span class="text-blue-600">Our</span>
+            {" "}
+            <strong>Mission</strong>
+          </h2>
+          <p class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500">
+            At Worklenz, our mission is simple yet ambitious: to empower teams
+            worldwide with the tools they need to succeed. We believe that
+            effective project management is the cornerstone of every successful
+            endeavor, and our goal is to provide innovative solutions that
+            enhance collaboration, productivity, and results.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-24">
+      <h2 class="text-4xl lg:text-5xl lg:tracking-tight text-center font-bold">
+        What sets us apart
+      </h2>
+      <p class="text-lg mt-4 text-slate-600 text-left">
+        Founded in 2022, Worklenz emerged from a collective vision to
+        revolutionize project management practices. As a technology startup
+        based in Sri Lanka, we recognized the growing need for streamlined
+        project management tools that could adapt to the unique challenges of
+        modern businesses.
+      </p>
+      <ul
+        class="flex flex-col self-center gap-2 px-20 mx-auto mt-8 text-slate-600">
+        <li class="flex items-center gap-2">
+          <Icon
+            name="ph:check-circle"
+            class="text-blue-600 w-40 h-40 sm:w-10 sm:h-10 md:w-4 md:h-4"
+          />
+          Streamline task management: Easily create, assign, and track tasks to keep
+          your projects on schedule.
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon
+            name="ph:check-circle"
+            class="text-blue-600 w-40 h-40 sm:w-10 sm:h-10 md:w-4 md:h-4"
+          />
+          Optimize resource allocation: Efficiently allocate resources to maximize
+          productivity and minimize bottlenecks.
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon
+            name="ph:check-circle"
+            class="text-blue-600 w-40 h-40 sm:w-10 sm:h-10 md:w-4 md:h-4"
+          />
+
+          Enhance collaboration: Foster seamless collaboration among team
+          members with real-time updates, comments, and file sharing.
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon
+            name="ph:check-circle"
+            class="text-blue-600 w-40 h-40 sm:w-10 sm:h-10 md:w-4 md:h-4"
+          />
+
+          Gain insights: Leverage powerful analytics and reporting tools to gain
+          valuable insights into your project's progress and performance.
+        </li>
+      </ul>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-10 mx-auto mt-24 items-center">
+      <div class="flex flex-col place-self-center gap-8">
+        <div>
+          <h2 class="text-5xl text-gray-800 tracking-tight -mt-2">
+            <span class="text-blue-600">Our</span>
+            {" "}
+            <strong>Team</strong>
+          </h2>
+          <p class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500">
+            Behind every line of code and every feature update is a dedicated
+            team of professionals committed to excellence. From our developers
+            and designers to our customer support specialists, each member of
+            the Worklenz team is driven by a passion for innovation and a
+            commitment to customer satisfaction.
+          </p>
+        </div>
+        <div>
+          <h2 class="text-5xl text-gray-800 tracking-tight -mt-2">
+            <span class="text-blue-600">Join us on our</span>
+            {" "}
+            <strong>Journey</strong>
+          </h2>
+          <p class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500">
+            As we continue to grow and evolve, we invite you to join us on our
+            journey. Whether you're a small startup, a growing enterprise, or
+            anything in between, Worklenz is here to support you every step of
+            the way. Thank you for choosing Worklenz for your project management
+            needs.
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-3">
+        <div class="flex flex-col gap-10">
+          <div class="flex flex-col items-center gap-6">
+            <Picture
+              formats={["avif", "webp"]}
+              src={Kalinga}
+              alt="Happy Team"
+              class="rounded-xl w-full max-w-md mx-auto"
+              loading="eager"
+            />
+            <!-- <label for="CEO">CEO</label> -->
+          </div>
+          <div class="flex flex-col items-center gap-6">
+            <Picture
+              formats={["avif", "webp"]}
+              src={Chamika}
+              alt="Happy Team"
+              class="rounded-xl w-full max-w-md mx-auto"
+              loading="eager"
+            />
+            <!-- <label for="CEO">SSE</label> -->
+          </div>
+        </div>
+        <div class="flex flex-col gap-10">
+          <div class="flex flex-col items-center gap-6">
+            <Picture
+              formats={["avif", "webp"]}
+              src={Danushka}
+              alt="Happy Team"
+              class="rounded-xl w-full max-w-md mx-auto"
+              loading="eager"
+            />
+            <!-- <label for="CEO">CTO</label> -->
+          </div>
+          <div class="flex flex-col items-center gap-6">
+            <Picture
+              formats={["avif", "webp"]}
+              src={Malaka}
+              alt="Happy Team"
+              class="rounded-xl w-full max-w-md mx-auto"
+              loading="eager"
+            />
+            <!-- <label for="CEO">SE</label> -->
+          </div>
+        </div>
+        <div class="flex flex-col gap-10">
+          <div class="flex flex-col items-center gap-6">
+            <Picture
+              formats={["avif", "webp"]}
+              src={Tharindu}
+              alt="Happy Team"
+              class="rounded-xl w-full max-w-md mx-auto"
+              loading="eager"
+            />
+            <!-- <label for="CEO">COO</label> -->
+          </div>
+          <div class="flex flex-col items-center gap-6">
+            <Picture
+              formats={["avif", "webp"]}
+              src={Kavindu}
+              alt="Happy Team"
+              class="rounded-xl w-full max-w-md mx-auto"
+              loading="eager"
+            />
+            <!-- <label for="CEO">QA</label> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+  <Cta />
+</Layout>
