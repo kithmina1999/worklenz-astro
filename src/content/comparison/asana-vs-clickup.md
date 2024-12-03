@@ -43,5 +43,5 @@ tools:
     open_source: false
     pricing: "Free & Paid plans"
 description: Discover the best project management tools for your business. Compare Asana, ClickUp, and Worklenz to find the perfect open-source alternative.
-related: [clickup-vs-open-project]
+related: [asana-vs-wrike, asana-vs-trello, asana-vs-basecamp, asana-vs-notion]
 ---

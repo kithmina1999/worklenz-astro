@@ -42,5 +42,5 @@ tools:
     open_source: true
     pricing: "Free for community edition; Paid plans for enterprise features"
 description: Discover the best project management tools for your business. Compare ClickUp and OpenProject to find the perfect fit for your team's needs.
-related: [asana-vs-clickup]
+related: [clickup-vs-asana, clickup-vs-trello, clickup-vs-wrike, clickup-vs-monday]
 ---
