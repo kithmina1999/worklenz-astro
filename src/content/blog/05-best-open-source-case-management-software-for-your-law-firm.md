@@ -7,7 +7,7 @@ image:
   alt: 05 Best Open-Source Case Management Software for Your Law Firm
 publishDate: 2024-06-07
 category: ""
-author: SJ
+author: Sachinthi Jayathilaka
 tags:
   - Guide
   - Tips
@@ -100,7 +100,7 @@ Remember, the best choice depends on your firm’s specific needs. Research thor
 
 ## Top Open-Source Case Management Software Providers
 
-### *01.ClinicCases*
+### *01. ClinicCases*
 
 <img src="/images/clinic-cases.webp" alt="Cliccases Logo" width="200"/>
 
@@ -109,7 +109,7 @@ Remember, the best choice depends on your firm’s specific needs. Research thor
 
 **Hosting Options:** Users can install ClinicCases on their servers or use the vendor’s paid hosting service, which provides free software setup and configuration.
 
-T**echnology Stack:** ClinicCases uses PHP and MySQL.
+**Technology Stack:** ClinicCases uses PHP and MySQL.
 
 
 ### *02. ArkCase*
@@ -159,7 +159,7 @@ The free plan covers two active users and four cases.
 **Deployment:** Dibcase is cloud-based.
 
 
-### *05.MyLegalNet*
+### *05. MyLegalNet*
 <img src="/images/legalpioneer-logo.webp" alt="mylegalnet logo" width="200"/>
 
 *[MyLegalNet](https://legalpioneer.org/business/mylegalnet/)* is an open-source case management system that performs standard functions like managing case files, documents, invoices, expenses, matters, and appointments.
@@ -167,6 +167,47 @@ The free plan covers two active users and four cases.
 **API Integration:** It provides a robust API for integration with court systems.
 
 **Use Case:** Suitable for legal professionals seeking an efficient case management solution
+
+### *06. Worklenz*
+<img src="/images/worklenz-logo.png" alt="Worklenz logo" width="200"/>
+
+*[Worklenz](https://worklenz.com/)* stands out as a versatile, open-source task management tool that can seamlessly adapt to case management requirements for law firms. Its robust features enable legal professionals to organize case files, assign tasks, and monitor deadlines efficiently. The platform is self-hosted, offering enhanced data privacy and compliance—key considerations for law practices. With Worklenz, law firms can streamline workflows, enhance team collaboration, and ensure timely client communication.
+
+**Key Features** 
+
+- **_Customizable Workflow Management_**: Tailor case workflows to match the unique needs of your firm.
+
+- **_Secure Data Handling_**: A self-hosted option ensures sensitive legal data remains confidential.
+
+- **_Integrated Communication Tools_**: Facilitates seamless collaboration among attorneys and staff.
+
+- **_Task Prioritization and Deadlines_**: Keeps your team on track with automated task reminders and milestone tracking.
+
+- **_Open Source Flexibility_**: Modify and scale the platform to suit your firm's evolving demands.
+
+**Why choose Worklenz for Case Management?** 
+
+Worklenz combines simplicity with powerful features, making it ideal for small to medium-sized law firms looking for a cost-effective yet reliable solution.
+
+**Try Worklenz Today**
+
+Discover how Worklenz can transform your law firm's case management. Visit Worklenz to learn more.
+
+<ins>**_Example: How a Law Firm Can Use Worklenz for Efficient Case Management_**</ins>
+
+Johnson & Co. Law Firm handles various legal cases, from personal injury to corporate litigation. By adopting Worklenz’s open-source case management system, they can streamline case tracking, enhance document collaboration, and improve client communication.
+
+- **Case Tracking:** Worklenz enables the firm to create separate tasks for each case, assign deadlines, and monitor progress. This ensures nothing falls through the cracks.
+
+- **Document Management:** Lawyers can upload case-related documents, organize them by case type, and share them securely with clients.
+
+- **Collaboration:** Teams can collaborate in real-time on case files, leaving comments and updates on task progress, ensuring everyone is on the same page.
+
+- **Client Communication:** The firm utilizes Worklenz's messaging feature to send regular case updates to clients, keeping them informed at every stage.
+
+With Worklenz, Johnson & Co. can reduce case management time by 30%, allowing their attorneys to focus more on their clients.
+
+When considering open-source case management software for law firms, it's also important to note the cost-saving potential. By opting for open-source solutions like Worklenz, law firms can reduce the financial burden of expensive proprietary software. Learn more about *[how enterprises can save costs](https://worklenz.com/blog/how-to-save-costs-by-using-open-source-task-management-tools/)* by using open-source task management tools.
 
 ## Future Trends in Case Management Software for Law Firms
 

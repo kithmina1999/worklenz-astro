@@ -7,7 +7,7 @@ image:
   alt: 5 Signs Your Team Needs a Project Management Tool 
 publishDate: 2024-07-23
 category: ""
-author: SJ
+author: Kalinga Gunawardhana
 tags:
   - Guide
   - Tips
