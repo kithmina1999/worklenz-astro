@@ -2,8 +2,6 @@
 import Container from "@components/container.astro";
 import { Picture } from "astro:assets";
 const { entry } = Astro.props;
-const { Content } = await entry.render();
-import { getCollection } from "astro:content";
 import RelatedArticles from "@components/related-articles.astro";
 import JsonLd from "@components/JsonLd.astro";
 import Cta from "./cta.astro";

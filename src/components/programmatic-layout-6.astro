@@ -3,7 +3,6 @@ import Container from "@components/container.astro";
 import { Picture } from "astro:assets";
 const { entry } = Astro.props;
 const { Content } = await entry.render();
-import { getCollection } from "astro:content";
 import RelatedArticles from "@components/related-articles.astro";
 import Link from "@components/ui/link.astro";
 import Cta from "@components/cta.astro";
@@ -158,7 +157,7 @@ Let’s compare the strengths and weaknesses of {Object.keys(entry.data.tools ||
         </li>
         <li><h3>Self-Hosting for Complete Control</h3>
         <p>Worklenz allows businesses to host the platform on their servers, offering enhanced data security and compliance with industry regulations. This makes it an excellent choice for industries with strict privacy needs, such as healthcare, finance, or government organizations.</p>
-        <h3>Why It Matters</h3>
+        <b>Why It Matters</b>
         <p>For a company managing sensitive projects, relying on a third-party cloud solution might pose risks. Worklenz ensures that businesses retain full control of their data.</p>
         </li>
         <li>
