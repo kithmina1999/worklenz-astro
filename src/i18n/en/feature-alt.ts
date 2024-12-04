@@ -1,0 +1,26 @@
+export const Feature_alt = {
+    'feature-alt.badgeText1': "UNIQUE FEATURES",
+    'feature-alt.heading1': "Mastering productivity with something extra special",
+    'feature-alt.paragraph1': "Discover the true potential of seamless task management with Worklenz, the most friendly platform for staying organized, efficient, and in control.",
+    'feature-alt.pictureAlt1': "team resource allocation view",
+    'feature-alt.badgeText2': "Task Overview",
+    'feature-alt.heading2': "Stay organized and in control of every task…",
+    'feature-alt.paragraph2': "Worklenz’s Task List keeps task management simple, helping teams stay  focused, organized, and on schedule. With a clear, streamlined view,  it’s easy to track progress and ensure every task moves forward  seamlessly.",
+    'feature-alt.ulliText1': "Subtasks",
+    'feature-alt.ulliText2': "Time Tracking",
+    'feature-alt.ulliText3': "Task Dependencies",
+    'feature-alt.ulliText4': "Activity Log",
+    'feature-alt.ulliText5': "Comments with Attachments",
+    'feature-alt.linkText1': "Try now!",
+    'feature-alt.pictureAlt2': "comprehensive view of project details, milestones, progress, and team contributions",
+    'feature-alt.badgeText3': "Project Overview",
+    'feature-alt.heading3': "Visualize your overall projects with one-click",
+    'feature-alt.paragraph3': "Get all project-related information for members of your projects. Worklenz provides a comprehensive view of project details, milestones, progress, and team contributions—all conveniently accessible in one place.",
+    'feature-alt.ulliText6': "Estimated vs Actual",
+    'feature-alt.ulliText7': "Tasks Progress Last Activity",
+    'feature-alt.ulliText8': "Status",
+    'feature-alt.ulliText9': "Health",
+    'feature-alt.ulliText10': "Category",
+    'feature-alt.ulliText11': "Start/End dates"
+    
+}

@@ -35,8 +35,8 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
   footerMargin={false}>
   <Container>
     <Sectionhead>
-      <Fragment slot="title">{t("about.body.title")}</Fragment>
-      <Fragment slot="desc">{t("about.body.subtitle")}</Fragment>
+      <Fragment slot="title">{t("about.fragmentTitle")}</Fragment>
+      <Fragment slot="desc">{t("about.fragmentDesc")}</Fragment>
     </Sectionhead>
 
     <div class="grid sm:grid-cols-2 gap-10 mx-auto mt-24 items-center">
@@ -44,7 +44,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
         <Picture
           formats={["avif", "webp"]}
           src={EmployeeImg}
-          alt="Happy Team"
+          alt={t("about.pictureAlt")}
           class="rounded-xl w-full max-w-md mx-auto"
           loading="eager"
         />
@@ -52,30 +52,22 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
       <div class="flex flex-col place-self-center gap-8">
         <div>
           <h2 class="text-5xl text-gray-800 tracking-tight -mt-2">
-            <span class="text-blue-600">Our</span>
+            <span class="text-blue-600">{t("about.heading1")}</span>
             {" "}
-            <strong>Story</strong>
+            <strong>{t("about.headingStrong1")}</strong>
           </h2>
           <p class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500">
-            Founded in 2022, Worklenz emerged from a collective vision to
-            revolutionize project management practices. As a technology startup
-            based in Sri Lanka, we recognized the growing need for streamlined
-            project management tools that could adapt to the unique challenges
-            of modern businesses.
+            {t("about.p1")}
           </p>
         </div>
         <div>
           <h2 class="text-5xl text-gray-800 tracking-tight -mt-2">
-            <span class="text-blue-600">Our</span>
+            <span class="text-blue-600">{t("about.heading2")}</span>
             {" "}
-            <strong>Mission</strong>
+            <strong>{t("about.headingStrong2")}</strong>
           </h2>
           <p class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500">
-            At Worklenz, our mission is simple yet ambitious: to empower teams
-            worldwide with the tools they need to succeed. We believe that
-            effective project management is the cornerstone of every successful
-            endeavor, and our goal is to provide innovative solutions that
-            enhance collaboration, productivity, and results.
+            {t("about.p2")}
           </p>
         </div>
       </div>
@@ -83,14 +75,10 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 
     <div class="mt-24">
       <h2 class="text-4xl lg:text-5xl lg:tracking-tight text-center font-bold">
-        What sets us apart
+        {t("about.heading3")}
       </h2>
       <p class="text-lg mt-4 text-slate-600 text-left">
-        Founded in 2022, Worklenz emerged from a collective vision to
-        revolutionize project management practices. As a technology startup
-        based in Sri Lanka, we recognized the growing need for streamlined
-        project management tools that could adapt to the unique challenges of
-        modern businesses.
+        {t("about.p3")}
       </p>
       <ul
         class="flex flex-col self-center gap-2 px-20 mx-auto mt-8 text-slate-600">
@@ -99,25 +87,14 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
             name="ph:check-circle"
             class="text-blue-600 w-40 h-40 sm:w-10 sm:h-10 md:w-4 md:h-4"
           />
-          Streamline task management: Easily create, assign, and track tasks to keep
-          your projects on schedule.
+          {t("about.ulliText1")}
         </li>
         <li class="flex items-center gap-2">
           <Icon
             name="ph:check-circle"
             class="text-blue-600 w-40 h-40 sm:w-10 sm:h-10 md:w-4 md:h-4"
           />
-          Optimize resource allocation: Efficiently allocate resources to maximize
-          productivity and minimize bottlenecks.
-        </li>
-        <li class="flex items-center gap-2">
-          <Icon
-            name="ph:check-circle"
-            class="text-blue-600 w-40 h-40 sm:w-10 sm:h-10 md:w-4 md:h-4"
-          />
-
-          Enhance collaboration: Foster seamless collaboration among team
-          members with real-time updates, comments, and file sharing.
+          {t("about.ulliText2")}
         </li>
         <li class="flex items-center gap-2">
           <Icon
@@ -125,8 +102,15 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
             class="text-blue-600 w-40 h-40 sm:w-10 sm:h-10 md:w-4 md:h-4"
           />
 
-          Gain insights: Leverage powerful analytics and reporting tools to gain
-          valuable insights into your project's progress and performance.
+          {t("about.ulliText3")}
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon
+            name="ph:check-circle"
+            class="text-blue-600 w-40 h-40 sm:w-10 sm:h-10 md:w-4 md:h-4"
+          />
+
+          {t("about.ulliText4")}
         </li>
       </ul>
     </div>
@@ -135,30 +119,22 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
       <div class="flex flex-col place-self-center gap-8">
         <div>
           <h2 class="text-5xl text-gray-800 tracking-tight -mt-2">
-            <span class="text-blue-600">Our</span>
+            <span class="text-blue-600">{t("about.heading4")}</span>
             {" "}
-            <strong>Team</strong>
+            <strong>{t("about.headingStrong4")}</strong>
           </h2>
           <p class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500">
-            Behind every line of code and every feature update is a dedicated
-            team of professionals committed to excellence. From our developers
-            and designers to our customer support specialists, each member of
-            the Worklenz team is driven by a passion for innovation and a
-            commitment to customer satisfaction.
+            {t("about.p4")}
           </p>
         </div>
         <div>
           <h2 class="text-5xl text-gray-800 tracking-tight -mt-2">
-            <span class="text-blue-600">Join us on our</span>
+            <span class="text-blue-600">{t("about.heading5")}</span>
             {" "}
-            <strong>Journey</strong>
+            <strong>{t("about.headingStrong5")}</strong>
           </h2>
           <p class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500">
-            As we continue to grow and evolve, we invite you to join us on our
-            journey. Whether you're a small startup, a growing enterprise, or
-            anything in between, Worklenz is here to support you every step of
-            the way. Thank you for choosing Worklenz for your project management
-            needs.
+            {t("about.p5")}
           </p>
         </div>
       </div>

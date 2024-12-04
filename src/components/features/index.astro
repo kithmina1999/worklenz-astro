@@ -1,0 +1,40 @@
+---
+// @ts-ignore
+import Badge from "@components/ui/badge.astro";
+import { Icon } from "astro-icon/components";
+
+import {
+  getLangFromUrl,
+  useTranslations,
+} from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const featuresObject = t("feature.features_list");
+const features = Array.isArray(featuresObject)
+  ? featuresObject // If already an array, just use it
+  : Object.values(featuresObject);
+---
+
+<div class="mt-24 max-w-3xl mx-auto flex flex-col items-center justify-center">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-4 text-center">
+    {t("feature.heading1")}
+  </h2>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-8 md:gap-16">
+  {
+    features.map((item) => (
+      <div class="flex flex-col gap-4 items-start group hover:bg-slate-50 hover:border-slate-100 border border-transparent rounded-lg transition-all md:-m-5 p-5">
+        <div class="mt-1 bg-blue-50 border shadow shadow-blue-100/50 border-blue-100 transition-colors rounded-lg grid place-items-center  p-2 w-10 h-10 shrink-0">
+          <Icon class="text-blue-500" name={item.icon} size={24} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>

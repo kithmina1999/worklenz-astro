@@ -7,42 +7,20 @@ import { Picture } from "astro:assets";
 import Logo from "@assets/logo.svg";
 import { Icon } from "astro-icon/components";
 
-const menuitems = [
-  {
-    title: "Features",
-    path: "#",
-    children: [
-      { title: "Time Tracking", path: "/time-tracking" },
-      { title: "Analytics", path: "/analytics" },
-      {
-        title: "Resource Management",
-        path: "/resource-management",
-      },
-      { title: "Task Management", path: "/task-management" },
-      { title: "Templates", path: "/templates" },
-    ],
-  },
-  {
-    title: "Capabilities",
-    path: "#",
-    children: [
-      { title: "Administrators", path: "/for-administrators" },
-      { title: "Project Managers", path: "/for-project-managers" },
-      {
-        title: "Team Members",
-        path: "/for-team-members",
-      },
-    ],
-  },
-  {
-    title: "Pricing",
-    path: "/pricing",
-  },
-  {
-    title: "Blog",
-    path: "/blog",
-  },
-];
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+const navbarObject = t("navbar.list");
+const menuitems = Array.isArray(navbarObject)
+  ? navbarObject // If already an array, just use it
+  : Object.values(navbarObject);
+
 ---
 
 <StickyHeader
@@ -88,7 +66,7 @@ const menuitems = [
                   {!item.children && (
                     <li>
                       <a
-                        href={item.path}
+                        href={translatePath(item.path)}
                         class="flex lg:px-3 py-2 text-sm text-gray-600 hover:text-blue-600 focus-visible:ring-2 focus-visible:ring-offset-2 transition focus-visible:ring-blue-500 focus-visible:outline-none focus-visible:shadow-outline-blue rounded-full">
                         {item.title}
                       </a>
@@ -99,8 +77,8 @@ const menuitems = [
             }
           </ul>
           <div class="lg:hidden flex items-center mt-3 gap-4">
-            <Link href="https://app.worklenz.com/auth/login" style="muted" block size="md">Log in</Link>
-            <Link href="https://app.worklenz.com/auth/signup" size="md" block>Try for Free</Link>
+            <Link href="https://app.worklenz.com/auth/login" style="muted" block size="md">{t("navbar.loginbtn")}</Link>
+            <Link href="https://app.worklenz.com/auth/signup" size="md" block>{t("navbar.signinbtn")}</Link>
           </div>
         </MenuItems>
       </Astronav>
@@ -109,13 +87,13 @@ const menuitems = [
           <a
             href="https://app.worklenz.com/worklenz"
             class="text-sm px-2 py-1 transition focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500 focus-visible:outline-none focus-visible:shadow-outline-blue rounded-full"
-            >Log in</a
+            >{t("navbar.loginbtn")}</a
           >
           <Link
             href="https://app.worklenz.com/auth/signup"
             size="sm"
             class="inline-flex items-center group gap-px">
-            <span>Try for Free</span>
+            <span>{t("navbar.signinbtn")}</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -133,7 +111,7 @@ const menuitems = [
               class="rounded-md text-blue-500 text-sm flex items-center border px-3 py-2 border-blue-500"
               href="https://github.com/Worklenz/worklenz"
               target="_blank">
-              <span>Star us on GitHub</span>
+              <span>{t("navbar.githubbtn")}</span>
             </a>
           </div>
         </div>
