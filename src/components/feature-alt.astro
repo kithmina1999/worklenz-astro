@@ -1,12 +1,20 @@
 ---
 import Badge from "@components/ui/badge.astro";
 import { Picture } from "astro:assets";
-import FeatureImg1 from "../assets/features/12-5.png";
-import FeatureImg2 from "../assets/features/2.svg";
+import FeatureImg1 from "@assets/features/12-5.png";
+import FeatureImg2 from "@assets/features/2.svg";
 import { Icon } from "astro-icon/components";
 import Link from "@components/ui/link.astro";
 
 const { nomargin } = Astro.props;
+
+import {
+  getLangFromUrl,
+  useTranslations,
+} from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div
@@ -14,13 +22,12 @@ const { nomargin } = Astro.props;
     "max-w-4xl mx-auto flex flex-col items-center justify-center",
     !nomargin && "mt-24",
   ]}>
-  <Badge color="blue">UNIQUE FEATURES</Badge>
+  <Badge color="blue">{t("feature-alt.badgeText1")}</Badge>
   <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-4 text-center">
-    Mastering productivity with something extra special
+    {t("feature-alt.heading1")}
   </h2>
   <p class="text-lg mt-4 text-slate-600 text-center [text-wrap:pretty]">
-    Discover the true potential of seamless task management with Worklenz, the
-    most friendly platform for staying organized, efficient, and in control.
+    {t("feature-alt.paragraph1")}
   </p>
 </div>
 
@@ -28,7 +35,7 @@ const { nomargin } = Astro.props;
   <div class="grid place-items-center">
     <Picture
       src={FeatureImg1}
-      alt="team resource allocation view"
+      alt={t("feature-alt.pictureAlt1")}
       formats={["avif", "webp"]}
       loading="lazy"
     />
@@ -36,15 +43,12 @@ const { nomargin } = Astro.props;
 
   <div class="grid place-items-center">
     <div class="max-w-lg">
-      <Badge color="blue" class="-ml-px">Task Overview</Badge>
+      <Badge color="blue" class="-ml-px">{t("feature-alt.badgeText2")}</Badge>
       <h3 class="text-2xl font-medium mt-4 [text-wrap:balance]">
-        Stay organized and in control of every task…
+        {t("feature-alt.heading2")}
       </h3>
       <p class="mt-4 text-slate-600 [text-wrap:balance]">
-        Worklenz’s Task List keeps task management simple, helping teams stay
-        focused, organized, and on schedule. With a clear, streamlined view,
-        it’s easy to track progress and ensure every task moves forward
-        seamlessly.
+        {t("feature-alt.paragraph2")}
       </p>
 
       <ul class="grid mt-6 text-left gap-y-4">
@@ -52,32 +56,32 @@ const { nomargin } = Astro.props;
           <Icon name="ph:check-circle-fill" class="w-5 h-5" />
 
           <span class="text-sm"
-            >Subtasks</span
+            >{t("feature-alt.ulliText1")}</span
           >
         </li>
 
         <li class="flex items-center gap-3 text-neutral-800">
           <Icon name="ph:check-circle-fill" class="w-5 h-5" />
 
-          <span class="text-sm">Time Tracking</span>
+          <span class="text-sm">{t("feature-alt.ulliText2")}</span>
         </li>
 
         <li class="flex items-center gap-3 text-neutral-800">
           <Icon name="ph:check-circle-fill" class="w-5 h-5" />
 
-          <span class="text-sm">Task Dependencies</span>
+          <span class="text-sm">{t("feature-alt.ulliText3")}</span>
         </li>
 
         <li class="flex items-center gap-3 text-neutral-800">
           <Icon name="ph:check-circle-fill" class="w-5 h-5" />
 
-          <span class="text-sm">Activity Log</span>
+          <span class="text-sm">{t("feature-alt.ulliText4")}</span>
         </li>
 
         <li class="flex items-center gap-3 text-neutral-800">
           <Icon name="ph:check-circle-fill" class="w-5 h-5" />
 
-          <span class="text-sm">Comments with Attachments</span>
+          <span class="text-sm">{t("feature-alt.ulliText5")}</span>
         </li>
       </ul>
       <div class="flex items-center gap-4 mt-6">
@@ -85,7 +89,7 @@ const { nomargin } = Astro.props;
           href="https://app.worklenz.com/auth/signup"
           size="sm"
           class="inline-flex items-center group gap-px">
-          <span>Try now!</span>
+          <span>{t("feature-alt.linkText1")}</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
@@ -106,7 +110,7 @@ const { nomargin } = Astro.props;
   <div class="grid place-items-center pb-10 md:pb-0 md:order-2">
     <Picture
       src={FeatureImg2}
-      alt="comprehensive view of project details, milestones, progress, and team contributions"
+      alt={t("feature-alt.pictureAlt2")}
       formats={["avif", "webp"]}
       loading="lazy"
     />
@@ -114,46 +118,43 @@ const { nomargin } = Astro.props;
 
   <div class="grid place-items-center">
     <div class="max-w-lg">
-      <Badge color="blue" class="-ml-px">Project Overview</Badge>
+      <Badge color="blue" class="-ml-px">{t("feature-alt.badgeText3")}</Badge>
       <h3 class="text-2xl font-medium mt-4 [text-wrap:balance]">
-        Visualize your overall projects with one-click
+        {t("feature-alt.heading3")}
       </h3>
       <p class="mt-4 text-slate-600 [text-wrap:balance]">
-        Get all project-related information for members of your projects.
-        Worklenz provides a comprehensive view of project details, milestones,
-        progress, and team contributions—all conveniently accessible in one
-        place.
+        {t("feature-alt.paragraph3")}
       </p>
       <ul class="grid mt-6 text-left gap-y-4">
         <li class="flex items-center gap-3 text-neutral-800">
           <Icon name="ph:check-circle-fill" class="w-5 h-5" />
 
-          <span class="text-sm">Estimated vs Actual</span>
+          <span class="text-sm">{t("feature-alt.ulliText6")}</span>
         </li>
         <li class="flex items-center gap-3 text-neutral-800">
           <Icon name="ph:check-circle-fill" class="w-5 h-5" />
 
-          <span class="text-sm">Tasks Progress Last Activity</span>
+          <span class="text-sm">{t("feature-alt.ulliText7")}</span>
         </li>
         <li class="flex items-center gap-3 text-neutral-800">
           <Icon name="ph:check-circle-fill" class="w-5 h-5" />
 
-          <span class="text-sm">Status</span>
+          <span class="text-sm">{t("feature-alt.ulliText8")}</span>
         </li>
         <li class="flex items-center gap-3 text-neutral-800">
           <Icon name="ph:check-circle-fill" class="w-5 h-5" />
 
-          <span class="text-sm">Health</span>
+          <span class="text-sm">{t("feature-alt.ulliText9")}</span>
         </li>
         <li class="flex items-center gap-3 text-neutral-800">
           <Icon name="ph:check-circle-fill" class="w-5 h-5" />
 
-          <span class="text-sm">Category</span>
+          <span class="text-sm">{t("feature-alt.ulliText10")}</span>
         </li>
         <li class="flex items-center gap-3 text-neutral-800">
           <Icon name="ph:check-circle-fill" class="w-5 h-5" />
 
-          <span class="text-sm">Start/End dates</span>
+          <span class="text-sm">{t("feature-alt.ulliText11")}</span>
         </li>
       </ul>
       <div class="flex items-center gap-4 mt-6">
@@ -161,7 +162,7 @@ const { nomargin } = Astro.props;
           href="https://app.worklenz.com/auth/signup"
           size="sm"
           class="inline-flex items-center group gap-px">
-          <span>Try now!</span>
+          <span>{t("feature-alt.linkText1")}</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"

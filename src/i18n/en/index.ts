@@ -9,6 +9,7 @@ import { Feature_grid } from './feature-grid';
 import { Features } from './features';
 import { Cta } from './cta';
 import { Navbar } from './navbar';
+import { Footer } from './footer';
 
 export const en = {
     ...About,
@@ -21,5 +22,6 @@ export const en = {
     ...Feature_grid,
     ...Features,
     ...Cta,
-    ...Navbar
+    ...Navbar,
+    ...Footer,
 };

@@ -1,19 +1,24 @@
 ---
-import Link from "./ui/link.astro";
+import Link from "@components/ui/link.astro";
+import {
+  getLangFromUrl,
+  useTranslations,
+} from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div
   class="bg-gradient-to-bl from-blue-900 to-blue-700 p-8 md:px-20 md:py-20 mt-20 flex flex-col items-center text-center">
   <h2 class="text-white text-4xl md:text-6xl tracking-tight">
-    Your friendly task management tool…
+    {t("cta.heading1")}
   </h2>
   <p class="text-white/70 mt-4 text-lg md:text-xl">
-    Simplify project management with an intuitive platform that makes task
-    coordination efficient, easy, and collaborative.
+    {t("cta.p1")}
   </p>
   <div class="flex mt-5">
     <Link href="https://app.worklenz.com/auth/signup" style="inverted"
-      >Sign up now!</Link
-    >
+      >{t("cta.linkText1")}</Link>
   </div>
 </div>

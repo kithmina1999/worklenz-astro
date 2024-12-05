@@ -7,40 +7,18 @@ import LanguagePicker from "@components/language-picker.astro";
 
 const { margin } = Astro.props;
 
-const footermenu = {
-  company: [
-    {
-      title: "About",
-      path: "/about",
-    },
-    {
-      title: "Contact",
-      path: "/contact",
-    },
-  ],
-  product: [
-    {
-      title: "Roadmap",
-      path: "https://github.com/orgs/Worklenz/projects/2/views/2",
-    },
-    {
-      title: "Feedback",
-      path: "https://worklenz.canny.io/public",
-    },
-  ],
-  resources: [
-    {
-      title: "Blog",
-      path: "/blog",
-      target: "self",
-    },
-    {
-      title: "Community",
-      path: "https://discord.gg/6Qmm839mgr",
-      target: "_blank",
-    },
-  ],
-};
+import {
+  getLangFromUrl,
+  useTranslations,
+} from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const footerObject = t("footer.footermenu");
+const footermenu = JSON.stringify(footerObject)
+  ? footerObject // If already an array, just use it
+  : Object.values(footerObject);
 ---
 
 <footer
@@ -55,8 +33,7 @@ const footermenu = {
           <Picture src={Logo} alt="Logo" loading="lazy" width={120} />
         </a>
         <p class="mt-4 text-sm text-slate-700 max-w-xs">
-          The only all-in-one open source solution that streamlines your
-          organization's success with easy navigation
+          {t("footer.p1")}
         </p>
         <div class="flex gap-3 mt-4 items-center">
           <a
@@ -97,7 +74,7 @@ const footermenu = {
         </div>
       </div>
       <div>
-        <h3 class="font-medium text-sm text-slate-800">Company</h3>
+        <h3 class="font-medium text-sm text-slate-800">{t("footer.heading1")}</h3>
         <div class="flex flex-col mt-3">
           {
             footermenu.company.map((item) => (
@@ -111,7 +88,7 @@ const footermenu = {
         </div>
       </div>
       <div>
-        <h3 class="font-medium text-sm text-slate-800">Product</h3>
+        <h3 class="font-medium text-sm text-slate-800">{t("footer.heading2")}</h3>
         <div class="flex flex-col mt-3">
           {
             footermenu.product.map((item) => (
@@ -126,7 +103,7 @@ const footermenu = {
         </div>
       </div>
       <div>
-        <h3 class="font-medium text-sm text-slate-800">Resources</h3>
+        <h3 class="font-medium text-sm text-slate-800">{t("footer.heading3")}</h3>
         <div class="flex flex-col mt-3">
           {
             footermenu.resources.map((item) => (
@@ -149,14 +126,13 @@ const footermenu = {
   <div class="mt-14 pt-8 px-5 border-t border-slate-200">
     <Container>
       <p class="text-center text-sm text-slate-600 [text-wrap:balance]">
-        Copyright © {new Date().getFullYear()} Worklenz. All rights reserved.
+        {t("footer.p2.p1")} {new Date().getFullYear()} {t("footer.p2.p2")}
       </p>
       <p class="text-center text-xs text-slate-600 mt-2">
-        <a href="/terms" class="hover:text-blue-500"> Terms</a> ・ <a
+        <a href="/terms" class="hover:text-blue-500"> {t("footer.a.text1")}</a> ・ <a
           href="/privacy"
           class="hover:text-blue-500">
-          Privacy</a
-        >
+          {t("footer.a.text2")}</a>
       </p>
     </Container>
   </div>

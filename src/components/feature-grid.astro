@@ -2,22 +2,29 @@
 // @ts-ignore
 import { Picture, Image } from "astro:assets";
 import Card from "@components/card.astro";
-import IntegrationImg from "../assets/integrations.png";
-import FeatureImgEight from "../assets/features/8.svg";
-import FeatureImgNine from "../assets/features/9.webp";
-import FeatureImgTen from "../assets/features/10.svg";
-import FeatureImgEleven from "../assets/features/11.webp";
+import IntegrationImg from "@assets/integrations.png";
+import FeatureImgEight from "@assets/features/8.svg";
+import FeatureImgNine from "@assets/features/9.webp";
+import FeatureImgTen from "@assets/features/10.svg";
+import FeatureImgEleven from "@assets/features/11.webp";
+
+import {
+  getLangFromUrl,
+  useTranslations,
+} from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div class="mt-24">
   <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need to <span class="text-blue-600"
-      >manage your organization</span
+    {t("feature-grid.heading1")} <span class="text-blue-600"
+      >{t("feature-grid.headingSpan1")}</span
     >
   </h2>
   <p class="text-lg mt-4 text-slate-600">
-    Worklenz comes with cutting-edge innovative features just to make sure that
-    your project process smoothly
+    {t("feature-grid.p1")}
   </p>
 </div>
 
@@ -26,38 +33,32 @@ import FeatureImgEleven from "../assets/features/11.webp";
     <Fragment slot="image">
       <Picture
         src={FeatureImgEight}
-        alt="chart of logged time by each user for each project"
+        alt={t("feature-grid.fragmentPictureAlt1")}
         formats={["avif", "webp"]}
         class="h-full w-full object-contain"
         loading="eager"
       />
     </Fragment>
     <!-- <span slot="badge">Astroship</span> -->
-    <span slot="title">Time reports</span>
+    <span slot="title">{t("feature-grid.fragmentTitle1")}</span>
     <span slot="desc">
-      Centralize all project-related information in one place for easy access,
-      organizing essential details like tasks, progress updates, and team
-      contributions. This unified platform streamlines collaboration, making
-      project management more efficient and enhancing overall team productivity.
+        {t("feature-grid.fragmentDesc1")}
     </span>
   </Card>
   <Card class="lg:col-span-2" color="blue">
     <Fragment slot="image">
       <Picture
         src={FeatureImgNine}
-        alt="task view by phases"
+        alt={t("feature-grid.fragmentPictureAlt2")}
         formats={["avif", "webp"]}
         class="h-full w-full object-contain"
         loading="eager"
       />
     </Fragment>
     <!-- <span slot="badge">Creative</span> -->
-    <span slot="title">Phases</span>
+    <span slot="title">{t("feature-grid.fragmentTitle2")}</span>
     <span slot="desc">
-      Implement a phased approach to project management by dividing projects
-      into clear stages, enabling focused tracking and progress monitoring. This
-      structured process ensures tasks and milestones are completed
-      systematically, boosting overall project efficiency and team coordination.
+        {t("feature-grid.fragmentDesc2")}
     </span>
   </Card>
 </div>
@@ -67,19 +68,16 @@ import FeatureImgEleven from "../assets/features/11.webp";
     <Fragment slot="image">
       <Picture
         src={FeatureImgTen}
-        alt="list of team members"
+        alt={t("feature-grid.fragmentPictureAlt3")}
         formats={["avif", "webp"]}
         class="h-full w-full object-contain"
         loading="eager"
       />
     </Fragment>
     <!-- <span slot="badge">Template</span> -->
-    <span slot="title">Team management</span>
+    <span slot="title">{t("feature-grid.fragmentTitle3")}</span>
     <span slot="desc">
-      Manage teams efficiently across projects with full visibility into their
-      tasks, progress, and contributions. Use analytics to gain insights, make
-      data-driven decisions, and enhance project outcomes while optimizing team
-      performance.
+        {t("feature-grid.fragmentDesc3")}
     </span>
   </Card>
 
@@ -87,19 +85,16 @@ import FeatureImgEleven from "../assets/features/11.webp";
     <Fragment slot="image">
       <Picture
         src={FeatureImgEleven}
-        alt="all team members' allocation calendar view"
+        alt={t("feature-grid.fragmentPictureAlt4")}
         formats={["avif", "webp"]}
         class="h-full w-full object-contain"
         loading="eager"
       />
     </Fragment>
     <!-- <span slot="badge">Product</span> -->
-    <span slot="title">Workload</span>
+    <span slot="title">{t("feature-grid.fragmentTitle4")}</span>
     <span slot="desc">
-      Track each user’s assigned tasks, completed work, pending items, and time
-      spent for insights into productivity and task completion rates. This
-      workload management tool enables better resource allocation and supports
-      efficient performance evaluation.
+        {t("feature-grid.fragmentDesc4")}
     </span>
   </Card>
 
@@ -108,7 +103,7 @@ import FeatureImgEleven from "../assets/features/11.webp";
       <!-- // svg image. cannot use <picture/> as of now -->
       <Image
         src={IntegrationImg}
-        alt="3rd party integrations for worklenz"
+        alt={t("feature-grid.fragmentPictureAlt5")}
         width="909"
         height="823"
         class="h-full w-full object-contain"
@@ -116,7 +111,7 @@ import FeatureImgEleven from "../assets/features/11.webp";
       />
     </Fragment>
     <!-- <span slot="badge">Webhooks</span> -->
-    <span slot="title">Integrations</span>
-    <span slot="desc"> Coming Soon...</span>
+    <span slot="title">{t("feature-grid.fragmentTitle5")}</span>
+    <span slot="desc"> {t("feature-grid.fragmentDesc5")}</span>
   </Card>
 </div>

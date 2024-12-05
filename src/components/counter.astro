@@ -1,5 +1,12 @@
 ---
 import Container from "@components/container.astro";
+import {
+  getLangFromUrl,
+  useTranslations,
+} from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div class="overflow-x-clip">
@@ -9,15 +16,15 @@ import Container from "@components/container.astro";
           <div class="sm:flex justify-around text-center block">
             <div>
               <h2 class="text-4xl font-bold text-gray-800 counter" data-end="300">600+</h2>
-              <p class="text-gray-600">Collaborative Teams</p>
+              <p class="text-gray-600">{t("counter.p1")}</p>
             </div>
             <div class="my-8 sm:my-0">
               <h2 class="text-4xl font-bold text-gray-800 counter" data-end="2000">5K+</h2>
-              <p class="text-gray-600">Active Projects</p>
+              <p class="text-gray-600">{t("counter.p2")}</p>
             </div>
             <div>
               <h2 class="text-4xl font-bold text-gray-800 counter" data-end="40000">80K+</h2>
-              <p class="text-gray-600">Tasks Accomplished</p>
+              <p class="text-gray-600">{t("counter.p3")}</p>
             </div>
           </div>
         </div>
