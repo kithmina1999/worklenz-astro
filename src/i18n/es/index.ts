@@ -10,6 +10,9 @@ import { Features } from './features';
 import { Cta } from './cta';
 import { Navbar } from './navbar';
 import { Footer } from './footer';
+import { Compare_pricing } from './compare-pricing';
+import { Pricing } from './pricing';
+import { Pricing_page } from './pricing-page';
 
 export const es = {
     ...About,
@@ -24,4 +27,7 @@ export const es = {
     ...Cta,
     ...Navbar,
     ...Footer,
+    ...Compare_pricing,
+    ...Pricing,
+    ...Pricing_page,
 };

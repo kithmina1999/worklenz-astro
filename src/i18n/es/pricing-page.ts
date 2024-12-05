@@ -1,0 +1,52 @@
+export const Pricing_page = {
+  'pricingpage.pricing': [
+    {
+      name: "Gratis",
+      price: "Gratis",
+      desc: "",
+      color: "azul",
+      popular: false,
+      features: [
+        "1 equipo",
+        "500MB de almacenamiento gratuito",
+        "3 proyectos activos",
+        "Miembros del equipo ilimitados",
+        "Lista de tareas",
+        "Tablero Kanban",
+        "Hoja de ruta del proyecto",
+        "Información del proyecto",
+        "Seguimiento del tiempo",
+      ],
+      button: {
+        text: "Empezar",
+        link: "https://app.worklenz.com/auth/signup",
+      },
+    },
+    {
+      name: "Pro",
+      price: "5.99",
+      desc: "",
+      popular: true,
+      color: "naranja",
+      features: [
+        "Equipos ilimitados",
+        "25GB de almacenamiento gratuito",
+        "Proyectos activos ilimitados",
+        "Miembros del equipo ilimitados",
+        "Todo en el plan gratuito",
+        "Gestión de recursos",
+        "Informes avanzados de proyectos",
+        "Seguimiento del progreso de los miembros del equipo",
+        "Exportación de informes",
+      ],
+      button: {
+        text: "Empezar",
+        link: "https://app.worklenz.com/auth/signup",
+      },
+    },
+  ],
+  'pricingpage.title': "Precios",
+  'pricingpage.desc': "Precios simples y predecibles. Sin sorpresas.",
+  'pricingpage.link.text1': "Prueba Gratis",
+  'pricingpage.link.text2': "Autoalojado",
+};
