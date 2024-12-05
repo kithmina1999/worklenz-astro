@@ -13,6 +13,7 @@ import { Footer } from './footer';
 import { Compare_pricing } from './compare-pricing';
 import { Pricing } from './pricing';
 import { Pricing_page } from './pricing-page';
+import { Faq } from './faq';
 
 export const es = {
     ...About,
@@ -30,4 +31,5 @@ export const es = {
     ...Compare_pricing,
     ...Pricing,
     ...Pricing_page,
+    ...Faq,
 };
