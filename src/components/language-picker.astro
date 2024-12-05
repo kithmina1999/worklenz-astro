@@ -1,17 +1,38 @@
 ---
-import { languages } from "../i18n/ui";
 import { getLangFromUrl, useTranslatedPath } from "../i18n/utils";
+import { languages, defaultLang } from "../i18n/ui";
 
-const lang = getLangFromUrl(Astro.url);
+const lang = getLangFromUrl(Astro.url); // Current language derived from the URL
 const translatePath = useTranslatedPath(lang);
+const currentPath = Astro.url.pathname;
 ---
 
-<ul>
-  {
-    Object.entries(languages).map(([lang, label]) => (
-      <li>
-        <a href={translatePath("/", lang)}>{label}</a>
-      </li>
-    ))
-  }
-</ul>
+<div class="flex items-center gap-4">
+  <select
+    class="text-sm px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500"
+    id="language-selector"
+    aria-label="Select Language">
+    {
+      Object.entries(languages).map(([code, label]) => (
+        <option value={code} selected={code === lang} key={code}>
+          {label}
+        </option>
+      ))
+    }
+  </select>
+</div>
+
+<script>
+  // Listen for language change and update the URL
+  const languageSelector = document.getElementById("language-selector");
+  languageSelector?.addEventListener("change", (event) => {
+    const selectedLang = event.target.value;
+    const currentPath = window.location.pathname;
+    const basePath = currentPath.replace(/^\/[a-z]{2}(\/|$)/, "/"); // Remove current language prefix
+    const newPath =
+      selectedLang === "${defaultLang}"
+        ? basePath
+        : `/${selectedLang}${basePath}`;
+    window.location.href = translatePath(newPath);
+  });
+</script>
