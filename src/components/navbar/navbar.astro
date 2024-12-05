@@ -6,6 +6,7 @@ import { StickyHeader, Astronav, MenuItems, MenuIcon } from "astro-navbar";
 import { Picture } from "astro:assets";
 import Logo from "@assets/logo.svg";
 import { Icon } from "astro-icon/components";
+import LanguagePicker from "@components/language-picker.astro";
 
 import {
   getLangFromUrl,
@@ -113,6 +114,9 @@ const menuitems = Array.isArray(navbarObject)
               target="_blank">
               <span>{t("navbar.githubbtn")}</span>
             </a>
+          </div>
+          <div>
+            <LanguagePicker />
           </div>
         </div>
       </div>
