@@ -1,12 +1,11 @@
 ---
 const { entry } = Astro.props;
-
 // Get related articles
 const relatedFiles = entry.data.related;
-const allArticles = import.meta.glob("../content/blog/*.md", { eager: true });
+const allArticles = import.meta.glob(`../content/**/*.md`, { eager: true });
 
 const relatedArticles = relatedFiles.map((file) => {
-  const article: any = allArticles[`../content/blog/${file}.md`];
+  const article: any = allArticles[`../content/${entry.collection}/${file}.md`];
   let Title: string;
 
   if (!article) {
@@ -21,6 +20,8 @@ const relatedArticles = relatedFiles.map((file) => {
     Title = `Open Source Task Management for Marketing Teams in ${article.frontmatter.title}`;
   } else if (article.frontmatter.is_programmatic_layout_4) {
     Title = `Self-Hosted Alternative to ${article.frontmatter.title}`;
+  } else if (article.frontmatter.is_programmatic_layout_5) {
+    Title = `Best Work Management Tools for ${article.frontmatter.title} Industry`;
   } else {
     Title = `${article.frontmatter.title}`;
   }
@@ -33,39 +34,42 @@ const relatedArticles = relatedFiles.map((file) => {
     url: file.replace(".md", ""),
   };
 });
-
 ---
 
 <div class="mx-auto max-w-4xl">
-    <h1 class="text-2xl font-bold mb-6">Related Articles</h1>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {
-        relatedArticles
-          .filter((article) => article != null)
-          .map((article) => (
-            <a
-              href={`/blog/${article.url}`}
-              class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 block">
-              <img
-                src={article.image.src}
-                alt={article.image.alt}
-                class="w-full h-40 object-cover"
-              />
-              <div class="p-4">
-                <h3 class="text-lg font-semibold text-gray-800">
-                  {article.title}
-                </h3>
-                <div class="mt-4 flex justify-between text-sm text-gray-500">
-                  <span class="text-slate-400">{article.author}</span>
-                  <time
-                    class="text-slate-400"
-                    datetime={new Date(article.publishDate).toISOString()}>
-                    {new Date(article.publishDate).toDateString()}
-                  </time>
-                </div>
+  {
+    relatedArticles.filter((article) => article != null).length > 0 && (
+      <h1 class="text-2xl font-bold mb-6">Related Articles</h1>
+    )
+  }
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {
+      relatedArticles
+        .filter((article) => article != null)
+        .map((article) => (
+          <a
+            href={`/${entry.collection}/${article.url}`}
+            class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 block">
+            <img
+              src={article.image.src}
+              alt={article.image.alt}
+              class="w-full h-40 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800">
+                {article.title}
+              </h3>
+              <div class="mt-4 flex justify-between text-sm text-gray-500">
+                <span class="text-slate-400">{article.author}</span>
+                <time
+                  class="text-slate-400"
+                  datetime={new Date(article.publishDate).toISOString()}>
+                  {new Date(article.publishDate).toDateString()}
+                </time>
               </div>
-            </a>
-          ))
-      }
-    </div>
+            </div>
+          </a>
+        ))
+    }
   </div>
+</div>

@@ -8,6 +8,8 @@ import ProgrammaticOneBlogContent from "@components/programmatic-one-blog-conten
 import ProgrammaticOneBlogContent2 from "@components/programmatic-layout-2.astro";
 import ProgrammaticOneBlogContent3 from "@components/programmatic-layout-3.astro";
 import ProgrammaticOneBlogContent4 from "@components/programmatic-layout-4.astro";
+import ProgrammaticOneBlogContent5 from "@components/programmatic-layout-5.astro";
+import ProgrammaticOneBlogContent6 from "@components/programmatic-layout-6.astro";
 
 // Generate a new path for every collection entry
 export async function getStaticPaths() {
@@ -36,6 +38,9 @@ if (entry.data.is_programmatic_layout_2) {
 } else if (entry.data.is_programmatic_layout_4) {
   ContentComponent = ProgrammaticOneBlogContent4;
   Title = `Self-Hosted Alternative to ${entry.data.title}`;
+} else if (entry.data.is_programmatic_layout_5) {
+  ContentComponent = ProgrammaticOneBlogContent5;
+  Title = `Best Work Management Tools for ${entry.data.title} Industry`;
 } else {
   ContentComponent = DefaultBlogContent;
   Title = `${entry.data.title}`;

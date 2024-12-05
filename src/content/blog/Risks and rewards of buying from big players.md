@@ -7,7 +7,7 @@ image:
   alt: Risks and Rewards of Buying from Big Players
 publishDate: 2024-05-20
 category: ""
-author: SJ
+author: Sachinthi Jayathilaka
 tags:
   - Guide
   - Tips

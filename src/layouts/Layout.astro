@@ -138,16 +138,47 @@ const makeTitle = title
         fbq("track", "PageView");
       });
     </script>
-    <noscript
-      ><img
+    <noscript>
+      <img
         loading="lazy"
         height="1"
         width="1"
         style="display:none"
         src="https://www.facebook.com/tr?id=1468803210502744&ev=PageView&noscript=1"
-      /></noscript
-    >
+      />
+    </noscript>
     <!-- End Meta Pixel Code -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Worklenz",
+        "description": "The most friendly task management tool for web and mobile users.",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web-based, iOS, Android",
+        "browserRequirements": "Requires JavaScript and modern browser",
+        "url": "https://worklenz.com/",
+        "offers": {
+          "@type": "Offer",
+          "price": "Free",
+          "priceCurrency": "USD"
+        },
+        "creator": {
+          "@type": "Organization",
+          "name": "Worklenz",
+          "url": "https://worklenz.com/"
+        },
+        "softwareVersion": "1.0",
+        "applicationSuite": "Task Management Suite",
+        "screenshot": "https://worklenz.com/images/1-Streamlined-Task-Management.webp",
+        "featureList": [
+          "Task management",
+          "Time tracking",
+          "Reporting & Analytics",
+          "Resource management"
+        ]
+      }
+    </script>
     <style is:global>
       /* Improve Page speed */
       /* https://css-tricks.com/almanac/properties/c/content-visibility/ */

@@ -12,7 +12,7 @@ export async function getStaticPaths({ paginate }) {
 
   // Hide pSEO articles
   const allPosts = await getCollection("blog", ({ data }) => {
-    return !data.draft && !data?.is_programmatic_seo && !data?.is_programmatic_layout_2 && !data?.is_programmatic_layout_3 && !data?.is_programmatic_layout_4 && data.publishDate < new Date();
+    return !data.draft && !data?.is_programmatic_seo && !data?.is_programmatic_layout_2 && !data?.is_programmatic_layout_3 && !data?.is_programmatic_layout_4 && !data?.is_programmatic_layout_5 && data.publishDate < new Date();
   });
 
   const allSortedPosts = allPosts.sort((a, b) => {

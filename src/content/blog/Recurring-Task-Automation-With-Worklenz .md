@@ -8,7 +8,7 @@ image:
   alt: Boost Your Productivity with Worklenz’s New Recurring Task Automation
 publishDate: 2024-09-12
 category: ""
-author: SJ
+author: Chamika Jayasri
 tags:
   - Guide
   - New release

@@ -7,7 +7,7 @@ image:
   alt: Best Open-Source PM Tools - Worklenz
 publishDate: 2023-05-10
 category: ""
-author: SJ
+author: Sachinthi Jayathilaka
 tags:
   - Open-Source
   - PM Tools

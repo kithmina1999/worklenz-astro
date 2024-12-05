@@ -8,7 +8,7 @@ image:
   alt: Boosting Agency Profitability with AI-Driven Task Management
 publishDate: 2024-06-07
 category: ""
-author: SJ
+author: Gayan Thakshila
 tags:
   - Guide
   - Tips

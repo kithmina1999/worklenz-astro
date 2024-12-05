@@ -1,0 +1,8 @@
+---
+const {jsonLdData} = Astro.props;
+
+const jsonLdString = JSON.stringify(jsonLdData);
+---
+
+<script type="application/ld+json" set:html={jsonLdString}></script>
+

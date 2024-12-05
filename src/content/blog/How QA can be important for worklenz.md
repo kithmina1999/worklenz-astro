@@ -7,7 +7,7 @@ image:
   alt: QA-important for Worklenz
 publishDate: 2024-05-22
 category: ""
-author: SJ
+author: Kavindu Mihiranga
 tags: [project management tool,QA]
 description: |
   Sustaining good quality standards is crucial in the very competitive field of project management software.

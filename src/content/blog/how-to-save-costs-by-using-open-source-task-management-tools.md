@@ -7,7 +7,7 @@ image:
   alt: Benefits of Open-Source - Worklenz
 publishDate: 2024-05-29
 category: ""
-author: SJ
+author: Kalinga Gunawardhana
 tags: [Open-Source,PM Tools,]
 description: |
   Unlock cost savings and transform your enterprise with open-source project management software. Let's to find out more about this game-changing solution.
