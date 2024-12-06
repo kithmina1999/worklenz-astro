@@ -17,6 +17,7 @@ import { Faq } from './faq';
 import { TimeTracking } from './time-tracking';
 import { Analytics } from './analytics';
 import { Resource } from './resource';
+import { TaskManagement } from './task-management';
 
 export const es = {
     ...About,
@@ -38,4 +39,5 @@ export const es = {
     ...TimeTracking,
     ...Analytics,
     ...Resource,
+    ...TaskManagement,
 };
