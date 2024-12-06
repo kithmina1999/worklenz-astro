@@ -19,6 +19,9 @@ import { Analytics } from './analytics';
 import { Resource } from './resource';
 import { TaskManagement } from './task-management';
 import { Templates } from './templates';
+import { Administration } from './for-administration';
+import { Managers } from './for-project-managers';
+import { Members } from './for-members';
 
 export const en = {
     ...About,
@@ -42,4 +45,7 @@ export const en = {
     ...Resource,
     ...TaskManagement,
     ...Templates,
+    ...Administration,
+    ...Managers,
+    ...Members,
 };
