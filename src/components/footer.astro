@@ -30,7 +30,7 @@ const footermenu = JSON.stringify(footerObject)
   <Container>
     <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
       <div class="sm:col-span-2 md:col-span-3 lg:col-span-2">
-        <a href="/" class="text-lg flex items-center">
+        <a href={translatePath("/")} class="text-lg flex items-center">
           <Picture src={Logo} alt="Logo" loading="lazy" width={120} />
         </a>
         <p class="mt-4 text-sm text-slate-700 max-w-xs">
@@ -127,8 +127,8 @@ const footermenu = JSON.stringify(footerObject)
         {t("footer.p2.p1")} {new Date().getFullYear()} {t("footer.p2.p2")}
       </p>
       <p class="text-center text-xs text-slate-600 mt-2">
-        <a href="/terms" class="hover:text-blue-500"> {t("footer.a.text1")}</a> ・ <a
-          href="/privacy"
+        <a href={translatePath("/terms")} class="hover:text-blue-500"> {t("footer.a.text1")}</a> ・ <a
+          href={translatePath("/privacy")}
           class="hover:text-blue-500">
           {t("footer.a.text2")}</a>
       </p>
