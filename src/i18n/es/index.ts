@@ -22,6 +22,7 @@ import { Templates } from './templates';
 import { Administration } from './for-administration';
 import { Managers } from './for-project-managers';
 import { Members } from './for-members';
+import { SelfHosted } from './self-hosted';
 
 export const es = {
     ...About,
@@ -48,4 +49,5 @@ export const es = {
     ...Administration,
     ...Managers,
     ...Members,
+    ...SelfHosted,
 };
