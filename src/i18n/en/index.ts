@@ -18,6 +18,7 @@ import { TimeTracking } from './time-tracking';
 import { Analytics } from './analytics';
 import { Resource } from './resource';
 import { TaskManagement } from './task-management';
+import { Templates } from './templates';
 
 export const en = {
     ...About,
@@ -40,4 +41,5 @@ export const en = {
     ...Analytics,
     ...Resource,
     ...TaskManagement,
+    ...Templates,
 };
