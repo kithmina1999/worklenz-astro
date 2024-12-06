@@ -16,6 +16,7 @@ import { Pricing_page } from './pricing-page';
 import { Faq } from './faq';
 import { TimeTracking } from './time-tracking';
 import { Analytics } from './analytics';
+import { Resource } from './resource';
 
 export const en = {
     ...About,
@@ -36,4 +37,5 @@ export const en = {
     ...Faq,
     ...TimeTracking,
     ...Analytics,
+    ...Resource,
 };
