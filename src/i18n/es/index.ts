@@ -13,6 +13,16 @@ import { Footer } from './footer';
 import { Compare_pricing } from './compare-pricing';
 import { Pricing } from './pricing';
 import { Pricing_page } from './pricing-page';
+import { Faq } from './faq';
+import { TimeTracking } from './time-tracking';
+import { Analytics } from './analytics';
+import { Resource } from './resource';
+import { TaskManagement } from './task-management';
+import { Templates } from './templates';
+import { Administration } from './for-administration';
+import { Managers } from './for-project-managers';
+import { Members } from './for-members';
+import { SelfHosted } from './self-hosted';
 
 export const es = {
     ...About,
@@ -30,4 +40,14 @@ export const es = {
     ...Compare_pricing,
     ...Pricing,
     ...Pricing_page,
+    ...Faq,
+    ...TimeTracking,
+    ...Analytics,
+    ...Resource,
+    ...TaskManagement,
+    ...Templates,
+    ...Administration,
+    ...Managers,
+    ...Members,
+    ...SelfHosted,
 };
