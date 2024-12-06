@@ -15,6 +15,7 @@ import { Pricing } from './pricing';
 import { Pricing_page } from './pricing-page';
 import { Faq } from './faq';
 import { TimeTracking } from './time-tracking';
+import { Analytics } from './analytics';
 
 export const es = {
     ...About,
@@ -34,4 +35,5 @@ export const es = {
     ...Pricing_page,
     ...Faq,
     ...TimeTracking,
+    ...Analytics,
 };
