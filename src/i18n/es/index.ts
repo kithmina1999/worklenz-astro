@@ -14,6 +14,7 @@ import { Compare_pricing } from './compare-pricing';
 import { Pricing } from './pricing';
 import { Pricing_page } from './pricing-page';
 import { Faq } from './faq';
+import { TimeTracking } from './time-tracking';
 
 export const es = {
     ...About,
@@ -32,4 +33,5 @@ export const es = {
     ...Pricing,
     ...Pricing_page,
     ...Faq,
+    ...TimeTracking,
 };
