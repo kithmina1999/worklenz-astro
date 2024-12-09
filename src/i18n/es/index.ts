@@ -23,6 +23,8 @@ import { Administration } from './for-administration';
 import { Managers } from './for-project-managers';
 import { Members } from './for-members';
 import { SelfHosted } from './self-hosted';
+import { Contact } from './contact';
+import { Integrations } from './integrations';
 
 export const es = {
     ...About,
@@ -50,4 +52,6 @@ export const es = {
     ...Managers,
     ...Members,
     ...SelfHosted,
+    ...Contact,
+    ...Integrations
 };

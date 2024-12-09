@@ -80,7 +80,7 @@ const footermenu = JSON.stringify(footerObject)
           {
             footermenu.company.map((item) => (
               <a
-                href={translatePath(item.path) || "#"}
+                href={item.path || "#"}
                 class="py-2 text-sm text-slate-600 hover:text-blue-600">
                 {item.title}
               </a>
@@ -94,7 +94,7 @@ const footermenu = JSON.stringify(footerObject)
           {
             footermenu.product.map((item) => (
               <a
-                href={translatePath(item.path) || "#"}
+                href={item.path || "#"}
                 class="py-2 text-sm text-slate-600 hover:text-blue-600"
                 target="_blank">
                 {item.title}
@@ -109,7 +109,7 @@ const footermenu = JSON.stringify(footerObject)
           {
             footermenu.resources.map((item) => (
               <a
-                href={translatePath(item.path) || "#"}
+                href={item.path || "#"}
                 class="py-2 text-sm text-slate-600 hover:text-blue-600"
                 target={item.target}>
                 {item.title}

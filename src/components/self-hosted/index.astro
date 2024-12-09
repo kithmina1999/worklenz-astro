@@ -33,8 +33,8 @@ const pricing = Array.isArray(pricingPageList)
     </Sectionhead>
 
     <div class="flex flex-row mx-auto w-[400px] mt-12">
-      <PricingLink href="/pricing" style="muted" block size="md">{t("pricingpage.link.text1")}</PricingLink>
-      <PricingLink href="/self-hosted" size="md" block>{t("pricingpage.link.text2")}</PricingLink>
+      <PricingLink href={translatePath("/pricing")} style="muted" block size="md">{t("pricingpage.link.text1")}</PricingLink>
+      <PricingLink href={translatePath("/self-hosted")} size="md" block>{t("pricingpage.link.text2")}</PricingLink>
     </div>
 
     <div class="grid mx-auto max-w-[400px] mt-12">

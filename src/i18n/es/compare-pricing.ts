@@ -6,8 +6,8 @@ export const Compare_pricing={
         "period": "/mes/usuario",
         "cta": "Probar ahora",
         "features": {
-          "Teams": "1",
-          "Storage": "500MB",
+          "Teams": "Ilimitado",
+          "Storage": "100MB",
           "Active Projects": "3",
           "Team Members": "Ilimitado",
           "For Team Members": {

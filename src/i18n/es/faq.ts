@@ -5,7 +5,7 @@ export const Faq = {
     {
       question: "¿Cómo funciona el plan gratuito?",
       answer:
-        "Nuestro plan gratuito está disponible para usarlo siempre, con algunas limitaciones. Si tu equipo tiene menos de cinco miembros, este plan puede ser adecuado para ti. Sin embargo, ten en cuenta que no tendrás acceso a nuestro programador y funciones de informes, y tu almacenamiento estará limitado a 500MB.",
+        "Nuestro plan gratuito está disponible para usarlo siempre, con algunas limitaciones. Si tu equipo tiene menos de cinco miembros, este plan puede ser adecuado para ti. Sin embargo, ten en cuenta que no tendrás acceso a nuestro programador y funciones de informes, y tu almacenamiento estará limitado a 100MB.",
     },
     {
       question: "¿Qué es la prueba gratuita y cómo funciona?",

@@ -5,7 +5,7 @@ export const Faq = {
         {
           question: "How does the free plan work?",
           answer:
-            "Our free plan is available to use forever, with some limitations. If your team has less than five members, this plan may be suitable for you. However, please note that you will not have access to our scheduler and reporting features, and your storage will be limited to 500MB.",
+            "Our free plan is available to use forever, with some limitations. If your team has less than five members, this plan may be suitable for you. However, please note that you will not have access to our scheduler and reporting features, and your storage will be limited to 100MB.",
         },
         {
           question: "What the free trial is and how it works?",
