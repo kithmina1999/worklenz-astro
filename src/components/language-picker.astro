@@ -2,54 +2,32 @@
 import { getLangFromUrl } from "../i18n/utils";
 import { languages, defaultLang } from "../i18n/ui";
 
-const lang = getLangFromUrl(Astro.url); // Get the initial language from the URL
+// Get the current language and base path
+const currentLang = getLangFromUrl(Astro.url) || defaultLang;
+
+// Remove language prefix from the URL path
+const currentPath = Astro.url.pathname.replace(/^\/[a-z]{2}(\/|$)/, "/");
+
+// Function to construct the new URL for the selected language
+const getTranslatedUrl = (lang) => {
+  const langPrefix = lang === defaultLang ? "" : `/${lang}`;
+  return `${langPrefix}${currentPath}`.replace(/\/+/g, "/"); // Ensure no duplicate slashes
+};
 ---
 
 <div class="flex items-center gap-4">
-  <select
-    id="language-selector"
-    class="text-sm px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500"
-    aria-label="Select Language">
-    {Object.entries(languages).map(([code, label]) => (
-      <option value={code} selected={code === lang}>
-        {label}
-      </option>
-    ))}
-  </select>
+  <form method="get" class="inline-block">
+    <label for="language-selector" class="sr-only">Select Language</label>
+    <select
+      id="language-selector"
+      class="text-sm px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500"
+      onchange="window.location.href = this.value;"
+      aria-label="Select Language">
+      {Object.entries(languages).map(([code, label]) => (
+        <option value={getTranslatedUrl(code)} selected={code === currentLang}>
+          {label}
+        </option>
+      ))}
+    </select>
+  </form>
 </div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const languageSelector = document.getElementById("language-selector");
-    const langRegex = /^\/([a-z]{2})(\/|$)/; // Regex to match language prefix
-
-    function updateURL(selectedLang) {
-      const currentPath = window.location.pathname;
-
-      // Remove existing language prefix from the URL
-      const basePath = currentPath.replace(langRegex, "/");
-
-      // Build the new URL with the selected language
-      const newPath =
-        selectedLang === "en" ? basePath : `/${selectedLang}${basePath}`;
-
-      if (newPath !== window.location.pathname) {
-        window.location.href = newPath; // Reload the page to apply the new language
-      }
-    }
-
-    function initializeDropdown() {
-      const currentLang = window.location.pathname.match(langRegex)?.[1] || defaultLang;
-      languageSelector.value = currentLang;
-    }
-
-    // Attach event listener for language selection
-    languageSelector.addEventListener("change", (event) => {
-      const selectedLang = event.target.value;
-      updateURL(selectedLang);
-    });
-
-    // Initialize dropdown to reflect the current language
-    initializeDropdown();
-  });
-</script>
