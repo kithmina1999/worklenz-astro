@@ -18,6 +18,10 @@ description: |
   Learn about the hidden costs associated with proprietary software and find out why transitioning to open-source can enhance your business's efficiency.
 ---
 
+>Did you know businesses spend billions annually on proprietary software licenses, with costs set to rise by 10-15% each year? 
+
+While proprietary software may offer convenience, it comes with hidden expenses like recurring licensing fees, vendor lock-in, and lack of customization. In contrast, open-source solutions, such as Worklenz, provide flexibility, control, and cost savings, helping businesses avoid the pitfalls of proprietary systems and take charge of their software environment.
+
 ## Shattering the Myths: Why Open Source is the Future of Software
 
 For decades, the software world has been dominated by proprietary giants, charging hefty fees for their products. However, a new era has dawned, one where open-source software is challenging the status quo. Often misunderstood and underestimated, open-source software has emerged as a powerful force, offering numerous advantages over its proprietary counterparts.
