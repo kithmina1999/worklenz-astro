@@ -47,10 +47,12 @@ const menuitems = Array.isArray(navbarObject)
             />
           </a>
           <!-- <Picture src={Logo} alt="Logo" loading='lazy' width={180} height={30}/> -->
-          <div class="block lg:hidden">
-            <MenuIcon class="w-4 h-4 text-gray-800" />
+          <div class="block lg:hidden flex">
+            <LanguagePicker/>
+            <MenuIcon class="w-4 h-4 text-gray-800 ml-5" />
           </div>
         </div>
+        
         <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
           <ul class="flex flex-col lg:flex-row lg:gap-3">
             {
