@@ -26,6 +26,14 @@ export async function getStaticPaths({ paginate }) {
 }
 
 const { page } = Astro.props;
+
+import {
+  getLangFromUrl,
+  useTranslatedPath,
+} from "../../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const usetranslatedpath = useTranslatedPath(lang);
 ---
 
 <Layout title="Insights, Tips, and Updates for Better Team Management">
@@ -36,7 +44,7 @@ const { page } = Astro.props;
         {
           ((page as any)).data.map((post, index) => (
             <li>
-              <a href={`/blog/${post.slug}`}>
+              <a href={usetranslatedpath(`/blog/${post.slug}`)}>
                 <div>
                   <Picture
                     formats={["avif", "webp"]}
