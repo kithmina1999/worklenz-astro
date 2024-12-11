@@ -25,6 +25,7 @@ import { Members } from './for-members';
 import { SelfHosted } from './self-hosted';
 import { Contact } from './contact';
 import { Integrations } from './integrations';
+import { Faqhome } from './faq-home';
 
 export const es = {
     ...About,
@@ -53,5 +54,6 @@ export const es = {
     ...Members,
     ...SelfHosted,
     ...Contact,
-    ...Integrations
+    ...Integrations,
+    ...Faqhome,
 };
