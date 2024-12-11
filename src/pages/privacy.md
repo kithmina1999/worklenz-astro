@@ -112,4 +112,6 @@ Unless the law permits, we will not collect, use or disclose your information fo
 
 In most cases, and subject to legal and contractual restrictions, you are free to refuse or withdraw your consent at any time upon reasonable advance notice. It should be noted that there may be certain portions of the Site, Platform or Services that will only be made available to you if you provide specific Personal Information to us. Consequently, if you choose not to provide us with any required Personal Information or withdraw any consent that you have provided, we may not be able to make such portions of the Site, Platform or Services available to you.
 
+## Account Deletion
 
+Users who wish to delete their account with Worklenz, must send an email to support@worklenz.com from the email address associated with their Worklenz account. This email should explicitly request account deletion. Once we receive your request, our support team will verify the request and process the account deletion within a reasonable timeframe. Please note that certain information may be retained to comply with legal or regulatory obligations, or as otherwise outlined in this Privacy Policy.
