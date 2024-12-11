@@ -26,8 +26,10 @@ import { SelfHosted } from './self-hosted';
 import { Contact } from './contact';
 import { Integrations } from './integrations';
 import { Faqhome } from './faq-home';
+import { Blog_page } from './blog-page';
 
 export const es = {
+    ...Blog_page,
     ...About,
     ...FourZeroFour,
     ...Hore,

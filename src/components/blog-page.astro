@@ -1,0 +1,16 @@
+---
+import Sectionhead from "./sectionhead.astro";
+import {
+  getLangFromUrl,
+  useTranslations,
+} from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+<Sectionhead>
+  <Fragment slot="title">{t("blogPage.title")}</Fragment>
+  <Fragment slot="desc">
+    {t("blogPage.desc")}
+  </Fragment>
+</Sectionhead>
