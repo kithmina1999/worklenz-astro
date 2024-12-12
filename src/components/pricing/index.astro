@@ -1,0 +1,47 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import PricingComponent from "@components/pricing.astro";
+import Faq from "@components/faq.astro";
+import ComparePricing from "@components/compare-pricing.astro";
+import PricingLink from "@components/ui/pricingLink.astro";
+
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath
+} from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang)
+
+const pricingPageList = t("pricingpage.pricing");
+const pricing = Array.isArray(pricingPageList)
+  ? pricingPageList // If already an array, just use it
+  : Object.values(pricingPageList);
+
+---
+
+<Layout title="Flexible Pricing Plans to Fit Your Team’s Needs">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{t("pricingpage.title")}</Fragment>
+      <Fragment slot="desc">
+        {t("pricingpage.desc")}
+      </Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-row mx-auto w-[400px] mt-12">
+      <PricingLink href={translatePath("/pricing")} block size="md">{t("pricingpage.link.text1")}</PricingLink>
+      <PricingLink href={translatePath("/self-hosted")} style="muted" size="md" block>{t("pricingpage.link.text2")}</PricingLink>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-screen-md mt-12">
+      {pricing.map((item) => <PricingComponent plan={item} />)}
+    </div>
+    <ComparePricing />
+    <Faq />
+  </Container>
+</Layout>

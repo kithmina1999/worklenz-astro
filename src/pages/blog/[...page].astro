@@ -5,6 +5,7 @@ import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Pagination from "@components/pagination.astro";
+import BlogPage from "@components/blog-page.astro";
 
 // Sort content entries by publication date
 export async function getStaticPaths({ paginate }) {
@@ -29,12 +30,7 @@ const { page } = Astro.props;
 
 <Layout title="Insights, Tips, and Updates for Better Team Management">
   <Container>
-    <Sectionhead>
-      <Fragment slot="title">Our Blog</Fragment>
-      <Fragment slot="desc">
-        We write about building startups and thoughts going on our mind.
-      </Fragment>
-    </Sectionhead>
+    <BlogPage />
     <main class="mt-16">
       <ul class="grid sm:grid-cols-2 md:grid-cols-3 gap-10 lg:gap-16">
         {

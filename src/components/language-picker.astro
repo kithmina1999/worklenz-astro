@@ -1,0 +1,33 @@
+---
+import { getLangFromUrl } from "../i18n/utils";
+import { languages, defaultLang } from "../i18n/ui";
+
+// Get the current language and base path
+const currentLang = getLangFromUrl(Astro.url) || defaultLang;
+
+// Remove language prefix from the URL path
+const currentPath = Astro.url.pathname.replace(/^\/[a-z]{2}(\/|$)/, "/");
+
+// Function to construct the new URL for the selected language
+const getTranslatedUrl = (lang) => {
+  const langPrefix = lang === defaultLang ? "" : `/${lang}`;
+  return `${langPrefix}${currentPath}`.replace(/\/+/g, "/"); // Ensure no duplicate slashes
+};
+---
+
+<div class="flex items-center gap-4">
+  <form method="get" class="inline-block">
+    <label for="language-selector" class="sr-only">Select Language</label>
+    <select
+      id="language-selector"
+      class="text-sm px-1 py-2 border text-blue-500 border-blue-500 rounded-md focus:outline-none focus:ring focus:ring-blue-500"
+      onchange="window.location.href = this.value;"
+      aria-label="Select Language">
+      {Object.entries(languages).map(([code, label]) => (
+        <option value={getTranslatedUrl(code)} selected={code === currentLang}>
+          {label}
+        </option>
+      ))}
+    </select>
+  </form>
+</div>
