@@ -6,6 +6,7 @@ const { Content } = await entry.render();
 import RelatedArticles from "@components/related-articles.astro";
 import JsonLd from "@components/JsonLd.astro";
 import Cta from "./cta.astro";
+import Link from "./ui/link.astro";
 
 const jsonLdData = {
   "@context": "https://schema.org",
@@ -339,10 +340,52 @@ const jsonLdData = {
     </div>
     <div
       class="mx-auto prose mt-6 max-w-4xl prose-headings:mb-2 prose-headings:mt-8">
+      <h2>Ready to Supercharge Your Project Management?</h2>
+    </div>
+    <div>
+      <p>
+        While there are other solid choices for many, Worklenz offers unparalleled flexibility, customization, and open-source power that adapts to your team's unique needs. Whether you're looking for a self-hosted solution or seamless integration, Worklenz is here to help you stay ahead.
+      </p>
+      <p><b>Start your journey with Worklenz today!</b></p>
+      <Link
+            href="https://app.worklenz.com/auth/signup"
+            size="sm"
+            class="inline-flex items-center group gap-px no-underline">
+            <span>Try for Free</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform">
+              <path
+                fill-rule="evenodd"
+                d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </Link>
+      <Link
+            href="https://outlook.office365.com/owa/calendar/Worklenzsupport@worklenz.com/bookings/"
+            size="sm"
+            class="inline-flex items-center group gap-px no-underline">
+            <span>Request a Demo</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform">
+              <path
+                fill-rule="evenodd"
+                d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </Link>
+      <p><b>Experience the future of project management with Worklenz – the ultimate open-source alternative.</b></p>
+    </div>
+    <div
+      class="mx-auto prose mt-6 max-w-4xl prose-headings:mb-2 prose-headings:mt-8">
       <Content />
     </div>
   </div>
-  <Cta />
   <hr class="mx-auto max-w-4xl mt-16 mb-16" />
 
   <!-- Related Articles -->
