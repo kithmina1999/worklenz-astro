@@ -32,7 +32,7 @@ export const Footer = {
           {
             title: "Blog",
             path: "/blog",
-            target: "self",
+            target: "_self",
           },
           {
             title: "Community",

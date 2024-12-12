@@ -109,7 +109,7 @@ const footermenu = JSON.stringify(footerObject)
           {
             footermenu.resources.map((item) => (
               <a
-                href={item.path || "#"}
+                href={item.target === "_blank" ? item.path : translatePath(item.path)}
                 class="py-2 text-sm text-slate-600 hover:text-blue-600"
                 target={item.target}>
                 {item.title}
