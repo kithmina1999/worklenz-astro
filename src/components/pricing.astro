@@ -13,11 +13,13 @@ const colors = {
 
 import {
   getLangFromUrl,
+  useTranslatedPath,
   useTranslations,
 } from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+const useTranslatedpath = useTranslatedPath(lang)
 ---
 
 <div>
@@ -66,7 +68,7 @@ const t = useTranslations(lang);
       }
     </ul><div class="flex mt-8">
       <Link
-        href={plan.button.link || "#"}
+        href={useTranslatedpath(plan.button.link) || "#"}
         block
         style={plan.popular ? "primary" : "outline"}>
         {plan.button.text || "Get Started"}

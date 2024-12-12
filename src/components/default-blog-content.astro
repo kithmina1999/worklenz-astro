@@ -3,6 +3,15 @@ import Container from "@components/container.astro";
 import { Picture } from "astro:assets";
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang)
 ---
 
 <Container>
@@ -54,7 +63,7 @@ const { Content } = await entry.render();
   </div>
   <div class="text-center mt-12">
     <a
-      href="/blog"
+      href={translatePath("/blog")}
       class="bg-gray-100 px-5 py-3 rounded-md hover:bg-gray-200 transition"
       >← Back to Blog</a
     >

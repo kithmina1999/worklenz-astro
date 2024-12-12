@@ -99,7 +99,7 @@ const adminFeatureKeys = Object.keys(
           teamMemberFeatureKeys.map((feature, index) => (
             <tr class={index % 2 === 0 ? "bg-gray-50" : ""}>
               <td class="border p-4 font-medium text-sm">
-                {feature}
+                {plans[0].features["For Team Members"][feature].title}
                 <br />
                 <span class="text-xs text-gray-600">
                   {plans[0].features["For Team Members"][feature].description}
@@ -130,7 +130,8 @@ const adminFeatureKeys = Object.keys(
           projectManagerFeatureKeys.map((feature, index) => (
             <tr class={index % 2 === 0 ? "bg-gray-50" : ""}>
               <td class="border p-4 font-medium text-sm">
-                {feature}
+                {plans[0].features["For Project Managers"][feature]
+                      .title}
                 <br />
                 <span class="text-xs text-gray-600">
                   {
@@ -164,7 +165,8 @@ const adminFeatureKeys = Object.keys(
           adminFeatureKeys.map((feature, index) => (
             <tr class={index % 2 === 0 ? "bg-gray-50" : ""}>
               <td class="border p-4 font-medium text-sm">
-                {feature}
+                {plans[0].features["For Administrators"][feature]
+                      .title}
                 <br />
                 <span class="text-xs text-gray-600">
                   {
