@@ -1,0 +1,23 @@
+export const About = {
+    'about.fragmentTitle': "About Worklenz",
+    'about.fragmentDesc': "Welcome to Worklenz, your go-to solution for efficient project management and resource optimization.",
+    'about.pictureAlt': "Happy Team",
+    'about.heading1': "Our",
+    'about.headingStrong1': "Story",
+    'about.p1': "Founded in 2022, Worklenz emerged from a collective vision to revolutionize project management practices. As a technology startup based in Sri Lanka, we recognized the growing need for streamlined project management tools that could adapt to the unique challenges of modern businesses.",
+    'about.heading2': "Our",
+    'about.headingStrong2': "Mission",
+    'about.p2': "At Worklenz, our mission is simple yet ambitious: to empower teams worldwide with the tools they need to succeed. We believe that effective project management is the cornerstone of every successful endeavor, and our goal is to provide innovative solutions that enhance collaboration, productivity, and results.",
+    'about.heading3': "What sets us apart",
+    'about.p3': "Founded in 2022, Worklenz emerged from a collective vision to revolutionize project management practices. As a technology startup based in Sri Lanka, we recognized the growing need for streamlined  project management tools that could adapt to the unique challenges of modern businesses.",
+    'about.ulliText1': "Streamline task management: Easily create, assign, and track tasks to keep your projects on schedule.",
+    'about.ulliText2': "Optimize resource allocation: Efficiently allocate resources to maximize productivity and minimize bottlenecks.",
+    'about.ulliText3': "Enhance collaboration: Foster seamless collaboration among team members with real-time updates, comments, and file sharing.",
+    'about.ulliText4': "Gain insights: Leverage powerful analytics and reporting tools to gain valuable insights into your project's progress and performance.",
+    'about.heading4': "Our",
+    'about.headingStrong4': "Team",
+    'about.p4': "Behind every line of code and every feature update is a dedicated team of professionals committed to excellence. From our developers  and designers to our customer support specialists, each member of  the Worklenz team is driven by a passion for innovation and a commitment to customer satisfaction.",
+    'about.heading5': "Join us on our",
+    'about.headingStrong5': "Journey",
+    'about.p5': "As we continue to grow and evolve, we invite you to join us on our  journey. Whether you're a small startup, a growing enterprise, or anything in between, Worklenz is here to support you every step of the way. Thank you for choosing Worklenz for your project management  needs."
+    };

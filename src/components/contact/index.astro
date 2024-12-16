@@ -1,0 +1,42 @@
+---
+import { Icon } from "astro-icon/components";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Button from "@components/ui/button.astro";
+import Contactform from "@components/contactform.astro";
+import {
+  getLangFromUrl,
+  useTranslations,
+} from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout title="Have Questions? Get in Touch with Us">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{t('contact.title')}</Fragment>
+      <Fragment slot="desc">{t('contact.desc')}</Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
+      <div>
+        <h2 class="font-medium text-2xl text-gray-800">{t('contact.h2')}</h2>
+        <p class="text-lg leading-relaxed text-slate-500 mt-3">
+          {t('contact.p1')}
+        </p>
+      </div>
+      <script
+        is:inline
+        charset="utf-8"
+        type="text/javascript"
+        src="//js.hsforms.net/forms/embed/v2.js">
+      </script>
+      <div class="bg-slate-100 p-5 md:p-8 rounded-xl mb-5">
+        <Contactform />
+      </div>
+    </div>
+  </Container>
+</Layout>

@@ -7,15 +7,20 @@ import Incrementl from "@assets/patners/incrementl.png";
 import Paymedia from "@assets/patners/paymedia-1.png";
 import Softcricket from "@assets/patners/softcricket.png";
 import FoundersNetwork from "@assets/patners/Logo-LFN-High-Resolution.png";
-import Link from "./ui/link.astro";
+import {
+  getLangFromUrl,
+  useTranslations,
+} from "../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div>
-  <h2 class="text-center text-slate-500">Trusted by</h2>
+  <h2 class="text-center text-slate-500">{t("logos.heading")}</h2>
   <div
     class="flex gap-x-8 gap-y-4 md:gap-10 lg:gap-20 items-center justify-center mt-6 flex-wrap">
     <div>
-        <Picture src={Nanosoft} alt="Nanosoft" loading="lazy" width={120} />
+        <Picture src={Nanosoft} alt={t("logos.imgAlt")} loading="lazy" width={120} />
     </div>
 
     <div>
