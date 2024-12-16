@@ -1,0 +1,212 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import EmployeeImg from "../../assets/employee.png";
+import Kalinga from "../../assets/team/kalinga.png";
+import Chamika from "../../assets/team/chamika.png";
+import Danushka from "../../assets/team/danushka.png";
+import Tharindu from "../../assets/team/tharindu.png";
+import Malaka from "../../assets/team/malaka.png";
+import Kavindu from "../../assets/team/kavindu.png";
+import { Icon } from "astro-icon/components";
+import Cta from "@components/cta.astro";
+
+import {
+  getLangFromUrl,
+  useTranslations,
+  useTranslatedPath,
+} from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
+
+// Filter team entries with 'draft: false' & date before current date
+const publishedTeamMembers = await getCollection("team", ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
+---
+
+<Layout
+  title="Our Journey to Simplify Team Task Management"
+  footerMargin={false}>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">{t("about.fragmentTitle")}</Fragment>
+      <Fragment slot="desc">{t("about.fragmentDesc")}</Fragment>
+    </Sectionhead>
+
+    <div class="grid sm:grid-cols-2 gap-10 mx-auto mt-24 items-center">
+      <div class="relative">
+        <Picture
+          formats={["avif", "webp"]}
+          src={EmployeeImg}
+          alt={t("about.pictureAlt")}
+          class="rounded-xl w-full max-w-md mx-auto"
+          loading="eager"
+        />
+      </div>
+      <div class="flex flex-col place-self-center gap-8">
+        <div>
+          <h2 class="text-5xl text-gray-800 tracking-tight -mt-2">
+            <span class="text-blue-600">{t("about.heading1")}</span>
+            {" "}
+            <strong>{t("about.headingStrong1")}</strong>
+          </h2>
+          <p class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500">
+            {t("about.p1")}
+          </p>
+        </div>
+        <div>
+          <h2 class="text-5xl text-gray-800 tracking-tight -mt-2">
+            <span class="text-blue-600">{t("about.heading2")}</span>
+            {" "}
+            <strong>{t("about.headingStrong2")}</strong>
+          </h2>
+          <p class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500">
+            {t("about.p2")}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-24">
+      <h2 class="text-4xl lg:text-5xl lg:tracking-tight text-center font-bold">
+        {t("about.heading3")}
+      </h2>
+      <p class="text-lg mt-4 text-slate-600 text-left">
+        {t("about.p3")}
+      </p>
+      <ul
+        class="flex flex-col self-center gap-2 px-20 mx-auto mt-8 text-slate-600">
+        <li class="flex items-center gap-2">
+          <Icon
+            name="ph:check-circle"
+            class="text-blue-600 w-40 h-40 sm:w-10 sm:h-10 md:w-4 md:h-4"
+          />
+          {t("about.ulliText1")}
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon
+            name="ph:check-circle"
+            class="text-blue-600 w-40 h-40 sm:w-10 sm:h-10 md:w-4 md:h-4"
+          />
+          {t("about.ulliText2")}
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon
+            name="ph:check-circle"
+            class="text-blue-600 w-40 h-40 sm:w-10 sm:h-10 md:w-4 md:h-4"
+          />
+
+          {t("about.ulliText3")}
+        </li>
+        <li class="flex items-center gap-2">
+          <Icon
+            name="ph:check-circle"
+            class="text-blue-600 w-40 h-40 sm:w-10 sm:h-10 md:w-4 md:h-4"
+          />
+
+          {t("about.ulliText4")}
+        </li>
+      </ul>
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-10 mx-auto mt-24 items-center">
+      <div class="flex flex-col place-self-center gap-8">
+        <div>
+          <h2 class="text-5xl text-gray-800 tracking-tight -mt-2">
+            <span class="text-blue-600">{t("about.heading4")}</span>
+            {" "}
+            <strong>{t("about.headingStrong4")}</strong>
+          </h2>
+          <p class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500">
+            {t("about.p4")}
+          </p>
+        </div>
+        <div>
+          <h2 class="text-5xl text-gray-800 tracking-tight -mt-2">
+            <span class="text-blue-600">{t("about.heading5")}</span>
+            {" "}
+            <strong>{t("about.headingStrong5")}</strong>
+          </h2>
+          <p class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500">
+            {t("about.p5")}
+          </p>
+        </div>
+      </div>
+      <div class="grid grid-cols-3">
+        <div class="flex flex-col gap-10">
+          <div class="flex flex-col items-center gap-6">
+            <Picture
+              formats={["avif", "webp"]}
+              src={Kalinga}
+              alt="Happy Team"
+              class="rounded-xl w-full max-w-md mx-auto"
+              loading="eager"
+            />
+            <!-- <label for="CEO">CEO</label> -->
+          </div>
+          <div class="flex flex-col items-center gap-6">
+            <Picture
+              formats={["avif", "webp"]}
+              src={Chamika}
+              alt="Happy Team"
+              class="rounded-xl w-full max-w-md mx-auto"
+              loading="eager"
+            />
+            <!-- <label for="CEO">SSE</label> -->
+          </div>
+        </div>
+        <div class="flex flex-col gap-10">
+          <div class="flex flex-col items-center gap-6">
+            <Picture
+              formats={["avif", "webp"]}
+              src={Danushka}
+              alt="Happy Team"
+              class="rounded-xl w-full max-w-md mx-auto"
+              loading="eager"
+            />
+            <!-- <label for="CEO">CTO</label> -->
+          </div>
+          <div class="flex flex-col items-center gap-6">
+            <Picture
+              formats={["avif", "webp"]}
+              src={Malaka}
+              alt="Happy Team"
+              class="rounded-xl w-full max-w-md mx-auto"
+              loading="eager"
+            />
+            <!-- <label for="CEO">SE</label> -->
+          </div>
+        </div>
+        <div class="flex flex-col gap-10">
+          <div class="flex flex-col items-center gap-6">
+            <Picture
+              formats={["avif", "webp"]}
+              src={Tharindu}
+              alt="Happy Team"
+              class="rounded-xl w-full max-w-md mx-auto"
+              loading="eager"
+            />
+            <!-- <label for="CEO">COO</label> -->
+          </div>
+          <div class="flex flex-col items-center gap-6">
+            <Picture
+              formats={["avif", "webp"]}
+              src={Kavindu}
+              alt="Happy Team"
+              class="rounded-xl w-full max-w-md mx-auto"
+              loading="eager"
+            />
+            <!-- <label for="CEO">QA</label> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+  <Cta />
+</Layout>

@@ -6,6 +6,11 @@ import Navbar from "@components/navbar/navbar.astro";
 
 import "@fontsource-variable/inter/index.css";
 
+import LanguagePicker from '@components/language-picker.astro';
+import { getLangFromUrl } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+
 export interface Props {
   title?: string;
   footerMargin?: boolean;
@@ -27,7 +32,7 @@ const makeTitle = title
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
