@@ -19,6 +19,8 @@ const t = useTranslations(lang);
 let analyticsContent;
 if (lang === 'es'){
   analyticsContent = await getCollection("analytics-es");
+} else if (lang === 'pt') {
+  analyticsContent = await getCollection("analytics-pt");
 } else {
   analyticsContent = await getCollection("analytics");
 }

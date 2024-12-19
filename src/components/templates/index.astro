@@ -17,7 +17,9 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 let templateContent;
 if (lang === 'es') {
-  templateContent = await getCollection("time-tracking-es")
+  templateContent = await getCollection("template-es")
+} else if (lang === 'pt') {
+  templateContent = await getCollection("template-pt");
 } else {
   templateContent = await getCollection("template");
 }

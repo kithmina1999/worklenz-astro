@@ -1,0 +1,23 @@
+export const About = {
+    'about.fragmentTitle': "Sobre o Worklenz",
+    'about.fragmentDesc': "Bem-vindo ao Worklenz, sua solução ideal para gestão eficiente de projetos e otimização de recursos.",
+    'about.pictureAlt': "Equipe Feliz",
+    'about.heading1': "Nossa",
+    'about.headingStrong1': "História",
+    'about.p1': "Fundada em 2022, a Worklenz surgiu de uma visão coletiva para revolucionar as práticas de gestão de projetos. Como uma startup de tecnologia baseada no Sri Lanka, reconhecemos a crescente necessidade de ferramentas de gestão de projetos simplificadas que pudessem se adaptar aos desafios únicos dos negócios modernos.",
+    'about.heading2': "Nossa",
+    'about.headingStrong2': "Missão",
+    'about.p2': "Na Worklenz, nossa missão é simples, mas ambiciosa: capacitar equipes em todo o mundo com as ferramentas de que precisam para ter sucesso. Acreditamos que a gestão eficaz de projetos é a base de todo empreendimento bem-sucedido, e nosso objetivo é fornecer soluções inovadoras que aprimorem a colaboração, a produtividade e os resultados.",
+    'about.heading3': "O que nos diferencia",
+    'about.p3': "Fundada em 2022, a Worklenz surgiu de uma visão coletiva para revolucionar as práticas de gestão de projetos. Como uma startup de tecnologia baseada no Sri Lanka, reconhecemos a crescente necessidade de ferramentas de gestão de projetos simplificadas que pudessem se adaptar aos desafios únicos dos negócios modernos.",
+    'about.ulliText1': "Simplifique a gestão de tarefas: Crie, atribua e acompanhe tarefas facilmente para manter seus projetos no cronograma.",
+    'about.ulliText2': "Otimize a alocação de recursos: Aloque recursos de forma eficiente para maximizar a produtividade e minimizar gargalos.",
+    'about.ulliText3': "Aprimore a colaboração: Promova uma colaboração perfeita entre os membros da equipe com atualizações em tempo real, comentários e compartilhamento de arquivos.",
+    'about.ulliText4': "Obtenha insights: Utilize ferramentas poderosas de análise e relatórios para obter insights valiosos sobre o progresso e o desempenho do seu projeto.",
+    'about.heading4': "Nossa",
+    'about.headingStrong4': "Equipe",
+    'about.p4': "Por trás de cada linha de código e de cada atualização de recurso está uma equipe dedicada de profissionais comprometidos com a excelência. Desde nossos desenvolvedores e designers até nossos especialistas em suporte ao cliente, cada membro da equipe Worklenz é movido por uma paixão pela inovação e um compromisso com a satisfação do cliente.",
+    'about.heading5': "Junte-se a nós em nossa",
+    'about.headingStrong5': "Jornada",
+    'about.p5': "À medida que continuamos a crescer e evoluir, convidamos você a se juntar a nós em nossa jornada. Seja você uma pequena startup, uma empresa em crescimento ou qualquer coisa entre esses dois extremos, a Worklenz está aqui para apoiá-lo em cada passo do caminho. Obrigado por escolher a Worklenz para suas necessidades de gestão de projetos."
+};

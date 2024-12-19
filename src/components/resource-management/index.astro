@@ -19,6 +19,8 @@ const t = useTranslations(lang);
 let resourceContent;
 if (lang === 'es'){
   resourceContent = await getCollection("resource-es");
+} else if (lang === 'pt') {
+  resourceContent = await getCollection("resource-pt");
 } else {
   resourceContent = await getCollection("resource");
 }
