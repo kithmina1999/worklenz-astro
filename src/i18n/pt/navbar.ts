@@ -35,7 +35,7 @@ export const Navbar = {
       path: "/blog",
     },
   ],
-  'navbar.loginbtn': "Entrar",
+  'navbar.loginbtn': "Inscrever-se",
   'navbar.signinbtn': "Experimente Grátis",
   'navbar.githubbtn': "Dê uma estrela no GitHub",
 }

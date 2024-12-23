@@ -10,7 +10,7 @@ export const Footer = {
   "footer.footermenu": {
     company: [
       {
-        title: "Sobre",
+        title: "Sobre nós",
         path: "/about",
       },
       {
