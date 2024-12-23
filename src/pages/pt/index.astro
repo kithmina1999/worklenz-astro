@@ -1,0 +1,29 @@
+---
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import FeatureAlt from "@components/feature-alt.astro";
+import FeatureGrid from "@components/feature-grid.astro";
+import Features from "@components/features.astro";
+import Counter from "@components/counter.astro";
+import Hero from "@components/hero.astro";
+import Logos from "@components/logos.astro";
+import Testimonials from "@components/testimonials.astro";
+import Layout from "@layouts/Layout.astro";
+import FaqHome from "@components/faq-home.astro";
+---
+
+<Layout footerMargin={false}>
+  <Hero />
+  <Container>
+    <Logos />
+    <FeatureAlt />
+  </Container>
+  <Counter />
+  <Testimonials />
+  <Container>
+    <FeatureGrid />
+    <Features />
+  </Container>
+  <FaqHome />
+  <Cta />
+</Layout>
