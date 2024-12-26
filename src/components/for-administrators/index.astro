@@ -19,6 +19,8 @@ const t = useTranslations(lang);
 let templateContent
 if (lang === 'es') {
   templateContent = await getCollection("admin-es");
+} else if (lang === 'pt') {
+  templateContent = await getCollection("admin-pt");
 } else {
   templateContent = await getCollection("admin");
 }

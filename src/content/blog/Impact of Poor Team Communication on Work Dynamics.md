@@ -74,6 +74,11 @@ Barriers such as time zone differences and technology constraints can limit coll
 
 *Addressing communication gaps in teams often requires adopting the right tools. Open-source task management tools not only streamline workflows but also provide cost-effective solutions for enterprises looking to save resources while improving team communication. Learn more about* *[how enterprises can save costs](https://worklenz.com/blog/how-to-save-costs-by-using-open-source-task-management-tools/)* *by using open-source task management tools.*
 
+<ins>**_How Improving Team Communication Can Boost Productivity and Morale_**</ins>
+
+Expanding on the impact of poor communication, studies reveal that companies with effective communication are 4.5 times more likely to retain top talent. Furthermore, 39% of workers report they are more likely to disengage when communication is unclear. Poor communication leads to missed deadlines, low morale, and reduced productivity, costing businesses up to $420 billion annually in the U.S. alone.
+
+
 Implementing effective team communication strategies to address these challenges and strengthen team collaboration is essential. 
 
 So here are some pro tips just for you.

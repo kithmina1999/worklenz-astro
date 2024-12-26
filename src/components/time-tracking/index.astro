@@ -20,6 +20,8 @@ const t = useTranslations(lang);
 let timeTrackingContent
 if (lang === 'es'){
     timeTrackingContent = await getCollection("time-tracking-es");
+} else if (lang === 'pt') {
+    timeTrackingContent = await getCollection("time-tracking-pt");
 } else {
     timeTrackingContent = await getCollection("time-tracking");
 }
