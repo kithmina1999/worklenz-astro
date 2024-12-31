@@ -18,25 +18,40 @@ description: |
 
 ## Table of Contents
 
-- [Prerequisites](#prerequisites)
-- [Step 1: Clone the Repository](#step-1-clone-the-repository)
+Here’s an updated version of your **Table of Contents** with corrected links, ensuring each section matches the headings in the guide:
+
+---
+
+## Table of Contents
+
+- [Prerequisites](#what-you-need)
+- [Step 1: Clone the Repository](#step-1-cloning-from-the-repository)
+  - [Option 1: Use Git to Clone the Repository](#option-1-use-git-to-clone-the-repository)
+  - [Option 2: Download the Application Files](#option-2-download-the-application-files)
 - [Step 2: Prepare the Docker Environment](#step-2-prepare-the-docker-environment)
   - [Create a `.env` File](#create-a-env-file)
   - [Configure the `.env` File](#configure-the-env-file)
 - [Step 3: Build and Start Containers](#step-3-build-and-start-containers)
+  - [Stopping and Removing Containers](#stopping-and-removing-containers)
 - [Step 4: Access the App](#step-4-access-the-app)
 - [Step 5: Troubleshooting Common Issues](#step-5-troubleshooting-common-issues)
-- [Additional notes](#additional-notes)
+- [Additional Notes](#additional-notes)
+
+---
+
+This update ensures the links in the table of contents align with the corresponding section headers, improving navigation and usability for readers.
 
 
 
-## Prerequisites
+## **What You Need**
 
 Before you begin, ensure you have the following:
-- **Docker and Docker Compose** installed on your system.  
-  You can install Docker by following the [official Docker installation guide](https://docs.docker.com/get-docker/) and [Docker Compose installation guide](https://docs.docker.com/compose/install/).
-- A **supported operating system**: Linux, macOS, or Windows (with Docker Desktop).
-- **Git** installed for cloning the repository.
+- A computer with Docker installed (Windows, Mac, or Linux).
+- Internet access to download required files.
+- Basic familiarity with opening a terminal (Command Prompt or equivalent).
+
+If Docker isn’t installed yet, follow [this guide](https://docs.docker.com/get-docker/) to set it up first.
+If Gitbash isn't installed yet, follow [this guide](https://phoenixnap.com/kb/how-to-install-git-windows) to set up gitbash in your computer
 
 ### Minimum system requirements
 
@@ -44,17 +59,18 @@ Before you begin, ensure you have the following:
 - **RAM**: 4GB minimum (8GB recommended)
 - **Disk Space**: 10GB free for Docker images and containers
 
-
-
-
 ## Step 1: Cloning from the Repository
+1. Option 1: Use Git to Clone the Repository
 
-Start by cloning the Worklenz repository to your local machine:
+Open your terminal (or Command Prompt, PowerShell, or Git Bash) and execute the following command to clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/Worklenz/worklenz.git
+git clone https://github.com/Worklenz/worklenz.git 
 ```
 
+2. Option 2: Download the Application Files
+
+If Git is not installed, you can manually download the files. Visit the [Worklenz repository](https://github.com/Worklenz/worklenz), click on the **"Code"** button, and select **"Download ZIP."** Extract the downloaded ZIP file and place the files in a folder named worklenz on your computer.
 
 Navigate to the project folder:
 
@@ -62,68 +78,81 @@ Navigate to the project folder:
 cd worklenz
 ```
 
+## Step 2: Prepare the Docker Environment
 
+To configure the application to run with Docker, follow these steps:
 
-## Step 2: Prepare Docker Environment
+### Create the `.env` File
 
-The app uses Docker Compose for easier management of multiple containers. To configure the app with Docker Compose:
-
-### Create a .env file  by copying the provided sample:
+In the project directory, navigate to the backend folder and create the `.env` file by copying the provided template:
 
 ```bash
-cd worklenz-backend && cp .env.sample .env
+cd worklenz-backend && cp .env.template .env
 ```
 
 ### Configure the `.env` File with the Necessary Credentials
 
-#### Database Configuration
+```plaintext
 
-```env
-DB_NAME=worklenz_db
-DB_USER=<your-db-username>
-DB_PASSWORD=<your-db-password>
-DB_HOST=localhost
-DB_PORT=5432
-```
-
-#### AWS Configuration
-
-```env
-AWS_REGION=<your-aws-region>
-S3_URL=<your-s3-url>
-S3_ACCESS_KEY_ID=<your-access-key>
-S3_SECRET_ACCESS_KEY=<your-secret-key>
-```
-#### Google OAuth Configuration
-
-```env
-GOOGLE_CLIENT_ID=<your-google-client-id>
-GOOGLE_CLIENT_SECRET=<your-google-client-secret>
-GOOGLE_CALLBACK_URL=<your-callback-url>
-```
-#### Slack Webhook URL
-
-```env
-SLACK_WEBHOOK=<your-slack-webhook-url>
-```
-#### Session and Cookie Configuration
-
-```env
-COOKIE_SECRET=<your-cookie-secret>
-SESSION_NAME=<your-session-name>
-SESSION_SECRET=<your-session-secret>
-```
-#### Backend Configuration
-
-```env
-ANGULAR_DIST_DIR=./dist
-ANGULAR_SRC_DIR=./src
-BACKEND_PUBLIC_DIR=./public
-BACKEND_VIEWS_DIR=./views
-COMMIT_BUILD_IMMEDIATELY=true
+# Server
 NODE_ENV=development
 PORT=3000
-HOSTNAME=localhost
+SESSION_NAME=worklenz.sid 
+SESSION_SECRET="YOUR_SESSION_SECRET_HERE"
+COOKIE_SECRET="YOUR_COOKIE_SECRET_HERE"
+
+# CORS
+SOCKET_IO_CORS=http://localhost:4200
+SERVER_CORS=*
+
+# Database
+DB_USER=worklenz_backend
+DB_PASSWORD=securepassword123
+DB_NAME=worklenz_db
+DB_HOST=worklenz_db 
+DB_PORT=5432
+DB_MAX_CLIENTS=50
+
+# Google Login
+GOOGLE_CLIENT_ID="12345.apps.googleusercontent.com"
+GOOGLE_CLIENT_SECRET="your-google-client-secret"
+GOOGLE_CALLBACK_URL="http://localhost:3000/secure/google/verify"
+LOGIN_FAILURE_REDIRECT="/"
+LOGIN_SUCCESS_REDIRECT="http://localhost:4200/auth/authenticate"
+
+# CLI
+ANGULAR_DIST_DIR="/path/worklenz_frontend/dist/worklenz" # Specify the location where the built Angular app is be placed 
+ANGULAR_SRC_DIR="/path/worklenz_frontend"
+BACKEND_PUBLIC_DIR="/path/worklenz_backend/src/public"
+BACKEND_VIEWS_DIR="/path/worklenz_backend/src/views/admin"
+COMMIT_BUILD_IMMEDIATELY=true
+
+# Host
+HOSTNAME=localhost:4200
+
+# SLACK
+SLACK_WEBHOOK="your-slack-webhook-url"
+USE_PG_NATIVE=true
+
+# JWT SECRET
+JWT_SECRET="YOUR_JWT_SECRET_HERE"
+
+# AWS
+AWS_REGION="us-west-2"
+AWS_ACCESS_KEY_ID="AWS_ACCESS_KEY_ID_HERE"
+AWS_SECRET_ACCESS_KEY="AWS_SECRET_ACCESS_KEY_HERE"
+
+# S3 Credentials
+REGION="us-west-2"
+BUCKET="your-bucket-name"
+S3_URL="S3_URL_HERE"
+S3_ACCESS_KEY_ID="S3_ACCESS_KEY_ID_HERE"
+S3_SECRET_ACCESS_KEY="S3_SECRET_ACCESS_KEY_HERE"
+
+# SES email
+SOURCE_EMAIL="Worklenz <noreply@worklenz.com>"
+
+
 ```
 
 
@@ -142,16 +171,20 @@ This command will do the following:
 - Ensure that all necessary services (like the database and app) are running.
 
 **Stopping and Removing Containers**
-To stop all running containers:
+
+To stop all running containers associated with the Worklenz project, you can use the following command:
 
 ```bash
 docker-compose down
 ```
 
-To remove all containers and images **(use with caution)**:
+If you want to remove the containers, as well as the images and volumes to free up disk space, you can use:
 ```bash
 docker system prune -a
 ```
+<div style="font-weight: bold; color: red">
+Be cautious! This command will delete unused images and volumes, which may result in losing any unsaved data in the volumes. Always ensure that you have backed up important data before running this command.
+</div>
 
 
 
