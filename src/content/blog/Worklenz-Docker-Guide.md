@@ -71,7 +71,7 @@ The app uses Docker Compose for easier management of multiple containers. To con
 ### Create a .env file  by copying the provided sample:
 
 ```bash
-cp .env.sample .env
+cd worklenz-backend && cp .env.sample .env
 ```
 
 ### Configure the `.env` File with the Necessary Credentials
