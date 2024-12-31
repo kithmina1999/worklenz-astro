@@ -234,3 +234,8 @@ By taking these steps, your marketing team can fully harness the power of a self
 Self-hosted project management tools aren’t just about managing tasks—they’re about empowering your marketing team to work smarter. By giving you control over workflows, data security, and costs, these tools provide the flexibility needed to tackle even the most complex campaigns.
 
 Whether you’re launching a product, managing a rebranding effort, or juggling multiple clients, self-hosted solutions ensure your team stays organized, collaborative, and creative. For marketing teams looking to future-proof their operations, the choice is clear: self-hosted project management tools are the way forward.
+
+**_Ready to boost your marketing team's productivity and take control of your projects?_** 
+
+[Try Worklenz](https://app.worklenz.com/auth/signup)– a powerful self-hosted project management solution designed to streamline tasks, enhance collaboration, and provide total control over your data. With Worklenz, you can customize workflows, automate processes, and drive better results for your marketing campaigns. Sign up for a free trial today and experience the difference for yourself!
+ 
