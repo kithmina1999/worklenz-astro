@@ -8,7 +8,7 @@ client = AsyncOpenAI(
   api_key='***REMOVED***',  # this is also the default, it can be omitted
 )
 
-async def translate_file(input_path, output_path, source_language="English", target_language="Portuguese"):
+async def translate_file(input_path, output_path, source_language="English", target_language="German"):
     with open(input_path, "r", encoding="utf-8") as file:
         content = file.read()
     
@@ -46,7 +46,7 @@ async def translate_folder(input_folder, output_folder):
 
 async def main():
     input_folder = "./src/i18n/en"  # Adjust the path as needed
-    output_folder = "./src/i18n/pt"  # Adjust the path as needed
+    output_folder = "./src/i18n/de"  # Adjust the path as needed
     
     try:
         await translate_folder(input_folder, output_folder)
