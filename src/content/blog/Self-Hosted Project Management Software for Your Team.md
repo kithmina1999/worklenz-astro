@@ -139,3 +139,40 @@ As your team uses the software, monitor its effectiveness and identify areas for
 
 Ready to take control of your projects? Experience a seamless workflow with Worklenz’s self-hosted platform. Start today and streamline your team's management with a solution that grows with you. *[Click here](https://app.worklenz.com/auth/signup)* to explore Worklenz and elevate your project management to the next level!
 
+## FAQs - Self-Hosted Project Management Software 
+
+### 1. How do I set up self-hosted software? 
+
+Setting up self-hosted software is simple: 
+
+- Choose the software that suits your team. 
+
+- Install it on a server (your own or cloud-based). 
+
+- Follow the setup guide provided by the software to configure it for your team. 
+
+ Start using it after a quick test to ensure everything works. 
+
+### 2. How much does self-hosted software cost? 
+
+Costs can vary, but typically include: 
+
+- Software: Often free if open-source. 
+
+- Hosting: Either on your server or through a hosting service. 
+
+- Maintenance: Minimal if you have basic IT support. 
+
+Overall, self-hosted tools are usually cheaper than monthly subscriptions for cloud tools. 
+
+### 3. Is maintaining self-hosted software difficult? 
+
+Not really! Most tools require: 
+
+- Updates: Install new versions when available. 
+
+- Backups: Save your data regularly. 
+
+- Basic IT support: For troubleshooting or customization. 
+
+Some tools, like Worklenz, are designed to make this easy even for small teams. 
