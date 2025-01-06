@@ -110,3 +110,5 @@ Remember, the key to success lies in finding what works best for you. Experiment
 
 With dedication and practice, you can harness the power of time and achieve your full potential as a freelancer.
 
+Take charge of your freelance career with Worklenz! Designed to simplify task management, streamline deadlines, and keep your projects on track, Worklenz empowers you to focus on what truly matters delivering exceptional results. *[Start your free trial today](https://app.worklenz.com/auth/signup)* and discover how effortless productivity can be. 
+

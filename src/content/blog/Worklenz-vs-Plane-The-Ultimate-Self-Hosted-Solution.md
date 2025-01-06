@@ -178,3 +178,4 @@ On the other hand, Plane.so is a strong contender for smaller, agile teams or de
 
 You'll be able to make an informed decision on which platform best suits your self-hosted task management needs by evaluating your organization's size, specific use cases, and budget
 
+*Empower your team with a self-hosted solution designed for flexibility and efficiency. Start your journey with Worklenz today by *[signing up for free](https://app.worklenz.com/auth/signup)* *and discover the difference in seamless project management and team collaboration.*
