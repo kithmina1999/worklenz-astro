@@ -55,6 +55,10 @@ const blogCollection = defineCollection({
     is_programmatic_layout_4: z.boolean().default(false),
     is_programmatic_layout_5: z.boolean().default(false),
     related: z.array(z.string()).optional().nullable(),
+    labels: z.array(z.string()).optional().nullable(),
+    phases: z.array(z.string()).optional().nullable(),
+    tasks: z.array(z.string()).optional().nullable(),
+    useCase: z.string().optional().nullable(),
   }),
 });
 
