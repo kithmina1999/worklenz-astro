@@ -1,0 +1,50 @@
+export const Pricing_page = {
+  'pricingpage.pricing': [
+    {
+      name: "Kostenlos",
+      price: "Kostenlos",
+      desc: "",
+      color: "blau",
+      popular: false,
+      features: [
+        "100MB kostenloser Speicherplatz",
+        "3 aktive Projekte",
+        "Unbegrenzte Teammitglieder",
+        "Aufgabenliste",
+        "Kanban-Board",
+        "Projekt-Roadmap",
+        "Projekt-Einblicke",
+        "Zeiterfassung",
+      ],
+      button: {
+        text: "Jetzt starten",
+        link: "https://app.worklenz.com/auth/signup",
+      },
+    },
+    {
+      name: "Pro",
+      price: "5,99",
+      desc: "",
+      popular: true,
+      color: "orange",
+      features: [
+        "25GB kostenloser Speicherplatz",
+        "Unbegrenzte aktive Projekte",
+        "Unbegrenzte Teammitglieder",
+        "Alles im kostenlosen Plan",
+        "Ressourcenmanagement",
+        "Erweiterte Projektberichte",
+        "Fortschritt der Teammitglieder verfolgen",
+        "Berichte exportieren",
+      ],
+      button: {
+        text: "Jetzt starten",
+        link: "https://app.worklenz.com/auth/signup",
+      },
+    },
+  ],
+  'pricingpage.title': "Preise",
+  'pricingpage.desc': "Einfache & vorhersehbare Preise. Keine Überraschungen.",
+  'pricingpage.link.text1': "Kostenlos testen",
+  'pricingpage.link.text2': "Selbst gehostet",
+}
