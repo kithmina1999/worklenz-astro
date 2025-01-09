@@ -1,0 +1,23 @@
+export const About = {
+    'about.fragmentTitle': "Über Worklenz",
+    'about.fragmentDesc': "Willkommen bei Worklenz, Ihrer Anlaufstelle für effizientes Projektmanagement und Ressourcenoptimierung.",
+    'about.pictureAlt': "Glückliches Team",
+    'about.heading1': "Unsere",
+    'about.headingStrong1': "Geschichte",
+    'about.p1': "Gegründet im Jahr 2022, entstand Worklenz aus einer kollektiven Vision, die Praktiken des Projektmanagements zu revolutionieren. Als Technologie-Startup mit Sitz in Sri Lanka erkannten wir den wachsenden Bedarf an optimierten Projektmanagement-Tools, die sich an die einzigartigen Herausforderungen moderner Unternehmen anpassen können.",
+    'about.heading2': "Unsere",
+    'about.headingStrong2': "Mission",
+    'about.p2': "Bei Worklenz ist unsere Mission einfach, aber ehrgeizig: Teams weltweit mit den Werkzeugen auszustatten, die sie für ihren Erfolg benötigen. Wir glauben, dass effektives Projektmanagement der Grundstein jedes erfolgreichen Vorhabens ist, und unser Ziel ist es, innovative Lösungen bereitzustellen, die Zusammenarbeit, Produktivität und Ergebnisse verbessern.",
+    'about.heading3': "Was uns auszeichnet",
+    'about.p3': "Gegründet im Jahr 2022, entstand Worklenz aus einer kollektiven Vision, die Praktiken des Projektmanagements zu revolutionieren. Als Technologie-Startup mit Sitz in Sri Lanka erkannten wir den wachsenden Bedarf an optimierten Projektmanagement-Tools, die sich an die einzigartigen Herausforderungen moderner Unternehmen anpassen können.",
+    'about.ulliText1': "Optimieren Sie das Aufgabenmanagement: Erstellen, zuweisen und verfolgen Sie Aufgaben einfach, um Ihre Projekte im Zeitplan zu halten.",
+    'about.ulliText2': "Optimieren Sie die Ressourcenzuweisung: Weisen Sie Ressourcen effizient zu, um die Produktivität zu maximieren und Engpässe zu minimieren.",
+    'about.ulliText3': "Verbessern Sie die Zusammenarbeit: Fördern Sie nahtlose Zusammenarbeit unter Teammitgliedern mit Echtzeit-Updates, Kommentaren und Dateifreigabe.",
+    'about.ulliText4': "Gewinnen Sie Einblicke: Nutzen Sie leistungsstarke Analyse- und Berichtswerkzeuge, um wertvolle Einblicke in den Fortschritt und die Leistung Ihres Projekts zu gewinnen.",
+    'about.heading4': "Unser",
+    'about.headingStrong4': "Team",
+    'about.p4': "Hinter jeder Codezeile und jedem Funktionsupdate steht ein engagiertes Team von Fachleuten, die sich der Exzellenz verschrieben haben. Von unseren Entwicklern und Designern bis hin zu unseren Kundensupport-Spezialisten wird jedes Mitglied des Worklenz-Teams von einer Leidenschaft für Innovation und einem Engagement für Kundenzufriedenheit angetrieben.",
+    'about.heading5': "Begleiten Sie uns auf unserer",
+    'about.headingStrong5': "Reise",
+    'about.p5': "Während wir weiter wachsen und uns entwickeln, laden wir Sie ein, uns auf unserer Reise zu begleiten. Egal, ob Sie ein kleines Startup, ein wachsendes Unternehmen oder etwas dazwischen sind, Worklenz ist hier, um Sie auf jedem Schritt des Weges zu unterstützen. Vielen Dank, dass Sie sich für Worklenz für Ihre Projektmanagement-Bedürfnisse entschieden haben."
+};

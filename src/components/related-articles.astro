@@ -22,6 +22,10 @@ const relatedArticles = relatedFiles.map((file) => {
     Title = `Self-Hosted Alternative to ${article.frontmatter.title}`;
   } else if (article.frontmatter.is_programmatic_layout_5) {
     Title = `Best Work Management Tools for ${article.frontmatter.title} Industry`;
+  } else if (article.frontmatter.is_programmatic_layout_6) {
+    Title = `Best Open-Source Project Management Software | ${article.frontmatter.title}`;
+  }else if (article.frontmatter.is_programmatic_layout_7) {
+      Title = `Streamline Your Projects with Worklenz’s ${article.frontmatter.title} Template`;
   } else {
     Title = `${article.frontmatter.title}`;
   }

@@ -5,6 +5,7 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 import JsonLd from "@components/JsonLd.astro";
 import Cta from "./cta.astro";
+import Link from "./ui/link.astro";
 
 const jsonLdData = {
   "@context": "https://schema.org",
@@ -270,9 +271,12 @@ const jsonLdData = {
         without the stress.
       </p>
       <p>
-        Ready to make your marketing team more efficient? Worklenz might be just
-        what you need to take things to the next level.
+        Ready to boost your marketing team’s productivity? Try Worklenz today and experience the benefits of an open-source task management system tailored to your team’s needs. For marketing teams in {entry.data.title}, we offer a free setup consultation to help you get started. 
+        
+        
       </p>
+      <Link href="https://outlook.office365.com/book/Worklenzsupport@worklenz.com/" class="rounded-full text-center transition focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500 focus-visible:outline-none focus-visible:shadow-outline-blue px-4 py-2 text-sm bg-blue-600 text-white hover:bg-blue-800 inline-flex items-center group gap-px"
+      >Try Demo</Link>
     </div>
   </div>
   <Cta />

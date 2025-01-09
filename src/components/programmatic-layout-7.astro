@@ -1,0 +1,201 @@
+---
+import Container from "@components/container.astro";
+import { Picture } from "astro:assets";
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+import RelatedArticles from "@components/related-articles.astro";
+import Link from "@components/ui/link.astro";
+import Cta from "@components/cta.astro";
+import JsonLd from "@components/JsonLd.astro";
+
+const jsonLdData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: entry.data.title,
+  datePublished: entry.data.publishDate.toISOString(),
+  author: {
+    "@type": "Person",
+    name: entry.data.author,
+  },
+  keywords: entry.data.tags.join(", "),
+  image: entry.data.image.src,
+  description: entry.data.description,
+};
+---
+
+<Container>
+  <div class="mx-auto max-w-3xl text-center mt-14">
+    <h1
+      class="text-3xl lg:text-4xl font-bold lg:tracking-tight mt-1 lg:leading-tight">
+      Streamline Your Projects with Worklenz’s {entry.data.title} Template
+    </h1>
+    <div class="mt-1">
+      <span class="text-lg text-slate-500 italic">
+        Effortless project organization and powerful tools tailored to your {entry.data.useCase}...
+      </span>
+    </div>
+    <div class="mx-auto max-w-4xl">
+      <Picture
+        formats={["avif", "webp"]}
+        src={entry.data.image.src}
+        alt={entry.data.image.alt}
+        width="1280"
+        height="600"
+        class="h-full w-full object-contain rounded-xl mt-6"
+        transition:name={`post-img-${entry.slug}`}
+      />
+    </div>
+    <div
+      class="flex gap-2 mt-3 items-center justify-center text-sm flex-wrap md:flex-nowrap">
+      <span class="text-slate-400">
+        {entry.data.author}
+      </span>
+      <span class="text-slate-400">•</span>
+      <time
+        class="text-slate-400"
+        datetime={entry.data.publishDate.toISOString()}>
+        {entry.data.publishDate.toDateString()}
+      </time>
+      <span class="text-slate-400 hidden md:block">•</span>
+      <div class="w-full md:w-auto flex flex-wrap justify-center gap-3">
+        {
+          entry.data.tags.map((tag) => (
+            <span class="text-sm text-slate-500">#{tag}</span>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+  <div
+    class="mx-auto prose mt-6 max-w-4xl prose-headings:mb-2 prose-headings:mt-8">
+    <div
+      class="mx-auto prose mt-6 max-w-4xl prose-headings:mb-2 prose-headings:mt-8">
+      Managing projects effectively often boils down to having the right
+      structure in place. Worklenz’s {entry.data.title} Template is designed to help
+      you streamline your workflow, saving you time and effort while maximizing productivity.
+      Whether you're organizing marketing campaigns, managing team tasks, or overseeing
+      client deliverables, this template offers a structured and customizable approach
+      to meet your specific needs.
+    </div>
+    <div
+      class="mx-auto prose mt-6 max-w-4xl prose-headings:mb-2 prose-headings:mt-8">
+      With Worklenz, you gain access to a variety of templates tailored to
+      different industries and workflows. The {entry.data.title} Template is one
+      of our most versatile options, crafted to make your processes seamless and
+      efficient.
+    </div>
+    <div
+      class="mx-auto prose mt-6 max-w-4xl prose-headings:mb-2 prose-headings:mt-8">
+      <h2>Components of the {entry.data.title} Template</h2>
+      <p>{entry.data.description}</p>
+      <ul>
+
+      </ul>
+
+      <div style="display: flex;">
+        <div style="flex: 1;">
+          <b>Labels</b>
+          <ul>
+            {
+              entry.data.labels.map((label) => (
+                <li>{label}</li>
+              ))
+            }
+          </ul>
+        </div>
+        <div style="flex: 1;">
+          <b>Phases</b>
+          <ul>
+            {
+              entry.data.phases.map((phase) => (
+                <li>{phase}</li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+      <b>Tasks</b>
+      <ol>
+      {
+        entry.data.tasks.map((task) => (
+          <li>{task}</li>
+        ))
+      }
+      </ol>
+    </div>
+    <div>
+      <h2>
+        Key Features of the {entry.data.title} Template
+      </h2>
+      <p>
+        Worklenz’s {entry.data.title} Template is designed to streamline your workflow with powerful, user-friendly features tailored to your specific needs. Here’s what makes it stand out
+      </p>
+      <ol>
+        <li>
+          <h3>Pre-Built Framework </h3>
+          <p>
+            Save time by using a ready-to-go template that’s structured to fit {entry.data.useCase}. No need to start from scratch; simply customize it to align with your goals. 
+          </p>
+        </li>
+        <li>
+          <h3>Customizable Tasks and Subtasks</h3>
+          <p>
+            Break down your work into manageable components. Assign tasks, set deadlines, and create subtasks to keep everything organized and on track.
+          </p>
+        </li>
+        <li>
+          <h3>Dynamic Reporting </h3>
+          <p>
+            Track progress effortlessly with built-in analytics. Monitor project status, workload distribution, and performance metrics.
+          </p>
+        </li>
+        <li>
+          <h3>Scalable and Flexible </h3>
+          <p>
+            Whether you’re managing a small team or a large-scale operation, the {entry.data.title} Template can grow with your business.
+          </p>
+        </li>
+        <li>
+          <h3>Open-Source Advantage </h3>
+          <p>
+            Enjoy the flexibility and control of an open-source solution, ensuring data privacy and the freedom to adapt the template to your needs. 
+          </p>
+        </li>
+      </ol>
+    </div>
+    <div>
+      <h2>How {entry.data.title} Helps You Achieve Project Success </h2>
+      <p>
+        Worklenz templates are more than just a pre-made framework; they offer a streamlined approach to managing projects effectively. Here’s how the {entry.data.title} template ensures success for your team
+      </p>
+      <h3>Save Time on Setup </h3>
+      <p>By using a {entry.data.title} template, your team can jump straight into work without spending time creating structures from scratch. Pre-configured task categories, deadlines, and responsibilities help you start the project quickly. </p>
+      <h3>Adapt to Specific Workflows</h3>
+      <p>Each project and team is different. The {entry.data.title} template allows you to adjust the structure to fit your team's unique processes, enhancing overall efficiency and ensuring everyone follows the same format.</p>
+      <h3>Consistency Across Projects</h3>
+      <p>Consistency in project setup leads to better control and visibility. Using templates like {entry.data.title} across multiple projects ensures a uniform approach to planning, task management, and reporting.</p>
+      <h3>Increased Collaboration and Communication</h3>
+      <p>With features like collaborative task comments, file sharing, and automatic updates, the {entry.data.title} template promotes open communication, keeping the entire team informed in real-time.</p>
+      <h3>Track Progress and Meet Deadlines</h3>
+      <p>The {entry.data.title} template offers easy-to-use tools for tracking project milestones, ensuring deadlines are met and everyone stays aligned with project goals. </p>
+    </div>
+    <div>
+      <h2>Unlock Your Team's Potential with Worklenz Templates </h2>
+      <p>Worklenz templates are the perfect solution to streamline your team's workflows and boost productivity. By offering customizable, easy-to-use templates, Worklenz empowers your team to tackle projects with greater efficiency, consistency, and focus. Whether you're managing marketing campaigns, product development, or client projects, the ability to standardize processes with templates ensures everyone is aligned and can focus on achieving key goals. 
+
+        Don’t let your team waste time reinventing the wheel start using Worklenz templates today to unlock seamless collaboration, faster project completion, and a clear path to success. </p>
+    </div>
+    <div>
+      <b>Ready to Get Started with Worklenz Templates? </b>
+      <p>Take control of your project management by leveraging Worklenz templates. Start today and experience the difference in efficiency and collaboration. <a href="https://app.worklenz.com/auth/signup" target="_blank">Sign up for a free trial</a> or <a href="https://worklenz.com/contact/" target="_blank">Contact us</a> to learn more about how Worklenz can transform your team’s workflow. </p>
+    </div>
+  </div>
+
+  <Cta />
+  <hr class="mx-auto max-w-4xl mt-16 mb-16" />
+
+  <!-- Related Articles -->
+  <RelatedArticles entry={entry} />
+  <!-- Schema Articles -->
+  <JsonLd jsonLdData={jsonLdData} />
+</Container>

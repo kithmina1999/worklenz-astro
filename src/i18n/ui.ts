@@ -1,11 +1,13 @@
 import { en } from './en';
 import { es } from './es';
 import { pt } from './pt';
+import { de } from './de';
 
 export const languages = {
     en: 'EN',
     es: 'ES',
-    pt: 'PT'
+    pt: 'PT',
+    de: 'DE'
 };
 
 export const defaultLang = 'en';
@@ -13,7 +15,8 @@ export const defaultLang = 'en';
 export const ui = {
     en,
     es,
-    pt
+    pt,
+    de
 } as const;
 
 export const routes = {
