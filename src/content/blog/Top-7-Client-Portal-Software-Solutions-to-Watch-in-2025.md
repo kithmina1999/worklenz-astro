@@ -243,6 +243,8 @@ By ensuring your client portal software includes these features, you’re not ju
 
 ## Tips for Choosing the Right Client Portal Software
 
+![Tips for Choosing the Right Client Portal Software](/images/Choosing-Right-Client-Portal-Software.webp)
+
 **_Tip 1 Prioritize User-Friendliness:_** A seamless, intuitive interface ensures both your team and clients can navigate the portal without hassle, enhancing overall productivity.
 
 **_Tip 2 Opt for Customization:_** Choose a portal that can be tailored to reflect your business’s branding and unique needs, offering flexibility as your operations evolve.

@@ -84,3 +84,4 @@ Your data is in safe hands. Worklenz employs top-tier security measures to safeg
 
 The Worklenz mobile app empowers you to manage tasks, stay connected, and track progress on-the-go—making it easier to stay productive, no matter where you are. Ready to take your task management to the next level? Download the Worklenz app today and experience the flexibility and efficiency of seamless mobile project management. Don’t let location hold you back—keep your work moving forward wherever life takes you!
 
+*Ready to take your productivity to the next level? Download the Worklenz Mobile App today and experience seamless task management wherever you are. Simplify your workflow, collaborate effortlessly, and never miss a deadline again. Get started now and transform the way you work on the go!* 

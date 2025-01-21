@@ -94,6 +94,8 @@ By integrating task management into their daily routines, HR teams can reduce ma
 
 To maximize efficiency and address the unique challenges of HR operations, self-hosted task management tools come equipped with features tailored to the needs of HR professionals. These tools not only streamline day-to-day activities but also offer customization options to align with organizational goals.
 
+![Key Features of Self-Hosted tools for HR](/images/Features-Self-Hosted-Tools-HR.webp)
+
 **1. Onboarding and Offboarding Workflows**
 
 Managing employee entry and exit processes can be overwhelming without proper systems in place. Self-hosted tools provide:
