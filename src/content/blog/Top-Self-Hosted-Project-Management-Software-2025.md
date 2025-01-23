@@ -166,6 +166,8 @@ When selecting self-hosted project management software, it’s crucial to focus 
 
 Choosing the right self-hosted project management software can be straightforward if you follow these simple steps: 
 
+![Steps to choose the right self-hosted tool](/images/Steps-to-Choose-the-Right-Self-Hosted-Tool.webp)
+
 ### Step 1: Identify Your Core Needs 
 
 - List the key features your team needs (task management, collaboration, time tracking, etc.). 
@@ -190,7 +192,7 @@ Choosing the right self-hosted project management software can be straightforwar
 
 - Check for compliance with relevant regulations (GDPR, HIPAA, etc.).
 
-## Step 5: Assess Integration Capabilities 
+### Step 5: Assess Integration Capabilities 
 
 - Ensure the tool can integrate with other software you use (CRM, email, Slack, etc.). 
 
