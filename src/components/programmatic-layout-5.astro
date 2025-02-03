@@ -49,6 +49,7 @@ const jsonLdData = {
       </time>
       <span class="text-slate-400 hidden md:block">•</span>
       <div class="w-full md:w-auto flex flex-wrap justify-center gap-3">
+        <span class="text-sm text-slate-500">#Industry</span>
         {
           entry.data.tags.map((tag) => (
             <span class="text-sm text-slate-500">#{tag}</span>
@@ -119,6 +120,8 @@ const jsonLdData = {
     <div
       class="mx-auto prose mt-6 max-w-4xl prose-headings:mb-2 prose-headings:mt-8">
       <h2>How Worklenz Helps {entry.data.title} industry</h2>
+      <p>Worklenz supports {entry.data.title} teams by streamlining processes, tracking tasks, and improving coordination.</p>
+      <p>With its powerful task management capabilities, Worklenz enables {entry.data.title} teams to prioritize activities, assign responsibilities, and monitor progress in real time. Customizable workflows ensure that businesses can align the tool with their specific operational needs, whether it's managing large-scale projects or handling day-to-day tasks. </p>
     </div>
     <div>
       <p>
