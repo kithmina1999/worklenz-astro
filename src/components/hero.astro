@@ -4,10 +4,7 @@ import heroImage from "@assets/hero-image.png";
 import heroImageMobile from "@assets/mobile-hero-image.png";
 import Link from "@components/ui/link.astro";
 import Container from "@components/container.astro";
-import {
-  getLangFromUrl,
-  useTranslations,
-} from "../i18n/utils";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -23,13 +20,13 @@ const t = useTranslations(lang);
         class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial from-purple-200 right-56 top-10">
       </div>
 
-      <div class="">
+      <div class="mb-[40px]">
         <h1
           class="text-4xl md:text-5xl lg:text-6xl xl:text-6xl lg:tracking-tight xl:tracking-tighter [text-wrap:balance] text-center lg:text-center xl:text-center font-bold leading-tight">
           {t("hero.heading")}
-          <br>
+
           <span
-            class="text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-semibold text-blue-600">
+            class="text-4xl md:text-5xl lg:text-6xl xl:text-6xl lg:tracking-tight xl:tracking-tighter [text-wrap:balance] text-center font-bold leading-tight bg-gradient-to-r from-blue-500 to-[#4FC3D8] text-transparent bg-clip-text">
             {t("hero.headingSpan")}
           </span>
         </h1>
@@ -39,30 +36,48 @@ const t = useTranslations(lang);
           {t("hero.headingParagraph")}
         </p>
         <div
-          class="mt-6 flex flex-col sm:flex-row sm:justify-center lg:justify-center gap-3">
+          class="mt-5 flex flex-col sm:flex-row sm:justify-center lg:justify-center gap-5">
           <Link
             href="https://app.worklenz.com/auth/signup"
             target="_blank"
-            class="flex gap-1 items-center justify-center"
-            rel="noopener">
-            {t("hero.linksignupText")}
+            rel="noopener"
+            class="relative inline-flex h-[44px] pl-[10px] pr-[15px] py-[10px] justify-center items-center gap-[10px] shrink-0 font-semibold overflow-hidden group before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-transparent before:transition-colors before:duration-500 after:absolute after:top-[10px] after:left-[10px] after:w-[24px] after:h-[24px] after:bg-[url('/images/startFreeButton.png')] after:bg-contain after:bg-no-repeat after:bg-center after:transition-transform after:duration-500 hover:before:bg-black hover:after:translate-x-[140px]">
+            <span
+              class="relative z-10 flex items-center gap-[10px] transition-transform duration-500 group-hover:translate-x-[-30px]">
+              <img
+                src="/images/startFreeButton.png"
+                class="w-[24px] h-[24px] invisible"
+              />
+              {t("hero.linksignupText")}
+            </span>
           </Link>
-          <!-- Add Product Hunt Button -->
-          <a
-            href="https://www.producthunt.com/posts/worklenz?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-worklenz"
+
+          <Link
+            href="https://app.worklenz.com/auth/signup"
             target="_blank"
-            class="center-mobile-hero"
-            ><img
-              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=446424&theme=light"
-              alt= {t("hero.imageAlt")}
-              style="width: 250px; height: 54px;"
-              width="250"
-              height="54"
-            /></a
-          >
+            rel="noopener"
+            class="relative inline-flex h-[44px] pl-[10px] pr-[15px] py-[10px] justify-center items-center gap-[10px] shrink-0 font-semibold border border-black text-black bg-transparent overflow-hidden group before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-transparent before:transition-colors before:duration-500 after:absolute after:top-[10px] after:left-[10px] after:w-[24px] after:h-[24px] after:bg-[url('/images/startFreeButton.png')] after:bg-contain after:bg-transparent after:bg-center after:transition-transform after:duration-500 hover:border-blue-500 hover:text-blue-500 hover:after:translate-x-[100px]">
+            <span
+              class="relative z-10 flex items-center gap-[10px] transition-transform duration-500 group-hover:translate-x-[-30px]">
+              <img
+                src="/images/startFreeButton.png"
+                class="w-[24px] h-[24px] invisible"
+              />
+              {t("hero.learnmoreText")}
+            </span>
+          </Link>
+
+          <!-- Add Product Hunt Button -->
         </div>
         <div
-          class="mt-4 flex items-center justify-center gap-2 review-section-hero">
+          class="mt-5 text-sm max-w-lg text-gray-400 text-center mx-auto flex justify-center items-center gap-2">
+          <img src="/images/Vector.png" class="w-4 h-5" alt="Vector icon" />
+          <p>
+            No Credit card Required. <b>Free 1 month trial</b>
+          </p>
+        </div>
+        <div
+          class="mt-8 flex items-center justify-center gap-2 review-section-hero">
           <div class="flex -space-x-1 review-section-hero-images">
             <img
               class="w-8 h-8 rounded-full border-2 border-white"
@@ -88,54 +103,102 @@ const t = useTranslations(lang);
           <span class="text-gray-600 text-sm review-section-hero-text"
             >{t("hero.reviewsText")}</span
           >
-          <span class="text-yellow-500 text-sm review-section-hero-text"
+          <span
+            class="text-yellow-500 mr-4 text- text-sm review-section-hero-text"
             >★★★★★</span
+          >
+
+          <a
+            href="https://www.producthunt.com/posts/worklenz?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-worklenz"
+            target="_blank"
+            class="center-mobile-hero"
+            ><img
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=446424&theme=light"
+              alt={t("hero.imageAlt")}
+              style="width: 200px; height: 45px;"
+              width="200"
+              height="45"
+            /></a
           >
         </div>
       </div>
-      <div class="py-3 lg:col-span-3 lg:-mr-44 mt-20 mb-16">
-        <div class="hero-image-holder">
-          <Picture
-            src={heroImage}
-            alt={t("hero.dashboardImgAlt")}
-            formats={["avif", "webp"]}
-            loading="eager"
-            fetchpriority="high"
-            class="hidden sm:block"
-          />
 
-          <Picture
-            src={heroImageMobile}
-            alt={t("hero.dashboardImgAlt")}
-            formats={["avif", "webp"]}
-            loading="eager"
-            fetchpriority="high"
-            class="block sm:hidden"
-          />
-        </div>
+      <div
+        class="bg-gradient-to-br from-white to-[#BFBFFF] rounded-[20px] px-5 py-[30px] mb-[40px]">
+        <section>
+          <div class="container mx-auto flex flex-col items-center">
+            <div
+              id="stepButtons"
+              class="flex flex-wrap gap-4 justify-center mb-[30px]">
+              <!-- Buttons rendered dynamically -->
+            </div>
+            <img
+              id="stepImage"
+              class="w-full max-w-3xl mx-auto mb-10 object-cover object-center rounded-2xl transition-full duration-500 shadow-lg"
+              src="/images/CustomColumn.png"
+              alt="step"
+            />
+          </div>
+        </section>
+
+        <script>
+          const steps = [
+            { label: "Custom Columns", img: "/images/CustomColumn.png" },
+            { label: "Scheduler", img: "/images/Sheduler.png" },
+            { label: "Analytics", img: "/images/GanttChart.png" },
+            { label: "Time Tracking", img: "/images/TimeTracking.png" },
+            { label: "Kanban", img: "/images/Kanban.png" },
+            { label: "Task List", img: "/images/TaskList.png" },
+            { label: "Coming soon..", img: "/images/TaskList.png" },
+          ];
+          let currentStep = 0;
+          const stepButtons = document.getElementById("stepButtons");
+          const stepImage = document.getElementById("stepImage");
+          function renderSteps() {
+            stepButtons.innerHTML = "";
+            steps.forEach((step, index) => {
+              const isActive = index === currentStep;
+              const button = document.createElement("button");
+              button.className = ` px-5 py-2 rounded-[10px] bg-transparent text-sm font-medium transition-all duration-500 ease-in-out transform ${isActive ? "bg-black text-white scale-105" : "bg-gray-100 text-black hover:bg-gray-200"} `;
+              button.textContent = step.label;
+              button.onclick = () => setStep(index);
+              stepButtons.appendChild(button);
+            });
+          }
+          function setStep(index) {
+            currentStep = index;
+            stepImage.src = steps[index].img || "";
+            renderSteps();
+          }
+          renderSteps();
+          setInterval(() => {
+            currentStep = (currentStep + 1) % steps.length;
+            setStep(currentStep);
+          }, 5000);
+        </script>
       </div>
-    </main>
-  </Container>
-</div>
 
-<style>
-  .hero-image-holder {
-    max-width: 1240px;
-  }
-  @media (max-width: 1280px) {
-    .hero-image-holder {
-      max-width: calc(100vw - 3rem);
-    }
-  }
-  @media (max-width: 480px) {
-    .review-section-hero {
-      display: grid !important;
-    }
-    .review-section-hero-images {
-      justify-content: center;
-    }
-    .review-section-hero-text {
-      text-align: center;
-    }
-  }
-</style>
+      <style>
+        .hero-image-holder {
+          max-width: 1240px;
+        }
+        @media (max-width: 1280px) {
+          .hero-image-holder {
+            max-width: calc(100vw - 3rem);
+          }
+        }
+        @media (max-width: 480px) {
+          .review-section-hero {
+            display: grid !important;
+          }
+          .review-section-hero-images {
+            justify-content: center;
+          }
+          .review-section-hero-text {
+            text-align: center;
+          }
+        }
+      </style>
+    </main></Container
+  >
+</div>
