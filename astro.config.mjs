@@ -11,7 +11,7 @@ export default defineConfig({
   integrations: [tailwind(), mdx(), icon(), sitemap(), react()],
   build: {
     // Ensure that the 404 page is generated
-    output: 'server'
+    output: 'static'
   },
   trailingSlash: 'ignore'
 });
