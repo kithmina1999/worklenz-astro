@@ -21,6 +21,7 @@ jobs:
             PROJECT_DIR: ${{ secrets.PROJECT_DIR }}
         run: |
           # Setup SSH connection
+          mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > private_key && chmod 600 private_key
           ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
 
