@@ -2,10 +2,9 @@ import asyncio
 import os
 from openai import AsyncOpenAI
 
-# Replace with your OpenAI API key
-# openai.api_key = "***REMOVED***"
+# It is recommended to set the OpenAI API key as an environment variable.
 client = AsyncOpenAI(
-  api_key='***REMOVED***',  # this is also the default, it can be omitted
+  api_key=os.environ.get("OPENAI_API_KEY"),
 )
 
 async def translate_file(input_path, output_path, source_language="English", target_language="German"):
