@@ -25,21 +25,5 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > private_key && chmod 600 private_key
           ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
 
-          # Define the deployment script
-          DEPLOY_SCRIPT="
-          set -e
-          echo "--- Starting deployment on server ---"
-          cd $PROJECT_DIR
-          echo "--- Pulling latest code from main branch ---"
-          git pull origin main
-          echo "--- Installing dependencies with pnpm ---"
-          # Ensure pnpm is available, you might need to install it globally on your server first
-          # Example: npm install -g pnpm
-          pnpm install --frozen-lockfile
-          echo "--- Building static files ---"
-          pnpm run build
-          echo "--- Deployment finished successfully ---"
-          "
-
-          # Execute the script on the remote server
-          ssh -i private_key ${SSH_USER}@${SSH_HOST} "${DEPLOY_SCRIPT}"
+          # Execute the deployment script on the remote server
+          ssh -i private_key ${SSH_USER}@${SSH_HOST} "set -e; echo '--- Starting deployment on server ---'; cd '${PROJECT_DIR}'; echo '--- Pulling latest code from main branch ---'; git pull origin main; echo '--- Installing dependencies with pnpm ---'; pnpm install --frozen-lockfile; echo '--- Building static files ---'; pnpm run build; echo '--- Deployment finished successfully ---'"
