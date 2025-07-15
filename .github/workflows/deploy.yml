@@ -1,71 +1,29 @@
-name: Docker Deploy to Server
-
+name: Deploy to Server
+# Trigger the workflow on push events to the main branch
 on:
   push:
     branches:
       - main
 
-env:
-  IMAGE_NAME: worklenz-static-site
-
 jobs:
-  build-and-deploy:
+  deploy:
+    name: Deploy
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup Node + Install deps
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - run: |
-          corepack enable
-          pnpm install
-          pnpm run build
-
-      - name: Build Docker image
-        run: |
-          docker build -t $IMAGE_NAME .
-
-      - name: Save Docker image as tarball
-        run: |
-          docker save $IMAGE_NAME -o image.tar
-
-      - name: Copy Docker image to remote server
-        uses: appleboy/scp-action@v0.1.3
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          source: image.tar
-          target: ${{ secrets.PROJECT_DIR }}
-
-      - name: Deploy on remote server
+      - name: Setup SSH and Deploy
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SSH_HOST: ${{ secrets.SSH_HOST }}
-          SSH_USER: ${{ secrets.SSH_USER }}
-          PROJECT_DIR: ${{ secrets.PROJECT_DIR }}
+            SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+            SSH_HOST: ${{ secrets.SSH_HOST }}
+            SSH_USER: ${{ secrets.SSH_USER }}
+            PROJECT_DIR: ${{ secrets.PROJECT_DIR }}
         run: |
+          # Setup SSH connection
+          mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > private_key && chmod 600 private_key
-          ssh -i private_key -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} << EOF
-            set -e
-            cd $PROJECT_DIR
-            echo "--- Loading Docker image ---"
-            docker load -i image.tar
+          ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
 
-            echo "--- Stopping existing container (if running) ---"
-            docker rm -f worklenz-nginx || true
-
-            echo "--- Running container ---"
-            docker run -d \
-              --name worklenz-nginx \
-              -p 80:80 \
-              --restart unless-stopped \
-              worklenz-static-site
-
-            echo "--- Deployment complete ---"
-          EOF
+          # Execute the deployment script on the remote server
+          ssh -i private_key ${SSH_USER}@${SSH_HOST} "set -e; echo '--- Starting deployment on server ---'; cd '${PROJECT_DIR}'; echo '--- Pulling latest code from main branch ---'; git pull origin main; echo '--- Installing dependencies with pnpm ---'; pnpm install --frozen-lockfile; echo '--- Building static files ---'; pnpm run build; echo '--- Deployment finished successfully ---'"
