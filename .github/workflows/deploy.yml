@@ -55,7 +55,7 @@ jobs:
             set -e
             cd $PROJECT_DIR
             echo "--- Loading Docker image ---"
-            docker load -i image.tar
+            docker load -i $PROJECT_DIR/image.tar
 
             echo "--- Stopping existing container (if running) ---"
             docker rm -f worklenz-nginx || true
